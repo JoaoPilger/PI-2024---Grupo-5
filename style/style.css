@@ -1,6 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Bebas+Neue&display=swap');
+.aldrich-regular {
+  font-family: "Aldrich", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+<<<<<<< HEAD
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family:"Aldrich", sans-serif;
+}
+
+
+header{
+    width: 100%;
+}
+header > div{
+    padding: 0 200px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.logo{
+    text-align: center;
+    max-width: 190px;
+    padding: 20px 0;
+}
+.logo > a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+.logo :first-child{
+    color: green;
+}
+
+
+.container{
+    padding: 200px;
+}
+=======
+.all{
+    text-align: center;
+}
+
+.genzlogo{
+    color: #ABF8CA;
+    font-size: 62px;
+    -webkit-text-stroke: 1px black;
+    font-family: "Aldrich", sans-serif;
+}
+.txtdynamics{
+    font-size: 64px;
+    margin-top: -85px;
+    font-family: "Aldrich", sans-serif;
+}
+
+.programaaux{
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: -20px;
+    font-size: 64px;
+}    
+
+:root {
+    --verde: #ABF8CA;
+}
+
+
+>>>>>>> 0d14e99033be67a83a0cea4085fddfa1cab4c1d6
 footer {
     background-color: black;
 }
