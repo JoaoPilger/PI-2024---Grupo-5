@@ -5,7 +5,6 @@
   font-style: normal;
 }
 
-<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -39,7 +38,6 @@ header > div{
 .container{
     padding: 200px;
 }
-=======
 .all{
     text-align: center;
 }
@@ -67,7 +65,6 @@ header > div{
 }
 
 
->>>>>>> 0d14e99033be67a83a0cea4085fddfa1cab4c1d6
 footer {
     background-color: black;
 }
