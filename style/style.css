@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Bebas+Neue&display=swap');
 
+:root {
+    --verde: #ABF8CA;
+}
+
+
 footer {
     background-color: black;
 }
