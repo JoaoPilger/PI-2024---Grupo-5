@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Bebas+Neue&display=swap');
 
-<<<<<<< HEAD
 .all{
     text-align: center;
 }
@@ -22,7 +21,17 @@
     font-family: "Bebas Neue", sans-serif;
     margin-top: -20px;
     font-size: 64px;
-=======
+}
+
+.modal{
+    border: 5px solid black;
+}
+
+.modal img{
+    width: 129px;
+    height: 129px;
+}
+
 :root {
     --verde: #ABF8CA;
 }
@@ -30,5 +39,4 @@
 
 footer {
     background-color: black;
->>>>>>> b089da6e358c8d00663f2da8dde0d4745aa1473e
-}
+} 
