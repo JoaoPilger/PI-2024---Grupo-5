@@ -5,6 +5,7 @@
   font-style: normal;
 }
 
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -38,6 +39,35 @@ header > div{
 .container{
     padding: 200px;
 }
+=======
+.all{
+    text-align: center;
+}
+
+.genzlogo{
+    color: #ABF8CA;
+    font-size: 62px;
+    -webkit-text-stroke: 1px black;
+    font-family: "Aldrich", sans-serif;
+}
+.txtdynamics{
+    font-size: 64px;
+    margin-top: -85px;
+    font-family: "Aldrich", sans-serif;
+}
+
+.programaaux{
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: -20px;
+    font-size: 64px;
+}    
+
+:root {
+    --verde: #ABF8CA;
+}
+
+
+>>>>>>> 0d14e99033be67a83a0cea4085fddfa1cab4c1d6
 footer {
     background-color: black;
 }
