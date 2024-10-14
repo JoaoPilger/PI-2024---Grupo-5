@@ -4,3 +4,53 @@
 footer {
     background-color: black;
 }
+
+
+.boneco {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation: moveBoneco 15s infinite;
+    margin-bottom: -10px;
+}
+
+.div1 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.pernae, .pernad {
+    position: relative;
+}
+
+.pernad {
+    animation: movepernae 1s infinite;
+    margin-top: -8px;
+    z-index: 10;
+}
+
+.pernae {
+    margin-top: -8px;
+    z-index: 10;
+}
+.pernad {
+    animation: movepernad 2s infinite;
+}
+@keyframes moveBoneco {
+    0% { left: -500px; }
+    50% { left: 500px; }
+    100% { left: 500px; }
+}
+@keyframes movepernae {
+    0% { left: 0px; }
+    50% { left: 100px; }
+    100% { left: 0px; }
+}
+
+@keyframes movepernad {
+    0% { left: -35px; }
+    50% { left: -5px; }
+    100% { left: -35px; }
+}
