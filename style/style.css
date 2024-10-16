@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .aldrich-regular {
   font-family: "Aldrich", sans-serif;
   font-weight: 400;
@@ -38,27 +40,40 @@ header > div{
 .container{
     padding: 200px;
 }
-.all{
+.allsecao5{
     text-align: center;
 }
 
-.genzlogo{
+.genzlogosc5{
     color: #ABF8CA;
     font-size: 62px;
     -webkit-text-stroke: 1px black;
     font-family: "Aldrich", sans-serif;
+    
 }
 .txtdynamics{
     font-size: 64px;
-    margin-top: -85px;
+    margin-top: -25px;
     font-family: "Aldrich", sans-serif;
+    text-align: center;
 }
 
 .programaaux{
     font-family: "Bebas Neue", sans-serif;
-    margin-top: -20px;
     font-size: 64px;
-}    
+    text-align: center;
+    margin-top: 10px;
+}
+
+.modal{
+    border: 5px solid black;
+    text-align: center;
+}
+
+.modal img{
+    width: 129px;
+    height: 129px;
+}
 
 :root {
     --verde: #ABF8CA;
@@ -67,6 +82,7 @@ header > div{
 
 footer {
     background-color: black;
+
 }
 
 
@@ -118,6 +134,7 @@ footer {
     50% { left: -5px; }
     100% { left: -35px; }
 }
+
 
 /* Carrossel header ================================================================================================*/
 
