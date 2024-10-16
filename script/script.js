@@ -1,19 +1,20 @@
-// Carrossel header ======================================================================================
+const carousel = document.querySelector('.carousel');
+const images = [
+  '/midia/header1.jpg',
+  '/midia/header2.jpg'
+];
+let currentImage = 0;
 
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
+function changeBackground() {
+  // Atualiza o background-image
+  carousel.style.backgroundImage = `url(${images[currentImage]})`;
 
-function showNextSlide() {
-  // Oculta a imagem atual
-  slides[currentSlide].classList.remove('active');
-
-  // Atualiza o índice da próxima imagem
-  currentSlide = (currentSlide + 1) % totalSlides;
-
-  // Exibe a próxima imagem
-  slides[currentSlide].classList.add('active');
+  // Define o próximo índice (circular)
+  currentImage = (currentImage + 1) % images.length;
 }
 
-// Alterna a imagem após algum tempo
-setInterval(showNextSlide, 5000);
+// Alterna a imagem a cada 15 segundos
+setInterval(changeBackground, 5000);
+
+// Exibe a primeira imagem ao carregar a página
+changeBackground();
