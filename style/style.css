@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
 :root {
     --verde: #ABF8CA;
@@ -9,6 +11,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -66,26 +69,39 @@ header > div{
 .all{
     text-align: center;
 }
-
+.allsecao5{
+    text-align: center;
+}
 .genzlogo{
     color: var(--verde);
     font-size: 62px;
     -webkit-text-stroke: 1px black;
     font-family: "Aldrich", sans-serif;
 }
+.genzlogosc5{
+    color: var(--verde);
+    font-size: 62px;
+    -webkit-text-stroke: 1px black;
+    font-family: "Aldrich", sans-serif;
+    
+}
 .txtdynamics{
     font-size: 64px;
-    margin-top: -85px;
+    margin-top: -25px;
     font-family: "Aldrich", sans-serif;
+    text-align: center;
 }
 
 .programaaux{
-    margin-top: -20px;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 64px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .modal{
     border: 5px solid black;
+    text-align: center;
 }
 
 .modal img{
@@ -145,3 +161,38 @@ footer {
     50% { left: -5px; }
     100% { left: -35px; }
 }
+
+/* Carrossel header ================================================================================================*/
+
+/* Centraliza o carrossel na tela */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilização do container do carrossel */
+  .carousel_header {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  /* Estilização das imagens */
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* Imagem ativa */
+  .active {
+    opacity: 1;
+  }
