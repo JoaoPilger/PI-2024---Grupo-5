@@ -1,7 +1,7 @@
 const carousel = document.querySelector('.carousel');
 const images = [
-  '/midia/header1.jpg',
-  '/midia/header2.jpg'
+  'hero1.jpg',
+  'hero2.jpg'
 ];
 let currentImage = 0;
 
