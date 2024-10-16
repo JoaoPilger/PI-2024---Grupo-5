@@ -118,3 +118,38 @@ footer {
     50% { left: -5px; }
     100% { left: -35px; }
 }
+
+/* Carrossel header ================================================================================================*/
+
+/* Centraliza o carrossel na tela */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilização do container do carrossel */
+  .carousel_header {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  /* Estilização das imagens */
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* Imagem ativa */
+  .active {
+    opacity: 1;
+  }
