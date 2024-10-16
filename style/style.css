@@ -101,8 +101,22 @@ main{
 }
 
 .modal{
+    width: 917px;
+    height: 572px;
     border: 5px solid black;
+}
+.modal p{
+    display: flex;
+    justify-content: center;
+}
+.modal input{
+    margin-top: 200px;
+    background-color: black;
+    font-size: 20px;
+    color: white;
     text-align: center;
+    width: 215px;
+    height: 48px;
 }
 
 .modal img{
