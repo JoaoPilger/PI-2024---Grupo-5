@@ -5,8 +5,6 @@
   font-style: normal;
 }
 
-<<<<<<< HEAD
-=======
 *{
     margin: 0;
     padding: 0;
@@ -40,8 +38,7 @@ header > div{
 .container{
     padding: 200px;
 }
->>>>>>> 7dfc7a3d0cd815a5c2b8b8237bed094a23f39578
-.all{
+.allsecao5{
     text-align: center;
 }
 
@@ -50,31 +47,31 @@ header > div{
     font-size: 62px;
     -webkit-text-stroke: 1px black;
     font-family: "Aldrich", sans-serif;
+    
 }
 .txtdynamics{
     font-size: 64px;
     margin-top: -85px;
     font-family: "Aldrich", sans-serif;
+    text-align: center;
 }
 
 .programaaux{
     font-family: "Bebas Neue", sans-serif;
     margin-top: -20px;
     font-size: 64px;
-<<<<<<< HEAD
+    text-align: center;
 }
 
 .modal{
     border: 5px solid black;
+    text-align: center;
 }
 
 .modal img{
     width: 129px;
     height: 129px;
 }
-=======
-}    
->>>>>>> 7dfc7a3d0cd815a5c2b8b8237bed094a23f39578
 
 :root {
     --verde: #ABF8CA;
