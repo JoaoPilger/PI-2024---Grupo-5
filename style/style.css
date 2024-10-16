@@ -1,6 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Bebas+Neue&display=swap');
+.aldrich-regular {
+  font-family: "Aldrich", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+<<<<<<< HEAD
+=======
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family:"Aldrich", sans-serif;
+}
+
+
+header{
+    width: 100%;
+}
+header > div{
+    padding: 0 200px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.logo{
+    text-align: center;
+    max-width: 190px;
+    padding: 20px 0;
+}
+.logo > a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+.logo :first-child{
+    color: green;
+}
+
+
+.container{
+    padding: 200px;
+}
+>>>>>>> 7dfc7a3d0cd815a5c2b8b8237bed094a23f39578
 .all{
     text-align: center;
 }
@@ -21,6 +61,7 @@
     font-family: "Bebas Neue", sans-serif;
     margin-top: -20px;
     font-size: 64px;
+<<<<<<< HEAD
 }
 
 .modal{
@@ -31,6 +72,9 @@
     width: 129px;
     height: 129px;
 }
+=======
+}    
+>>>>>>> 7dfc7a3d0cd815a5c2b8b8237bed094a23f39578
 
 :root {
     --verde: #ABF8CA;
@@ -39,4 +83,58 @@
 
 footer {
     background-color: black;
+<<<<<<< HEAD
 } 
+=======
+}
+
+
+.boneco {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation: moveBoneco 15s infinite;
+    margin-bottom: -10px;
+}
+
+.div1 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.pernae, .pernad {
+    position: relative;
+}
+
+.pernad {
+    animation: movepernae 1s infinite;
+    margin-top: -8px;
+    z-index: 10;
+}
+
+.pernae {
+    margin-top: -8px;
+    z-index: 10;
+}
+.pernad {
+    animation: movepernad 2s infinite;
+}
+@keyframes moveBoneco {
+    0% { left: -500px; }
+    50% { left: 500px; }
+    100% { left: 500px; }
+}
+@keyframes movepernae {
+    0% { left: 0px; }
+    50% { left: 100px; }
+    100% { left: 0px; }
+}
+
+@keyframes movepernad {
+    0% { left: -35px; }
+    50% { left: -5px; }
+    100% { left: -35px; }
+}
+>>>>>>> 7dfc7a3d0cd815a5c2b8b8237bed094a23f39578
