@@ -1,49 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
-.aldrich-regular {
-  font-family: "Aldrich", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family:"Aldrich", sans-serif;
-}
-
-
-header{
-    width: 100%;
-}
-header > div{
-    padding: 0 200px;
-    background-color: rgba(0, 0, 0, 0.2);
-}
-.logo{
+.all{
     text-align: center;
-    max-width: 190px;
-    padding: 20px 0;
-}
-.logo > a{
-    font-size: 30px;
-    text-decoration: none;
-    color: black;
-}
-.logo :first-child{
-    color: green;
-}
-
-
-.container{
-    padding: 200px;
 }
 .allsecao5{
     text-align: center;
 }
-
 .genzlogo{
-    color: #ABF8CA;
+    color: var(--verde);
+    font-size: 62px;
+    -webkit-text-stroke: 1px black;
+    font-family: "Aldrich", sans-serif;
+}
+.genzlogosc5{
+    color: var(--verde);
     font-size: 62px;
     -webkit-text-stroke: 1px black;
     font-family: "Aldrich", sans-serif;
@@ -51,21 +19,35 @@ header > div{
 }
 .txtdynamics{
     font-size: 64px;
-    margin-top: -85px;
+    margin-top: -25px;
     font-family: "Aldrich", sans-serif;
     text-align: center;
 }
 
 .programaaux{
     font-family: "Bebas Neue", sans-serif;
-    margin-top: -20px;
     font-size: 64px;
     text-align: center;
+    margin-top: 10px;
 }
 
 .modal{
+    width: 917px;
+    height: 572px;
     border: 5px solid black;
+}
+.modal p{
+    display: flex;
+    justify-content: center;
+}
+.modal input{
+    margin-top: 200px;
+    background-color: black;
+    font-size: 20px;
+    color: white;
     text-align: center;
+    width: 215px;
+    height: 48px;
 }
 
 .modal img{
@@ -73,15 +55,9 @@ header > div{
     height: 129px;
 }
 
-:root {
-    --verde: #ABF8CA;
-}
-
-
 footer {
     background-color: black;
 }
-
 
 .boneco {
     margin-top: 10px;
@@ -130,4 +106,44 @@ footer {
     0% { left: -35px; }
     50% { left: -5px; }
     100% { left: -35px; }
+}
+
+/* Carrossel header ================================================================================================*/
+
+/* Centraliza o carrossel na tela */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+  
+  /* Estilização do container do carrossel */
+.carousel_header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel_header > div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+  
+  /* Estilização das imagens */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+  
+  /* Imagem ativa */
+.active {
+    opacity: 1;
 }

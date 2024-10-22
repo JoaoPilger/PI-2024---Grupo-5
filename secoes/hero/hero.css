@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --verde: #ABF8CA;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family:"Aldrich", sans-serif;
+}
+
+.aldrich-regular {
+  font-family: "Aldrich", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1{
+  font-family: "Bebas Neue", sans-serif;
+}
+a{
+  text-decoration: none;
+}
+
+/* Carrossel */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.carousel {
+  width: 1920px;
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
+
+
+/* Header */
+header{
+  width: 1920px;
+  position: absolute;
+}
+
+header > div{
+    padding: 0 200px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pesquisaRapida{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pesquisaRapida a{
+    color: white;
+    font-size: 18px;
+    max-width: 150px;
+    text-align: center;
+}
+
+.logo{
+    text-align: center;
+    max-width: 190px;
+    padding: 20px 0;
+}
+
+.logo > a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo :first-child{
+    color: var(--verde);
+}
+
+main{
+    width: 100%;
+}
+
+.container{
+    padding: 200px;
+}
