@@ -57,6 +57,7 @@
 }
 .slider > i{
     font-size: 100px;
+    transition: ease 0.3s;
 }
 .slider > i:hover{
     transform: scale(1.1);
