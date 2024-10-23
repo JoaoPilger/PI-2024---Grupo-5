@@ -1,13 +1,87 @@
+/* Importações das fontes */
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+/* Definições básicas */
 :root {
     --verde: #ABF8CA;
 }
-
 *{
     margin: 0;
     padding: 0;
     border: 0;
     font-family:"Aldrich", sans-serif;
+}
+.container{
+    padding: 50px 200px;
+}
+.flex{
+    display: flex;
+}
+
+/* Estrutura base */
+.carrossel{
+    background-image: linear-gradient(white, var(--verde));
+}
+.content{
+    align-items: center;
+    gap: 150px;
+    flex-direction: column;
+}
+
+/* Pergunta no topo da seção */
+.pergunta{
+    border: 2px solid black;
+    border-radius: 50px;
+    align-items: center;
+    gap: 50px;
+    font-size: 60px;
+    flex-direction: row;
+    padding: 40px 100px;
+    box-shadow: 0 0 20px gray;
+    background-color: white;
+}
+.pergunta > *{
+    text-shadow: 0 3px 5px gray;
+}
+.pergunta > p{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+/* Carrossel */
+.slider{
+    max-width: 88%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.slider > i{
+    font-size: 100px;
+}
+.slider > i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.slider > div{
+    overflow: hidden;
+}
+.slideDiv{
+    padding: 20px 0;
+    gap: 140px;
+    transition: 1s ease-in-out;
+}
+
+.slides{
+    min-width: 400px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 34px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 20px -20px 0;
+    padding: 75px 20px;
+}
+.slides > i{
+    font-size: 130px;
 }

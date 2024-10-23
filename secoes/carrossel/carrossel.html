@@ -7,6 +7,39 @@
     <link rel="stylesheet" href="carrossel.css">
 </head>
 <body>
-    
+    <section class="carrossel container">
+        <div class="content flex">
+            <div class="pergunta flex">
+                <p>Como a atividade física muda nosso corpo?</p>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="slider flex">
+                <i class="fa-solid fa-arrow-left flecha" onclick="mudaImg2()"></i>
+                <div class="flex">
+                    <div class="slideDiv flex" id="slide">
+                        <div class="slides flex" id="slides">
+                            <i class="fa-solid fa-person-running"></i>
+                            <p>Exercícios anaeróbicos fortificam a musculatura corporal, proporcionando maior resistência física, tornando o praticante mais forte.</p>
+                        </div>
+                        <div class="slides flex" id="slides">
+                            <i class="fa-solid fa-brain"></i>
+                            <p>Mantendo a constância, é possível sentir-se mais confiante e notar uma melhora estética significante em seu corpo.</p>
+                        </div>
+                        <div class="slides flex" id="slides">
+                            <i class="fa-solid fa-heart-circle-check"></i>
+                            <p>A prática saudável de atividades físicas aumenta o potencial do coração, melhorando a circulação sanguínea.</p>
+                        </div>
+                        <div class="slides flex" id="slides">
+                            <i class="fa-solid fa-lungs"></i>
+                            <p>Atividades aeróbicas tornam nossos pulmões mais eficientes, aproveitando melhor o ar inspirado.</p>
+                        </div>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right flecha" onclick="mudaImg1()"></i>
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/3fb66d1327.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
