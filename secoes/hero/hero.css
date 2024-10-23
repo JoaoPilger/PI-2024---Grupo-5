@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/* Variáveis de cor */
 :root {
   --verde: #ABF8CA;
 }
 
-/* Reset e configurações globais */
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +26,6 @@ a {
   text-decoration: none;
 }
 
-/* Estilização do Body */
 body {
   display: flex;
   justify-content: center;
@@ -38,14 +35,13 @@ body {
   background-color: #f0f0f0;
 }
 
-/* Header */
 header {
   width: 100%;
-  position: absolute; /* Aparece no topo, mas não fica fixo durante o scroll */
+  position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.4); /* Fundo transparente */
-  z-index: 10; /* Garante sobreposição */
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
 }
 
 header > div {
@@ -55,7 +51,6 @@ header > div {
   justify-content: space-between;
 }
 
-/* Estilização do Logo */
 .logo {
   text-align: center;
   max-width: 190px;
@@ -64,15 +59,13 @@ header > div {
 
 .logo > a {
   font-size: 30px;
-  font-weight: bold;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .logo :first-child {
   color: var(--verde);
 }
 
-/* Menu de Navegação */
 .pesquisaRapida {
   display: flex;
   align-items: center;
@@ -88,52 +81,52 @@ header > div {
   max-width: 150px;
 }
 
-/* Carrossel */
 .carousel {
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
   transition: background-image 1s ease-in-out;
-  display: flex; /* Flexbox para centralizar conteúdo */
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 
-/* Conteúdo Centralizado do Hero */
 .hero-content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Centraliza verticalmente */
-  height: 100%; /* Garante que ocupe toda a altura do carrossel */
+  justify-content: center;
+  height: 100%;
 }
 
 .hero-content {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  text-align: left;
   color: var(--verde);
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
   line-height: 1.3;
-  max-width: 80%; /* Limita a largura do conteúdo */
-}
-
-.hero-content h1 {
-  font-size: 150px; /* Aumentado para 150px */
-  font-weight: bold;
-  margin-bottom: 15px;
-  letter-spacing: 2px;
-  line-height: 1.1; /* Ajusta o espaçamento entre linhas */
+  max-width: 80%;
 }
 
 .hero-content p {
-  font-size: 48px; /* Aumentado para 48px */
+  font-size: 48px;
   font-weight: 400;
   color: black;
   margin-top: 10px;
 }
 
-/* Main e Container */
+.hero-content .pt {
+  font-size: 150px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  color: var(--verde);
+}
+
 main {
   width: 100%;
 }
