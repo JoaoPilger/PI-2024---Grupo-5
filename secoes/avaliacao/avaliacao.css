@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+:root {
+    --verde: #ABF8CA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family:"Aldrich", sans-serif;
+}
+
+.allsecao5{
+    text-align: center;
+}
+
+.botaotreino input{
+    background-color: var(--verde);
+    margin-top: 50px;
+    width: 624px;
+    height: 168px;
+    font-size: 44px;
+    box-shadow: 20px -20px black;
+}
+
+.genzlogo{
+    color: var(--verde);
+    font-size: 62px;
+    -webkit-text-stroke: 1px black;
+    font-family: "Aldrich", sans-serif;
+}
+.genzlogosc5{
+    color: var(--verde);
+    font-size: 62px;
+    -webkit-text-stroke: 1px black;
+    font-family: "Aldrich", sans-serif;
+    
+}
+.txtdynamics{
+    font-size: 64px;
+    margin-top: -25px;
+    font-family: "Aldrich", sans-serif;
+    text-align: center;
+}
+
+.programaaux{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 64px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.modal{
+    background-image: linear-gradient(white, var(--verde));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 917px;
+    height: 572px;
+    border: 5px solid black;
+    padding: 50px;
+}
+.modal p{
+    font-size: 24px;
+    margin: auto;
+}
+.modal h1{
+    font-size: 96px;
+    margin: 0px 0px 0pc 50px;
+}
+.avisosecao5{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.modal button{
+    background-color: black;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 215px;
+    height: 48px;
+}
+
+.modal img{
+    margin: auto;
+    width: 129px;
+    height: 129px;
+}
