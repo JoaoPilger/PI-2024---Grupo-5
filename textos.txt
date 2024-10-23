@@ -1,0 +1,87 @@
+SECTION 1
+### BANNER ##############################################################################
+
+Movimente o corpo, equilibre a mente. 
+
+Exercitar-se é um presente para o corpo e uma transformação para a mente.
+#########################################################################################
+
+
+-----------------------------------------------------------------------------------------
+
+
+SECTION 2
+### POR QUE DEVEMOS SER ATIVOS? #########################################################
+
+De acordo com estudos e trabalhos desenvolvidos por pesquisadores, manter o corpo exercitado é essencial para a saúde, sendo possível obter, além dos benefícios físicos, melhoras psicológicas e emocionais, como alívios de sintomas ansiosos e depressivos.
+
+As taxas de prevalência a obesidade e sedentarismo aumentam cada vez mais, não apenas no Brasil, mas no mundo todo. Comprometa-se com o exercício, seu corpo e mente agradecem!
+#########################################################################################
+
+
+-----------------------------------------------------------------------------------------
+
+
+SECTION 3
+### CARDS ###############################################################################
+
+MÚSCULOS
+Exercícios anaeróbicos fortificam a musculatura corporal, proporcionando maior resistência física, tornando o praticante mais forte.
+
+CORAÇÃO
+A prática de atividades físicas aumenta o potencial do coração, melhorando a circulação sanguínea e regulando a temperatura corporal.
+
+PULMÃO
+Atividades aeróbicas tornam nossos pulmões mais eficientes, fazendo com que seu corpo aproveite melhor o ar inspirado.
+
+AUTO-ESTIMA
+Mantendo a constância, é possível sentir-se mais confiante e notar uma melhora estética significante em seu corpo.
+#########################################################################################
+
+
+-----------------------------------------------------------------------------------------
+
+SECTION 4
+### Por que utilizar Inteligências Artificiais? #########################################
+
+As inteligências artificiais oferecem soluções inovadoras para otimizar processos, 
+análises e automatização de sistemas. Elas são capazes de analisar grandes
+quantidades de dados rapidamente, fornecendo informações que seriam de mais difícil 
+acesso manualmente.
+
+Com seu potencial de aprendizado via informações fornecidas, a IA torna-se cada 
+vez mais sábia, sendo capaz de considerar diversas possibilidades não imaginadas 
+antes. Essa tecnologia é a peça-chave para que nosso sistema funcione adequadamente. 
+#########################################################################################
+
+
+-----------------------------------------------------------------------------------------
+
+
+SECTION 5
+### AVISO MODAL #########################################################################
+
+Atente-se ao fato de que Inteligências Artificiais são tecnologias em desenvolvimento e podem 
+cometer erros durante seu funcionamento, não considere os resultados deste sistema como verdade absoluta. 
+É importante consultar um profissional da área antes de começar sua prática de exercícios.
+#########################################################################################
+
+
+-----------------------------------------------------------------------------------------
+
+
+SECTION 6
+### SOBRE NÓS ###########################################################################
+
+A GenZ Dynamics é composta por alunos do 1º ano do Ensino Médio integrado ao curso técnico 
+de Informática para Internet - Instituto Federal Catarinense Campus Concórdia. Componentes da
+turma 1F 2024, sendo os seguintes: Bruno Trombetta Gelain, Carlos Eduardo Mior, Gabriel Moura Jappe, 
+João Victor Pilger, João Vitor Pramio, Murilo Victor Jochkeck.
+
+Como trabalho do componente curricular Projeto Integrador, nos foi designado o desenvolvimento 
+de um Web Site e um artigo científico, que pode ser acessado clicando aqui. Todo o trabalho 
+foi feito com intuito principal de integrar a tecnologia na área das linguagens, no caso, Educação física.
+########################################################################################
+
+
+-----------------------------------------------------------------------------------------

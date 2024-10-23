@@ -1,7 +1,7 @@
 const carousel = document.querySelector('.carousel');
 const images = [
-  '/midia/header1.jpg',
-  '/midia/header2.jpg'
+  'hero1.jpg',
+  'hero2.jpg'
 ];
 let currentImage = 0;
 
@@ -13,7 +13,7 @@ function changeBackground() {
   currentImage = (currentImage + 1) % images.length;
 }
 
-// Alterna a imagem a cada 15 segundos
+// Intervalo de alternância
 setInterval(changeBackground, 5000);
 
 // Exibe a primeira imagem ao carregar a página
