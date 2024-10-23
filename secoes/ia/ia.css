@@ -25,14 +25,29 @@
 }
 
 body {
+    display: flex;
     width: 1920px;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+#abrir {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    justify-content: center;
 }
 
 .container {
     color: white;
     background-color: black;
     width: 1300px;
-    height: 188px;
+    height: 175px;
     margin: auto;
     text-align: center;
     align-content: center;
@@ -57,12 +72,27 @@ body {
     width: 100px;
     animation: balancar 3s infinite ease-in-out;
     transform-origin: top center;
+    cursor: pointer;
 }
 
 .insight_ia {
     display: flex;
-    background-color: blue;
+    align-items: center;
+    background-color: black;
     width: 1300px;
-    height: 650px;
+    height: 462px;
     margin: auto;
+}
+
+.insight_ia img {
+    height: 420px;
+    width: 420px;
+    margin-left: 83px;
+
+}
+
+.insight_ia p {
+    color: white;
+    font-size: 24px;
+    margin: 0px 80px;
 }
