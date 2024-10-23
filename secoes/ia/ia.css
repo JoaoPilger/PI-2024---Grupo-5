@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@keyframes balancar {
+    0% {
+      transform: translateY(-17px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-17px) rotate(10deg);
+    }
+    100% {
+      transform: translateY(-17px) rotate(0deg);
+    }
+  }
+
 :root {
     --verde: #ABF8CA;
 }
@@ -10,4 +22,40 @@
     padding: 0;
     border: 0;
     font-family:"Aldrich", sans-serif;
+}
+
+body {
+    width: 1920px
+}
+
+.container {
+    color: white;
+    background-color: black;
+    width: 1300px;
+    height: 188px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+}
+
+.container > p {
+    font-size: 48px;
+    font-family: 'Bebas Neue';
+}
+
+#setinha_arrastar {
+    width: 80px;
+    height: 80px;
+}
+
+.puxador {
+    text-align: center;
+}
+
+.puxador img {
+    height: 100px;
+    width: 100px;
+    transform: translateY(-15px);
+    animation: balancar 3s infinite ease-in-out;
+    transform-origin: top center;
 }
