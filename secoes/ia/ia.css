@@ -29,11 +29,13 @@ body {
     width: 1920px;
     align-items: center;
     justify-content: center;
+    user-select: none;
 }
 
 section {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #abrir {
@@ -58,37 +60,34 @@ section {
     font-family: 'Bebas Neue';
 }
 
-#setinha_arrastar {
-    width: 80px;
-    height: 80px;
-}
-
 .puxador {
     text-align: center;
-}
-
-.puxador img {
-    height: 100px;
+    background-image: url(../../midia/pendurado.png);
+    background-size: cover;
     width: 100px;
+    height: 100px;
     animation: balancar 3s infinite ease-in-out;
     transform-origin: top center;
-    cursor: pointer;
+    cursor: grab;
 }
 
 .insight_ia {
     display: flex;
     align-items: center;
     background-color: black;
+    border: solid var(--verde) 6px;
     width: 1300px;
-    height: 462px;
     margin: auto;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    box-sizing: border-box;
 }
 
 .insight_ia img {
     height: 420px;
     width: 420px;
     margin-left: 83px;
-
 }
 
 .insight_ia p {
