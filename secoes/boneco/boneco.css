@@ -11,53 +11,55 @@
     border: 0;
     font-family:"Aldrich", sans-serif;
 }
-.boneco {
-    margin-top: 10px;
-    width: 50px;
-    height: 50px;
-    position: relative;
-    animation: moveBoneco 50s infinite;
-    margin-bottom: -10px;
-}
-
-.div1 {
+body {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; 
     margin: 0;
+    background: linear-gradient(to bottom, aquamarine, lightblue);
     padding: 0;
 }
 
-#pernae, #pernad {
+#osdois {
+    display: flex;
+    flex-direction: row;
+    position: relative; 
+    animation: moveSprite 16s forwards; 
+    filter: contrast(1.5); 
+}
+
+#sprite {
+    width: 320px; 
+    height: 320px;
+    background-image: url('sprites/sprite1.png'); 
+    background-size: cover; 
     position: relative;
+    bottom: -32px;
+    left: 100px; 
+    filter: contrast(1.5) drop-shadow(0 0 0.5px rgba(0, 0, 0, 1));
 }
 
-#pernae {
-    margin-top: -8px;
-    z-index: 10;
-    animation: movepernae 4s infinite;
-}
-#pernad {
-    animation: movepernad 2s infinite;
-    margin-top: -8px;
-    z-index: 10;
-    left: -80px;
-}
-
-@keyframes moveBoneco {
-    0% { left: -500px; }
-    50% { left: 500px; }
-    100% { left: 500px; }
+#caixa {
+    background-color: rgb(255, 255, 255);
+    font-size: 50px;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    border-color: yellow;
+    border-style: solid;
+    border-width: 5px; 
 }
 
-@keyframes movepernae {
-    0% { left: 5px; bottom:0px; }
-    50% { left: 50px; bottom: 10px; }
-    100% { left: 5px; bottom:0px; }
-}
-
-@keyframes movepernad {
-    0% { left: -36px; bottom:0px; }
-    50% { left: -15px; bottom:10px; }
-    75% { left: -10px; bottom:3px; }
-    90% { left: -30px; bottom:0px; }
-    100% { left: -36px; bottom:0px; }
+@keyframes moveSprite {
+    0% {
+        left: -1100px; 
+    }
+    100% {
+        left: -200px;
+    }
 }
