@@ -1,39 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="boneco.css">
-    <title>Document</title>
+    <title>Animação de Sprites</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="boneco">
-        <img src="midia/tronco.png">
-        <div class="div1">
-            <img src="midia/pernaesquerda.png" id="pernae">
-            <img src="midia/pernadireita.png" id="pernad">
-        </div>
+    <div id="osdois">
+        <img id="sprite" src="./imagens/empurrando/1.png" alt="Sprite">
+        <div id="caixa"><p>Adoro Projeto Integrador❤️</p></div>
     </div>
 
-    <script>
-        const imagens = ["midia/pernadireita.png", "midia/pernaesquerda.png"];
-        let indiceAtual = 0;
-
-        function trocarImagem() {
-            const imagem = document.getElementById("pernad");
-            const estilo = window.getComputedStyle(imagem);
-            const left = parseInt(estilo.left, 10);
-
-            if (left <= -35) {
-  
-                indiceAtual = (indiceAtual + 1) % imagens.length;
-                imagem.src = imagens[indiceAtual];
-
-                imagem.style.left = indiceAtual === 0 ? "-90px" : "-20px";
-            }
-        }
-
-        setInterval(trocarImagem, 100);
+    
+    <script src="animacao.js">
+ 
     </script>
 </body>
 </html>
