@@ -3,13 +3,15 @@
 
 @keyframes balancar {
     0% {
-      transform: rotate(0deg);
+      transform: rotate(8deg);
     }
+
     50% {
-      transform: rotate(10deg);
+        transform: rotate(-8deg);
     }
+
     100% {
-      transform: rotate(0deg);
+      transform: rotate(8deg);
     }
   }
 
@@ -62,12 +64,12 @@ section {
 
 .puxador {
     text-align: center;
-    background-image: url(../../midia/pendurado.png);
+    background-image: url(../../midia/segurando-high_2.png);
     background-size: cover;
     width: 100px;
     height: 100px;
     animation: balancar 3s infinite ease-in-out;
-    transform-origin: top center;
+    transform-origin: 62px 0px;
     cursor: grab;
 }
 
