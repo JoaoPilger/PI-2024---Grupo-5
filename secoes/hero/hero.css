@@ -89,7 +89,8 @@ header > div {
   transition: background-image 1s ease-in-out;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+  padding-left: 50px; /* Ajuste fino da posição horizontal */
   position: relative;
 }
 
@@ -104,27 +105,31 @@ header > div {
 .hero-content {
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: flex-start; /* Alinhamento à esquerda */
+  justify-content: center;
   text-align: left;
   color: var(--verde);
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
   line-height: 1.3;
-  max-width: 80%;
+  padding-left: 40%;
+  gap: 10px; /* Espaço entre os parágrafos */
+}
+
+.hero-content .pt {
+  font-size: 140px;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  color: var(--verde);
 }
 
 .hero-content p {
   font-size: 48px;
   font-weight: 400;
   color: black;
-  margin-top: 10px;
-}
-
-.hero-content .pt {
-  font-size: 150px;
-  margin-bottom: 15px;
-  letter-spacing: 2px;
-  line-height: 1.1;
-  color: var(--verde);
+  margin-top: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 30px;
 }
 
 main {
