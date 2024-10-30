@@ -83,6 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (arrastando) {
           const distance = (e.clientY - startY) * dragSensitivity;
           const newHeight = Math.min(maxHeight, Math.max(0, altura_atual + distance));
+          const elemento = document.querySelector('.ia');
+          elemento.style.userSelect = 'none';
 
           // atualiza a altura da div insight_ia usando requestAnimationFrame
           requestAnimationFrame(() => updateHeight(newHeight));
@@ -93,6 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
       arrastando = false;
       puxador.style.cursor = 'grab'; // restaura o cursor ao soltar
       insightIA.style.transition = 'height 0.3s ease'; // transição para qualquer ajuste final na altura
+      const elemento = document.querySelector('.ia');
+      elemento.style.userSelect = 'auto';
   });
 });
 
