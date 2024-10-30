@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 footer {
     background-color: black;
-    height: 240px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-family: "Aldrich";
     color: white;

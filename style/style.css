@@ -1,30 +1,337 @@
-.all{
-    text-align: center;
+/* DEFINIÇÕES BÁSICAS */
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --verde: #ABF8CA;
 }
-.allsecao5{
-    text-align: center;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Aldrich", sans-serif;
 }
-.genzlogo{
+
+.aldrich-regular {
+  font-family: "Aldrich", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 100;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.flex{
+    display: flex;
+}
+.container{
+    padding: 50px 200px;
+}
+
+/* ------------- HEADER --------------*/
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+header > div {
+  padding: 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-align: center;
+  max-width: 190px;
+  padding: 20px 0;
+}
+
+.logo > a {
+  font-size: 36px;
+  color: rgb(0, 0, 0);
+}
+
+.logo :first-child {
+  color: var(--verde);
+}
+
+.pesquisaRapida {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.pesquisaRapida a {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  max-width: 150px;
+  transition: 1s;
+}
+.pesquisaRapida a:hover{
+    transform: scale(1.2);
+    color: var(--verde);
+}
+
+
+/* ------------- HERO --------------*/
+.carousel {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    display: flex;
+    position: relative;
+  }
+
+  .background{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: right;
+  }
+  
+  .hero-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinhamento à esquerda */
+    justify-content: center;
+    text-align: left;
+    color: var(--verde);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    line-height: 1.3;
+    gap: 10px; /* Espaço entre os parágrafos */
+  }
+  
+  .hero-content .pt {
+    font-size: 150px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    color: var(--verde);
+  }
+  
+  .hero-content p {
+    font-size: 48px;
+    font-weight: 400;
+    color: black;
+    margin-top: 0;
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+/* ------------- CARROSSEL CARDS --------------*/
+.carrossel{
+    background-image: linear-gradient(white, var(--verde));
+}
+.content{
+    align-items: center;
+    gap: 150px;
+    flex-direction: column;
+}
+
+/* Pergunta no topo da seção */
+.pergunta{
+    border: 2px solid black;
+    border-radius: 50px;
+    align-items: center;
+    gap: 50px;
+    font-size: 60px;
+    flex-direction: row;
+    padding: 40px 100px;
+    box-shadow: 0 0 20px gray;
+    background-color: white;
+}
+.pergunta > *{
+    text-shadow: 0 3px 5px gray;
+}
+.pergunta > p{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+/* Carrossel */
+.slider{
+    max-width: 88%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.flecha{
+    font-size: 100px;
+    transition: ease 0.3s;
+}
+.flecha:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.slider > div{
+    overflow: hidden;
+}
+.slideDiv{
+    padding: 20px 0;
+    gap: 140px;
+    transition: 1s ease-in-out;
+}
+
+.slides{
+    min-width: 400px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 34px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 20px -20px 0;
+    padding: 75px 20px;
+}
+.slides > i{
+    font-size: 130px;
+}
+
+/* ------------- SEÇÃO SOBRE IA --------------*/
+@keyframes balancar {
+    0% {
+      transform: rotate(8deg);
+    }
+
+    50% {
+        transform: rotate(-8deg);
+    }
+
+    100% {
+      transform: rotate(8deg);
+    }
+  }
+
+  .ia{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(var(--verde), white);
+  }
+
+  #abrir {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    justify-content: center;
+}
+
+.containerIa {
+    color: white;
+    background-color: black;
+    width: 1300px;
+    height: 175px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+}
+
+.containerIa > p {
+    font-size: 48px;
+    font-family: 'Bebas Neue';
+}
+
+.puxador {
+    text-align: center;
+    background-image: url(../midia/puxador/segurando-high_2.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    animation: balancar 3s infinite ease-in-out;
+    transform-origin: 62px 0px;
+    cursor: grab;
+}
+
+.insight_ia {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 1300px;
+    margin: auto;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    box-sizing: border-box;
+}
+
+.insight_ia img {
+    height: 420px;
+    width: 420px;
+    margin-left: 83px;
+}
+
+.insight_ia p {
+    color: white;
+    font-size: 24px;
+    margin: 0px 80px;
+}
+
+/* ------------- AVALIAÇÃO --------------*/
+.seçao_5{
+    text-align: center;
+    position: relative;
+}
+
+.botao_treino{
+    background-color: var(--verde);
+    text-decoration: none;
+    margin-top: 50px;
+    padding: 50px 100px;
+    font-size: 44px;
+    box-shadow: 30px -30px black;
+    transition: 1s ease;
+}
+.botao_treino:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.genz_logo{
     color: var(--verde);
     font-size: 62px;
     -webkit-text-stroke: 1px black;
     font-family: "Aldrich", sans-serif;
 }
-.genzlogosc5{
-    color: var(--verde);
-    font-size: 62px;
-    -webkit-text-stroke: 1px black;
-    font-family: "Aldrich", sans-serif;
-    
+
+.avaliacao{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
-.txtdynamics{
+
+.txt_dynamics{
     font-size: 64px;
     margin-top: -25px;
     font-family: "Aldrich", sans-serif;
     text-align: center;
 }
 
-.programaaux{
+.programa_aux{
     font-family: "Bebas Neue", sans-serif;
     font-size: 64px;
     text-align: center;
@@ -32,17 +339,33 @@
 }
 
 .modal{
+    background-image: linear-gradient(white, var(--verde));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
     width: 917px;
     height: 572px;
     border: 5px solid black;
+    padding: 50px;
+    display: none;
 }
 .modal p{
-    display: flex;
-    justify-content: center;
+    font-size: 24px;
+    margin: auto;
 }
-.modal input{
-    margin-top: 200px;
+.modal h1{
+    font-size: 96px;
+    margin: 0px 0px 0pc 50px;
+}
+.aviso_secao5{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.modal button{
     background-color: black;
+    margin: auto;
     font-size: 20px;
     color: white;
     text-align: center;
@@ -51,99 +374,148 @@
 }
 
 .modal img{
+    margin: auto;
     width: 129px;
     height: 129px;
 }
 
-footer {
-    background-color: black;
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
 }
 
-.boneco {
-    margin-top: 10px;
+.info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* ------------- SOBRE NÓS --------------*/
+#sobreNos {
+    background: linear-gradient(rgba(255,255,255,1) 0%, rgba(176,252,204,1) 35%, rgba(0,0,0,1) 100%);
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    justify-content: center;
+    gap: 50px;
+}
+
+.sobreTextoCaixa, .sobreIntegrante {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.txtdynamicsBranco{
+    font-size: 64px;
+    margin-top: -85px;
+    font-family: "Aldrich", sans-serif;
+    color: white;
+}
+
+.sobreFlecha {
     width: 50px;
     height: 50px;
-    position: relative;
-    animation: moveBoneco 15s infinite;
-    margin-bottom: -10px;
+    filter: drop-shadow(-2px 2px 4px rgb(58, 58, 58));
 }
 
-.div1 {
+.sobreFlecha:hover {
+    transform: scale(1.1);
+}
+
+.sobreIntegrante {
+    filter: drop-shadow(30px -30px #000000);
+    max-width: 420px;
+    max-height: 433px;
+}
+
+.sobreImagem {
     display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.pernae, .pernad {
-    position: relative;
-}
-
-.pernad {
-    animation: movepernae 1s infinite;
-    margin-top: -8px;
-    z-index: 10;
-}
-
-.pernae {
-    margin-top: -8px;
-    z-index: 10;
-}
-.pernad {
-    animation: movepernad 2s infinite;
-}
-@keyframes moveBoneco {
-    0% { left: -500px; }
-    50% { left: 500px; }
-    100% { left: 500px; }
-}
-@keyframes movepernae {
-    0% { left: 0px; }
-    50% { left: 100px; }
-    100% { left: 0px; }
-}
-
-@keyframes movepernad {
-    0% { left: -35px; }
-    50% { left: -5px; }
-    100% { left: -35px; }
-}
-
-/* Carrossel header ================================================================================================*/
-
-/* Centraliza o carrossel na tela */
-body {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
-  
-  /* Estilização do container do carrossel */
-.carousel_header {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+    width: 420px;
+    height: 433px;
 }
 
-.carousel_header > div{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+.sobreTexto {
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    padding: 20px;
+    font-family: "Aldrich";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    filter: drop-shadow(-10px 10px 30px #000000);
 }
-  
-  /* Estilização das imagens */
-.slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+
+.sobreTudo {
+    display: flex;
+    align-items: flex-end;
+    gap: 50px;
 }
-  
-  /* Imagem ativa */
-.active {
-    opacity: 1;
+
+.sobreTitulo {
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.sobreEscrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#sobreNome {
+    margin: 15px 0px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* ------------- FOOTER --------------*/
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Aldrich";
+    color: white;
+}
+
+#footerGemini {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#footerGemini > p {
+    margin-bottom: 0;
+}
+
+.footerGenZ{
+    color: var(--verde);
+    font-size: 30px;
+    -webkit-text-stroke: 1px black;
+    font-family: "Aldrich", sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+.footerDynamics{
+    font-size: 30px;
+    font-family: "Aldrich", sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+#footerContato {
+    text-align: center;
 }
