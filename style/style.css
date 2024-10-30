@@ -118,13 +118,13 @@ header > div {
   .hero-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinhamento à esquerda */
+    align-items: flex-start;
     justify-content: center;
     text-align: left;
     color: var(--verde);
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 3px 3px 5px rgba(78, 78, 78, 0.5);
     line-height: 1.3;
-    gap: 10px; /* Espaço entre os parágrafos */
+    gap: 10px;
   }
   
   .hero-content .pt {
@@ -141,6 +141,11 @@ header > div {
     color: black;
     margin-top: 0;
     font-family: "Bebas Neue", sans-serif;
+    text-shadow: 
+    3px 3px 5px rgba(121, 121, 121, 0.5), 
+    -3px -3px 5px rgba(121, 121, 121, 0.5), 
+    3px -3px 5px rgba(121, 121, 121, 0.5), 
+    -3px 3px 5px rgba(121, 121, 121, 0.5);
   }
 
 /* ------------- CARROSSEL CARDS --------------*/
