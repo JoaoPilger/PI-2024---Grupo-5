@@ -269,6 +269,7 @@ header > div {
     animation: balancar 3s infinite ease-in-out;
     transform-origin: 62px 0px;
     cursor: grab;
+    translate: 0px -2px;
 }
 
 .insight_ia {
