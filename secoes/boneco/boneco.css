@@ -54,7 +54,7 @@ body {
     display: flex;
     flex-direction: row;
     position: relative; 
-    animation: moveSprite 16s forwards; 
+    animation: moveSprite 12s forwards; 
     filter: contrast(1.5);
 }
 
@@ -102,7 +102,7 @@ body {
         left: -200px;
     }
 }
-
+/* 
 @keyframes movenuvens{
     0% {
         left: -1100px; 
@@ -110,4 +110,4 @@ body {
     100% {
         left: 2000px;
     }
-}
+} */
