@@ -20,6 +20,7 @@
 
 h1 {
   font-family: "Bebas Neue", sans-serif;
+  text-decoration: none;
 }
 
 a {
@@ -116,28 +117,29 @@ header > div {
 }
 
 .hero-content .pt {
-  font-size: 90px;
+  font-size: 150px;
   margin-bottom: 5px;
   letter-spacing: 2px;
   line-height: 1.1;
   color: var(--verde);
-  text-shadow: 
+  /*text-shadow: 
   5px 5px 10px rgba(0, 0, 0, 0.5), 
   -5px -5px 10px rgba(0, 0, 0, 0.5), 
   5px -5px 10px rgba(0, 0, 0, 0.5), 
-  -5px 5px 10px rgba(0, 0, 0, 0.5);
+  -5px 5px 10px rgba(0, 0, 0, 0.5);*/
 }
 
 .hero-content p {
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 400;
   color: black;
   margin-top: 0;
-  text-shadow: 
+  font-family: "Bebas Neue", sans-serif;
+  /*text-shadow: 
   5px 5px 10px rgba(255, 255, 255, 0.5), 
   -5px -5px 10px rgba(255, 255, 255, 0.5), 
   5px -5px 10px rgba(255, 255, 255, 0.5), 
-  -5px 5px 10px rgba(255, 255, 255, 0.5);
+  -5px 5px 10px rgba(255, 255, 255, 0.5);*/
 }
 
 main {
