@@ -1,14 +1,17 @@
-from dotenv import load_dotenv
-import google.generativeai as genai
-from langchain.llms.base import LLM
-from langchain.utilities import GoogleSearchAPIWrapper as google
-from langchain.document_loaders import PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-import os
+from dotenv import load_dotenv # Puxar api do arquivo oculto
+import google.generativeai as genai # GEMINI
+from langchain.llms.base import LLM # base de IA
+from langchain.utilities import GoogleSearchAPIWrapper as google # buscar direto do Google
+from langchain_community.document_loaders import PyPDFLoader # carregar PDFs
+from langchain.text_splitter import RecursiveCharacterTextSplitter as splitter # quebrar o texto em várias partes
+import os # executar comandos 
+import time
 
-# load_dotenv()
+a = time.time()
 
-# genai.configure(api_key=os.getenv["API_KEY"])
+ # aplica a API_KEY para buscar com a IA
+load_dotenv() 
+genai.configure(api_key=os.getenv("API_KEY"))
 
 
 artigos = ["./sistema/artigos/atividade_fisica_saude_mental_e_reabilitacao_psicossocial.pdf",
@@ -25,13 +28,23 @@ artigos = ["./sistema/artigos/atividade_fisica_saude_mental_e_reabilitacao_psico
            "./sistema/artigos/o_exercicio_fisico_e_os_aspectos_psicobiologicos.pdf",
            "./sistema/artigos/obesidade_em_adolescentes_e_as_politicas_publicas_de_nutricao.pdf",
            "./sistema/artigos/prescricao_de_exercicios_fisicos_por_inteligencia_artificial_a_educacao_fisica_vai_acabar.pdf"]
-all_docs = []
+
+all_docs = [] # conhecimento dos artigos acima
 
 
 for pdf in artigos:
-    carregados = PyPDFLoader(pdf)
-    docs = carregados.load()
-    all_docs.extend(docs)
+    carregados = PyPDFLoader(pdf) # puxa um pdf
+    docs = carregados.load() # carrega o pdf
+    all_docs.extend(docs) # adiciona o conteúdo em all_docs
     
-    
+# divide o texto dos artigos em partes menores, pra acelerar o processamento
+cortado = splitter(chunk_size=1000, chunk_overlap=50)
+all_docs = cortado.split_documents(all_docs)
+
 print(all_docs)
+
+b = time.time()
+
+print(f'{b - a}, segundos')
+    
+    
