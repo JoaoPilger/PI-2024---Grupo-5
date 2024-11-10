@@ -22,30 +22,28 @@ body {
 
 .nuvens {
     position: relative;
-    animation: movenuvens 50s infinite;
 }
 
 .nuvens img {
     width: 200px;
     height: auto; 
     position: absolute;
-    animation: movenuvens 50s infinite;
-    animation-delay: 2s;
 }
 
 #nuvem1 {
     bottom: -100px;
     left:-300px;
-    animation: movenuvens 50s infinite;
-    animation-delay: 4s;
+    animation: movenuvem1 27s infinite;
 }
 
 #nuvem2 {
     bottom: 0; 
-    left:200px
+    left:200px;
+    animation: movenuvem2 27s infinite;
 }
 
 #nuvem3 {
+    animation: movenuvem3 27s infinite;
     bottom: -100px;
     left:700px
 }
@@ -102,12 +100,29 @@ body {
         left: -200px;
     }
 }
-/* 
-@keyframes movenuvens{
+@keyframes movenuvem1 {
     0% {
-        left: -1100px; 
+        transform: translateX(-100vw);
     }
     100% {
-        left: 2000px;
+        transform: translateX(100vw); 
     }
-} */
+}
+
+@keyframes movenuvem2 {
+    0% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes movenuvem3 {
+    0% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
