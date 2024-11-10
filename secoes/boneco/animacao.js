@@ -69,7 +69,7 @@ let currentDoubleBicepsFrame = 0;
 let currentDescansarFrame = 0;
 const fpsEmpurrando = 14;
 const fpsDoubleBiceps = 7;
-const fpsDescansar = 2; // You can adjust this
+const fpsDescansar = 2;
 const intervalEmpurrando = 1000 / fpsEmpurrando;
 const intervalDoubleBiceps = 1000 / fpsDoubleBiceps;
 const intervalDescansar = 1000 / fpsDescansar;
@@ -96,7 +96,7 @@ const empurrandoAnimation = setInterval(() => {
     currentEmpurrandoFrame = animate(empurrandoFrames, currentEmpurrandoFrame, intervalEmpurrando);
 }, intervalEmpurrando);
 
-const switchTime = 11000; 
+const switchTime = 11100; 
 
 setTimeout(() => {
     clearInterval(empurrandoAnimation); 
@@ -109,10 +109,6 @@ setTimeout(() => {
 
 ly
 function runInfiniteDescansarAnimation() {
-    currentDescansarFrame = animate(descansarFrames, currentDescansarFrame, intervalDescansar);
-    spriteElement.style.bottom = '-187px';
-    setTimeout(runInfiniteDescansarAnimation, intervalDescansar);
-}
     currentDescansarFrame = animate(descansarFrames, currentDescansarFrame, intervalDescansar);
     spriteElement.style.bottom = '-187px';
     setTimeout(runInfiniteDescansarAnimation, intervalDescansar);
