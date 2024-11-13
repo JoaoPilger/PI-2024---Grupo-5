@@ -9,13 +9,18 @@ footer {
     color: white;
 }
 
-#footerGemini {
+#footerOpenai {
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-#footerGemini > p {
+#footerOpenai > img {
+    margin-top: 10px;
+    width: 200px;
+}
+
+#footerOpenai > p {
     margin-bottom: 0;
 }
 
