@@ -4,34 +4,39 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="avaliacao.css">
     <title>avaliacao</title>
+    <script src="script.js"></script>
 </head>
 <body>
-    <section>
+    <section id="avaliacao">
         <div id="particles-js" class="seçao_5">
-            <div class="info">
-                <div class="logo">
-                    <p class="genz_logo">GenZ</p>
-                    <p class="txt_dynamics">Dynamics</p>
-                    <h1 class="programa_aux">PROGRAMA AUXILIAR DE TREINO DE CONCÓRDIA!</h1>
-                    <div class="botao_treino">
-                        <a href=""><input type="button" value="Faça sua avaliação!"></a>
+            <div class="darkground" id="darkground">
+                <div class="info">
+                    <div class="avaliacao flex">
+                        <div class="logoAvaliacao">
+                            <p class="genz_logo">GenZ</p>
+                            <p class="txt_dynamics">Dynamics</p>
+                        </div>
+                        <h1 class="programa_aux">PROGRAMA AUXILIAR DE TREINO DE CONCÓRDIA!</h1>
+                        <div class="botao_treino" onclick="modalAparece()">
+                            <p>Faça sua avaliação!</p>
+                        </div>
                     </div>
-                </div>
-    
-                <div class="modal">   
-                    <div class="aviso_secao5">   
-                        <img src="../../midia/alarme.png" alt="">
-                        <h1>AVISO</h1>
+        
+                    <div class="modal" id="modal">   
+                        <div class="aviso_secao5">   
+                            <img src="midia/avaliacao/alarme.png" alt="">
+                            <h1>AVISO</h1>
+                        </div>
+                        <p>Atente-se ao fato de que Inteligências Artificiais são tecnologias em desenvolvimento e podem 
+                            cometer erros durante seu funcionamento, não considere os resultados deste sistema como verdade absoluta. 
+                            É importante consultar um profissional da área antes de começar sua prática de exercícios.</p>
+                        <button>COMPREENDO</button>
                     </div>
-                    <p>Atente-se ao fato de que Inteligências Artificiais são tecnologias em desenvolvimento e podem 
-                        cometer erros durante seu funcionamento, não considere os resultados deste sistema como verdade absoluta. 
-                        É importante consultar um profissional da área antes de começar sua prática de exercícios.</p>
-                    <button>COMPREENDO</button>
                 </div>
             </div>
         </div>
     </section>
-        <script src="particles.js"></script>
-        <script src="app.js"></script>
+        <script src="../../script/particles.js"></script>
+        <script src="../../script/app.js"></script>
 </body>
 </html>
