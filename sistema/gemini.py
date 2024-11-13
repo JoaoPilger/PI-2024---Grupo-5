@@ -1,17 +1,32 @@
-from dotenv import load_dotenv # Puxar api do arquivo oculto
-import google.generativeai as genai # GEMINI
-from langchain.llms.base import LLM # base de IA
+from dotenv import load_dotenv # puxar api do arquivo oculto
 from langchain.utilities import GoogleSearchAPIWrapper as google # buscar direto do Google
 from langchain_community.document_loaders import PyPDFLoader # carregar PDFs
 from langchain.text_splitter import RecursiveCharacterTextSplitter as splitter # quebrar o texto em várias partes
 import os # executar comandos 
 import time
+from openai import OpenAI
 
-a = time.time()
+a = time.time() # marcador de tempo
 
  # aplica a API_KEY para buscar com a IA
-load_dotenv() 
-genai.configure(api_key=os.getenv("API_KEY"))
+load_dotenv()
+
+# client = OpenAI()
+
+
+# messages=[
+#     {"role": "system", "content": "você é um assistente que faz piadas"},
+#     {"role": "user", "content": "faça uma piada"}
+# ],
+
+# response = client.chat.completions.create(
+#     model="gpt-3.5-turbo",
+#     messages=messages
+#     temperature=0.7
+# )
+
+# response.choices[0].message.content
+
 
 
 artigos = ["./sistema/artigos/atividade_fisica_saude_mental_e_reabilitacao_psicossocial.pdf",
@@ -43,7 +58,7 @@ all_docs = cortado.split_documents(all_docs)
 
 print(all_docs)
 
-b = time.time()
+b = time.time() # marcador de tempo
 
 print(f'{b - a}, segundos')
     
