@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // SOBRE NÓS
 const content = [
   { nome:'João Pilger', text: 'Texto Pilger', img: 'midia/integrantes/pilger.png' },
-  { nome: 'João Prâmio', text: 'Texto Pramio', img: 'midia/integrantes/pramio.png' },
+  { nome: 'João Pramio', text: 'Estudante de 16 anos do Instituto Federal Catarinense Campus Concórdia,  no curso de informática. Responsável pelo boneco.', img: 'midia/integrantes/pramio.png' },
   { nome: 'Bruno Gelain', text: 'Estudante de 16 anos do Instituto Federal Catarinense Campus Concórdia,  no curso de informática. Responsável por esta seção "Sobre Nós" e pelo footer.', img: 'midia/integrantes/bruno.png' },
   { nome: 'Gabriel Jappe', text: 'Texto Jappe', img: 'midia/integrantes/jappe.png' },
   { nome: 'Carlos Mior', text: 'Texto Carlos', img: 'midia/integrantes/carlos.png' },
