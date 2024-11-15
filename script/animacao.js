@@ -1,4 +1,6 @@
-const spriteElement = document.getElementById('sprite');
+document.addEventListener('DOMContentLoaded', () => {
+    const osdois = document.getElementById('osdois');
+    const spriteElement = document.getElementById('sprite');
 const empurrandoFrames = [
     './midia/empurrando/1.png',
     './midia/empurrando/2.png',
@@ -67,9 +69,11 @@ const descansarFrames = [
 let currentEmpurrandoFrame = 0;  
 let currentDoubleBicepsFrame = 0; 
 let currentDescansarFrame = 0;
+
 const fpsEmpurrando = 14;
 const fpsDoubleBiceps = 7;
 const fpsDescansar = 2;
+
 const intervalEmpurrando = 1000 / fpsEmpurrando;
 const intervalDoubleBiceps = 1000 / fpsDoubleBiceps;
 const intervalDescansar = 1000 / fpsDescansar;
@@ -82,7 +86,7 @@ function animate(frames, currentFrame, interval) {
 
 function runAnimation(frames, currentFrame, interval, isDoubleBiceps = false, callback = null) {
     spriteElement.src = frames[currentFrame];
-    spriteElement.style.bottom = isDoubleBiceps ? '-187px' : ' -160px';
+    spriteElement.style.bottom = isDoubleBiceps ? '-187px' : '-160px';
     currentFrame++;
 
     if (currentFrame < frames.length) {
@@ -92,24 +96,39 @@ function runAnimation(frames, currentFrame, interval, isDoubleBiceps = false, ca
     }
 }
 
-const empurrandoAnimation = setInterval(() => {
-    currentEmpurrandoFrame = animate(empurrandoFrames, currentEmpurrandoFrame, intervalEmpurrando);
-}, intervalEmpurrando);
-
-const switchTime = 10900; 
-
-setTimeout(() => {
-    clearInterval(empurrandoAnimation); 
-    currentDoubleBicepsFrame = 0; 
-    runAnimation(doublebicepsFrames, currentDoubleBicepsFrame, intervalDoubleBiceps, true, () => {
-        currentDescansarFrame = 0; 
-        runInfiniteDescansarAnimation();
-    });
-}, switchTime);
-
-ly
 function runInfiniteDescansarAnimation() {
     currentDescansarFrame = animate(descansarFrames, currentDescansarFrame, intervalDescansar);
     spriteElement.style.bottom = '-187px';
     setTimeout(runInfiniteDescansarAnimation, intervalDescansar);
 }
+
+function startSpriteAnimation() {
+    const empurrandoAnimation = setInterval(() => {
+        currentEmpurrandoFrame = animate(empurrandoFrames, currentEmpurrandoFrame, intervalEmpurrando);
+    }, intervalEmpurrando);
+
+    const switchTime = 10900; 
+
+    setTimeout(() => {
+        clearInterval(empurrandoAnimation); 
+        currentDoubleBicepsFrame = 0; 
+        runAnimation(doublebicepsFrames, currentDoubleBicepsFrame, intervalDoubleBiceps, true, () => {
+            currentDescansarFrame = 0; 
+            runInfiniteDescansarAnimation();
+        });
+    }, switchTime);
+}
+
+// Configura o Intersection Observer
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) { // Verifica se está visível
+            startSpriteAnimation(); // Inicia a animação
+            observer.unobserve(entry.target); // Para de observar após iniciar
+        }
+    });
+}, { threshold: 0.1 }); // Ativa quando 10% do elemento estiver visível
+
+// Inicia a observação
+observer.observe(osdois);
+});
