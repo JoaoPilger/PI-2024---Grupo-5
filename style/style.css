@@ -210,12 +210,14 @@ header > div {
 }
 #osdois{
     display: flex;
-    flex-direction: row;
     position: relative; 
-    animation: moveSprite 12s forwards; 
     filter: contrast(1.5);
+    opacity: 0;
 }
-
+#osdois.animate{
+    animation: moveSprite 12s forwards;
+    opacity: 1; 
+}
 #sprite {
     width: 320px; 
     height: 320px;
