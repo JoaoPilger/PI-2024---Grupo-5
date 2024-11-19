@@ -148,6 +148,148 @@ header > div {
     -3px 3px 5px rgba(121, 121, 121, 0.5);
   }
 
+/* ------------- BONECO ---------------------- */
+.container.boneco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; 
+    margin: 0;
+    background: linear-gradient(to bottom, #ABF8CA, rgb(255, 255, 255));
+    padding: 0;
+    position: relative;
+}
+.aldrich-regular {
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#div_tudo {
+    position: relative;
+    height: 300px;
+}
+
+.nuvens {
+    position: relative;
+
+}
+
+.nuvens img {
+    width: 200px;
+    height: auto; 
+    position: absolute;
+}
+
+#nuvem1 {
+    bottom: -100px;
+    left:-300px;
+    opacity: 0;
+}
+#nuvem1.animate{
+    animation: movenuvem1 35s infinite;
+    opacity: 1;
+}
+#nuvem2 {
+    bottom: 0; 
+    left:200px;
+    opacity: 0;
+}
+#nuvem2.animate{
+    animation: movenuvem2 35s infinite;
+    opacity: 1;
+}
+#nuvem3 {
+    bottom: -100px;
+    left:700px;
+    opacity: 0;
+}
+#nuvem3.animate{
+    animation: movenuvem3 35s infinite;
+    opacity: 1;
+}
+#osdois{
+    display: flex;
+    position: relative; 
+    filter: contrast(1.5);
+    opacity: 0;
+}
+#osdois.animate{
+    animation: moveSprite 12s forwards;
+    opacity: 1; 
+}
+#sprite {
+    width: 320px; 
+    height: 320px;
+    background-image: url('sprites/sprite1.png'); 
+    background-size: cover; 
+    position: relative;
+    bottom: -160px;
+    left: 100px; 
+    filter: drop-shadow(0.5px rgba(0, 0, 0, 1));
+    z-index: 2; 
+}
+
+#h1 {
+    filter: contrast(1.5) drop-shadow(2px rgba(0, 0, 0, 1));
+    font-size: 25px;
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+#caixa {
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    width: 350px;
+    height: 350px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    filter: contrast(1.5) drop-shadow(10px -10px rgba(0, 0, 0, 1));
+    flex-direction: column;
+    font-family: "Aldrich";
+    z-index: 2;
+}
+
+@keyframes moveSprite {
+    0% {
+        left: -100vw; 
+    }
+    100% {
+        left: -12vw;
+    }
+}
+@keyframes movenuvem1 {
+    0% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(100vw); 
+    }
+}
+
+@keyframes movenuvem2 {
+    0% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes movenuvem3 {
+    0% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
 /* ------------- CARROSSEL CARDS --------------*/
 .carrossel{
     background-image: linear-gradient(white, var(--verde));
