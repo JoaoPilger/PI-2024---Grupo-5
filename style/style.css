@@ -257,7 +257,7 @@ header > div {
 
 @keyframes moveSprite {
     0% {
-        left: -100vw; 
+        left: -80vw; 
     }
     100% {
         left: -12vw;
