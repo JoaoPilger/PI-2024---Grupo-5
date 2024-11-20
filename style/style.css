@@ -232,15 +232,15 @@ header > div {
 
 #h1 {
     filter: contrast(1.5) drop-shadow(2px rgba(0, 0, 0, 1));
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 1000;
     margin-bottom: 10px;
 }
 #caixa {
     background-color: rgb(255, 255, 255);
-    font-size: 15px;
-    width: 350px;
-    height: 350px;
+    font-size: 20px;
+    width: 30%;
+    height: 30%;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-right: 30px;
@@ -249,7 +249,7 @@ header > div {
     display: flex;
     justify-content: center; 
     text-align: center;
-    filter: contrast(1.5) drop-shadow(10px -10px rgba(0, 0, 0, 1));
+    filter: contrast(1.5) drop-shadow(20px -20px rgba(0, 0, 0, 1));
     flex-direction: column;
     font-family: "Aldrich";
     z-index: 2;
@@ -289,6 +289,7 @@ header > div {
         transform: translateX(100vw);
     }
 }
+
 
 /* ------------- CARROSSEL CARDS --------------*/
 .carrossel{
