@@ -3,238 +3,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
     <title>Formulário</title>
 </head>
 <body>
-    <section class="container-forms">
-        <div class="questoes">
-
-            <div class="nomecompleto">
-                <label for="nome">Nome Completo:</label>
-                <input type="text" name="nome" id="">
-            </div>
-            <div class="idade">
-                <label for="idade">Idade:</label>
-                <input type="number" name="idade">
-            </div>
-            <div class="sexo">
-                <label for="">Sexo:</label>
-                <label for="sexoM">Masculino</label>
-                <input type="checkbox" name="sexoM" id="">
-                <label for="sexoF">Feminino</label>
-                <input type="checkbox" name="sexoF" id="">
-            </div>
-            <div class="peso">
-                <label for="peso">Peso:</label>
-                <input type="number" name="peso" id="">
-            </div>
-            <div class="altura">
-                <label for="altura">Altura:</label>
-                <input type="number" name="altura" id="">
-            </div>
-
-            <div class="atvReg">
-                <label for="atvReg">Você pratica atividade regularmente?</label>
-                <label for="atvRegS">Sim</label>
-                <input type="checkbox" name="atvRegS" id="">
-                <label for="atvRegN">Não</label>
-                <input type="checkbox" name="atvRegN" id="">
-                    <div class="atvRegG">
-                        <div class="atvRegQ">
-                            <label for="quais">Quais</label>
-                            <input type="text" name="quais" id="">
+    <section class="container formulario">
+        <form action="/submit" method="POST" class="form">
+            <div class="slider" id="slider">
+                <div id="slide">
+                    <fieldset class="info basico">
+                        <h1>Informações Básicas</h1>
+                        <div>
+                            <div class="perg">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            
+                            <div class="perg">
+                                <label for="idade">Idade</label>
+                                <input type="number" id="idade" name="idade" required>
+                            </div>
+            
+                            <div class="perg radio">
+                                <label>Sexo:</label>
+                                <div>
+                                    <div>
+                                        <label for="masc">Masculino</label>
+                                        <input type="radio" id="masc" name="sexo" required>
+                                    </div>
+                                    <div>
+                                        <label for="fem">Feminino</label>
+                                        <input type="radio" id="fem" name="sexo" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="perg">
+                                <label for="peso">Peso</label>
+                                <input type="number" id="peso" name="peso" required>
+                            </div>
+            
+                            <div class="perg">
+                                <label for="altura">Altura</label>
+                                <input type="number" id="altura" name="altura" required>
+                            </div>
                         </div>
-                        <div class="atvRegF">
-                            <label for="frequencia">Frequência semanal: </label>
-                            <label for="frequencia1">1 a 3 vezes</label>
-                            <input type="checkbox" name="frequencia1" id="">
-                            <label for="frequencia2">3 a 5 vezes</label>
-                            <input type="checkbox" name="frequencia2" id="">
-                            <label for="frequencia3">5 a 7 vezes</label>
-                            <input type="checkbox" name="frequencia3" id="">
+                    </fieldset>
+    
+                    <!-- Atividades regulares -->
+                    <fieldset class="info atv">
+                        <h1>Informações sobre prática anterior de atividades físicas</h1>
+                        <div class="atvRegular">
+                            <div class="perg radio">
+                                <label>Você pratica atividade regularmente?</label>
+                                <div>
+                                    <div>
+                                        <label for="atvSim">Sim</label>
+                                        <input type="radio" id="atvSim" name="atvReg" required>
+                                    </div>
+                                    <div>
+                                        <label for="atvNao">Não</label>
+                                        <input type="radio" id="atvNao" name="atvReg" required>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="perg quais">
+                                <label for="atvQual">Qual(is):</label>
+                                <textarea name="atvQuais" id="atvQual" class="qualPerg"></textarea>
+                            </div>
+    
+                            <div class="perg radio">
+                                <label>Frequência semanal:</label>
+    
+                                <div>
+                                    <div>
+                                        <label for="atv1">De 1 a 3 vezes</label>
+                                        <input type="radio" name="atvFrequencia" id="atv1">
+                                    </div>
+                                    <div>
+                                        <label for="atv2">De 3 a 5 vezes</label>
+                                        <input type="radio" name="atvFrequencia" id="atv2">
+                                    </div>
+                                    <div>
+                                        <label for="atv3">De 5 a 7 vezes</label>
+                                        <input type="radio" name="atvFrequencia" id="atv3">
+                                    </div>
+                                </div>
+                                
+                            </div>
+    
+                            <div class="perg radio">
+                                <label>Duração:</label>
+    
+                                <div>
+                                    <div>
+                                        <label for="dur1">De 0 a 1 hora</label>
+                                        <input type="radio" name="atvDur" id="dur1">
+                                    </div>
+                                    <div>
+                                        <label for="dur2">De 1 a 2 horas</label>
+                                        <input type="radio" name="atvDur" id="dur2">
+                                    </div>
+                                    <div>
+                                        <label for="dur3">Mais de 2 horas</label>
+                                        <input type="radio" name="atvDur" id="dur3">
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="perg radio">
+                                <label>Tempo regular de sono:</label>
+        
+                                <div>
+                                    <div>
+                                        <label for="sono1">De 4 horas ou menos</label>
+                                    <input type="radio" name="sono" id="sono1" required>
+                                    </div>
+                                    <div>
+                                        <label for="sono2">De 5 horas à 8 horas</label>
+                                        <input type="radio" name="sono" id="sono2" required>
+                                    </div>
+                                    <div>
+                                        <label for="sono3">Mais de 8 horas</label>
+                                        <input type="radio" name="sono" id="sono3" required>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="atvRegD">
-                            <label for="duracao">Duração:</label>
-                            <label for="duracao1">0 a 1 hora</label>
-                            <input type="checkbox" name="duracao1" id="">
-                            <label for="duracao2">1 a 3 horas</label>
-                            <input type="checkbox" name="duracao2" id="">
-                            <label for="duracao3">Mais de 3 horas</label>
-                            <input type="checkbox" name="duracao3" id="">
+                    </fieldset>
+    
+                    <!-- Doença ou Deficiência -->
+                    <fieldset class="info doencaDefic">
+                        <h1>Informações sobre possíveis interferências</h1>
+                        <div class="doenca">
+                            <div class="perg radio">
+                                <label>Possui alguma doença que impede a realização de atividades físicas?</label>
+                                <div>
+                                    <label for="simDoenca">Sim</label>
+                                    <input type="radio" name="doenca" id="simDoenca" required>
+                                    <label for="naoDoenca">Não</label>
+                                    <input type="radio" name="doenca" id="naoDoenca" required>
+                                </div>
+                            </div>
+    
+                            <div class="perg quais">
+                                <label for="qualDoenca">Qual(is)</label>
+                                <input name="qualDoenca" id="qualDoenca" class="qualPerg">
+                            </div>
                         </div>
-                    </div>
-            </div>
-
-            <div class="Doenca">
-                <label for="doe">Possui alguma doença que impede a prática de exercícios (cardíaco, diabete, hipertensão, lesão, fratura e etc)?</label>
-                <label for="doeS">Sim</label>
-                <input type="checkbox" name="doeS" id="">
-                <label for="doeN">Não</label>
-                <input type="checkbox" name="doeN" id="">
-                <div class="doeQ">
-                    <label for="doeQual">Qual?</label>
-                    <input type="text">
+                        <div class="deficiencia">
+                            <div class="perg radio">
+                                <label>Possui alguma deficiência física?</label>
+                                <div>
+                                    <label for="simDefic">Sim</label>
+                                    <input type="radio" name="defic" id="simDefic" required>
+                                    <label for="naoDefic">Não</label>
+                                    <input type="radio" name="defic" id="naoDefic" required>
+                                </div>
+                            </div>
+    
+                            <div class="perg quais">
+                                <label for="qualDefic">Qual(is)</label>
+                                <div>
+                                    <input name="qualDefic" id="qualDefic" class="qualPerg">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+    
+                    <!-- Saúde -->
+                    <fieldset class="info saude">
+                        <h1>Informações sobre a sua saúde</h1>
+                        <div class="cirurgia">
+                            <div class="perg radio">
+                                <label>Fez ou irá fazer cirurgia?</label>
+                                <div>
+                                    <label for="cirurSim">Sim</label>
+                                    <input type="radio" name="cirur" id="cirurSim">
+                                    <label for="cirurNao">Não</label>
+                                    <input type="radio" name="cirur" id="cirurNao">
+                                </div>
+                            </div>         
+                            <div class="perg quais">
+                                <label for="qualCirur">Qual(is)</label>
+                                <input name="qualCirur" id="qualCirur" class="qualPerg">
+                            </div>
+                        </div>
+                        <div class="medicamento">
+                            <div class="perg radio">
+                                <label>Toma medicamento(s) frequentemente?</label>
+                                <div>
+                                    <label for="medSim">Sim</label>
+                                    <input type="radio" name="med" id="medSim">
+                                    <label for="medNao">Não</label>
+                                    <input type="radio" name="med" id="medNao">
+                                </div>
+                            </div>
+                            <div class="perg quais">
+                                <label for="qualMed">Qual(is)</label>
+                                <div>
+                                    <input name="qualCirur" id="qualMed" class="qualPerg">
+                                </div>
+                            </div>
+    
+                            <div class="perg radio">
+                                <label>Frequência:</label>
+                                <div>
+                                    <label for="medFre1">De 0 à 1 vez semanal</label>
+                                    <input type="radio" name="medFre" id="medFre1">
+                                    <label for="medFre2">De 2 à 3 vezes semanais</label>
+                                    <input type="radio" name="medFre" id="medFre2">
+                                    <label for="medFre3">De 4 à 5 vezes semanais</label>
+                                    <input type="radio" name="medFre" id="medFre3">
+                                    <label for="medFre4">De 6 à 7 vezes semanais</label>
+                                    <input type="radio" name="medFre" id="medFre4">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="info bebidaFumo">
+                        <div class="bebida">
+                            <div class="perg radio">
+                                <label>Ingere bebidas alcoólicas?</label>
+                                <div>
+                                    <label for="bebidaSim">Sim</label>
+                                    <input type="radio" name="bebida" id="bebidaSim">
+                                    <label for="bebidaNao">Não</label>
+                                    <input type="radio" name="bebida" id="bebidaNao">
+                                </div>
+                            </div>
+    
+                            <div class="perg radio">
+                                <label>Frequência:</label>
+                                <div>
+                                    <label for="bebidaFre1">De 0 à 1 vez semanal</label>
+                                    <input type="radio" name="bebidaFre" id="bebidaFre1">
+                                    <label for="bebidaFre2">De 2 à 3 vezes semanais</label>
+                                    <input type="radio" name="bebidaFre" id="bebidaFre2">
+                                    <label for="bebidaFre3">De 4 à 5 vezes semanais</label>
+                                    <input type="radio" name="bebidaFre" id="bebidaFre3">
+                                    <label for="bebidaFre4">De 6 à 7 vezes semanais</label>
+                                    <input type="radio" name="bebidaFre" id="bebidaFre4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fumo">
+                            <div class="perg radio">
+                                <label>Fuma?</label>
+                                <div>
+                                    <label for="fumoSim">Sim</label>
+                                    <input type="radio" name="fumo" id="fumoSim">
+                                    <label for="fumoNao">Não</label>
+                                    <input type="radio" name="fumo" id="fumoNao">
+                                </div>
+                            </div>
+    
+                            <div class="perg radio">
+                                <label>Frequência:</label>
+                                <div>
+                                    <label for="fumoFre1">De 0 à 1 vez semanal</label>
+                                    <input type="radio" name="bebidaFre" id="fumoFre1">
+                                    <label for="fumoFre2">De 2 à 3 vezes semanais</label>
+                                    <input type="radio" name="bebidaFre" id="fumoFre2">
+                                    <label for="fumoFre3">De 4 à 5 vezes semanais</label>
+                                    <input type="radio" name="bebidaFre" id="fumoFre3">
+                                    <label for="fumoFre4">De 6 à 7 vezes semanais</label>
+                                    <input type="radio" name="bebidaFre" id="fumoFre4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="extra perg">
+                            <div>
+                                <label for="infoExtra">Infomações extras que julga serem importantes:</label>
+                                <textarea name="infoExtra" id="infoExtra" class="qualPerg"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+    
+                    <!-- Informações sobre nova atividades -->
+                    <fieldset class="info novaAtv">
+                        <h1>Tempo e Intensidade da atividade</h1>
+                        <div>
+                            <div class="perg radio">
+                                <label>Frequência semanal:</label>
+                                    <div>
+                                        <label for="atvNovaFre1">De 0 à 1 vez</label>
+                                        <input type="radio" name="atvNovaFre" id="atvNovaFre1">
+                                        <label for="atvNovaFre2">De 2 à 3 vezes</label>
+                                        <input type="radio" name="atvNovaFre" id="atvNovaFre2">
+                                        <label for="atvNovaFre3">De 4 à 5 vezes</label>
+                                        <input type="radio" name="atvNovaFre" id="atvNovaFre3">
+                                        <label for="atvNovaFre4">De 6 à 7 vezes</label>
+                                        <input type="radio" name="atvNovaFre" id="atvNovaFre4">
+                                    </div>
+                            </div>
+                            <div class="perg radio">
+                                <label>Quanto tempo livre você tem no dia para a realização de exercícios?</label>
+                                <div>
+                                    <label for="atvNovaTempo1">De 30 minutos à 1 hora diária</label>
+                                        <input type="radio" name="atvNovaTempo" id="atvNovaTempo1">
+                                        <label for="atvNovaTempo2">De 1 hora à 1 hora e meia diária</label>
+                                        <input type="radio" name="atvNovaTempo" id="atvNovaTempo2">
+                                        <label for="atvNovaTempo3"> De 2 horas diárias ou mais</label>
+                                        <input type="radio" name="atvNovaTempo" id="atvNovaTempo3">
+                                </div>
+                            </div>
+                            <div class="perg radio">
+                                <label>Período do dia:</label>
+                                <div>
+                                    <label for="atvNovaPer1">Manhã</label>
+                                        <input type="radio" name="atvNovaPer" id="atvNovaPer1">
+                                        <label for="atvNovaPer2">Tarde</label>
+                                        <input type="radio" name="atvNovaPer" id="atvNovaPer2">
+                                        <label for="atvNovaPer3">Noite</label>
+                                        <input type="radio" name="atvNovaPer" id="atvNovaPer3">
+                                </div>
+                            </div>
+                            <div class="perg radio">
+                                <label>Intensidade da atividade:</label>
+                                <div>
+                                    <label for="atvNovaIntense1">Leve</label>
+                                        <input type="radio" name="atvNovaIntense" id="atvNovaIntense1">
+                                        <label for="atvNovaIntense2">Intermediária</label>
+                                        <input type="radio" name="atvNovaIntense" id="atvNovaIntense2">
+                                        <label for="atvNovaIntense3">Pesada</label>
+                                        <input type="radio" name="atvNovaIntense" id="atvNovaIntense3">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
                 </div>
             </div>
-
-            <div class="Defi">
-                <label for="defi">Possui algum tipo de deficiência física (membro amputado, cadeira de rodas)?</label>
-                <label for="defiS">Sim</label>
-                <input type="checkbox" name="defiS" id="">
-                <label for="defiN">Não</label>
-                <input type="checkbox" name="defiN" id="">
-                <div class="defiQ">
-                    <label for="defiQual">Qual?</label>
-                    <input type="text" name="defiQual">
-                </div>
-            </div>
-
-            <div class="parente">
-                <label for="parDoe">Possui algum parente com histórico de doenças? </label>
-                <label for="parDoeS">Sim</label>
-                <input type="checkbox" name="parDoeS" id="">
-                <label for="parDoeN">Não</label>
-                <input type="checkbox" name="parDoeN" id="">
-                <div class="parQP">
-                    <label for="parQPar">Qual o parentesco?</label>
-                    <label for="parPA">Avôs</label>
-                    <input type="checkbox" name="parPA" id="">
-                    <label for="parPP">Pais</label>
-                    <input type="checkbox" name="parPP" id="">
-                    <label for="parPI">Irmãos</label>
-                    <input type="checkbox" name="" id="">
-                </div>
-                <div class="parQD">
-                    <label for="parQDoe">Qual doença?</label>
-                    <input type="text" name="parQdoe" id="">
-                </div>
-            </div>
-
-            <div class="cirurgia">
-                <label for="cirur">Fez ou irá fazer cirurgia?</label>
-                <label for="cirurS">Sim</label>
-                <input type="checkbox" name="cirurS" id="">
-                <label for="cirurN">Não</label>
-                <input type="checkbox" name="cirurS" id="">
-                <div class="cirurQual">
-                    <label for="cirurQ">Qual?</label>
-                    <input type="checkbox" name="cirurQ" id="">
-                </div>
-            </div>
-
-            <div class="medicacao">
-                <label for="medi">Toma medicação regularmente?</label>
-                <label for="mediS">Sim</label>
-                <input type="checkbox" name="mediS" id="">
-                <label for="mediN">Não</label>
-                <input type="checkbox" name="mediN" id="">
-                <div class="mediRS">
-                    <div class="mediQual">
-                        <label for="mediQ">Qual?</label>
-                        <input type="text" name="mediQ" id="">
-                    </div>
-                    <div class="mediFrequencia">
-                        <label for="mediFre">Qual a frequência?</label>
-
-
-
-                    </div>
-                </div> 
-            </div>
-
-            <div class="bebidas">
-                <label for="bebe">Bebe bebidas alcoólicas?</label>
-                <label for="bebeS">Sim</label>
-                <input type="checkbox" name="bebeS" id="">
-                <label for="bebeN">Não</label>
-                <input type="checkbox" name="bebeN" id="">
-                <div class="bebeFre">
-                    <label for="bebeF">Qual a frequência?</label>
-
-                </div>
-            </div>
-
-            <div class="fumar">
-                <label for="fuma">Fuma?</label>
-                <label for="fumaS">Sim</label>
-                <input type="checkbox" name="fumaS" id="">
-                <label for="fumaN">Não</label>
-                <input type="checkbox" name="fumaN" id="">
-                <div class="fumaF">
-                    <label for="fumaFreq">Qual a frequência?</label>
-
-                </div>
-            </div>
-
-            <div class="sonoreg">
-                <label for="sono">Tempo regular de sono?</label>
-                <label for="sono1">Até 4 horas diárias</label>
-                <input type="checkbox" name="sono1" id="">
-                <label for="sono2">5 a 8 horas diárias</label>
-                <input type="checkbox" name="sono2" id="">
-                <label for="sono3">Mais de 8 horas diárias</label>
-                <input type="checkbox" name="sono3" id="">
-            </div>
-
-            <div class="gravidez">
-                <label for="gravida">Está grávida?</label>
-                <label for="gravS">Sim</label>
-                <input type="checkbox" name="gravS" id="">
-                <label for="gravN">Não?</label>
-                <input type="checkbox" name="gravN" id="">
-                <div class="gravD">
-                    <label for="gravDur">Quanto tempo de gestação?</label>
-                    <label for="gravD1">Até 4 meses</label>
-                    <input type="checkbox" name="gravD1" id="">
-                    <label for="gravD2">5 a 7 meses</label>
-                    <input type="checkbox" name="gravD2" id="">
-                    <label for="gravD3">8 e 9 meses</label>
-                    <input type="checkbox" name="gravD3" id="">
-                </div>
-            </div>
-
-            <div class="tempolivre">
-                <div class="tempo">
-                    <label for="tempo">Quanto tempo livre você tem no dia para a realização de exercícios?</label>
-                    <label for="tempo1">Até 2 horas</label>
-                    <input type="checkbox" name="tempo1" id="">
-                    <label for="tempo2">De 2 horas a 5 horas</label>
-                    <input type="checkbox" name="tempo2" id="">
-                    <label for="tempo3">Mais de 5 horas</label>
-                    <input type="checkbox" name="tempo3" id="">
-                </div>
-                <div class="periododia">
-                    <label for="periodo">Período do dia?</label>
-                    <label for="periodo1">Matutino</label>
-                    <input type="checkbox" name="periodo1" id="">
-                    <label for="periodo2">Vespertino</label>
-                    <input type="checkbox" name="periodo2" id="">
-                    <label for="periodo3">Noturno</label>
-                    <input type="checkbox" name="periodo3" id="">
-                </div>
-                <div class="fqcsmn">
-                    <label for="fqc">Frequência semana?</label>
-                    <label for="fqc1">Até 3 vezes</label>
-                    <input type="checkbox" name="fqc1" id="">
-                    <label for="fqc2">4 a 7 vezes</label>
-                    <input type="checkbox" name="fqc2" id="">
-                </div>
-                <div class="intensidade">
-                    <label for="intensi">Intensidade dos exercícios</label>
-                    <label for="intensi1">Leve</label>
-                    <input type="checkbox" name="intensi1" id="">
-                    <label for="intensi2">Moderada</label>
-                    <input type="checkbox" name="intensi2" id="">
-                    <label for="intensi3">Intensa</label>
-                    <input type="checkbox" name="intensi3" id="">
-                </div>
-            </div>
-
-            <div class="infoextra">
-                <label for="inextra">Informações extras sobre o paciente:</label>
-                <input type="text" name="inextra" id="">
-            </div>
-        </div>
+            <div class="submit" id="passar">Enviar</div>
+        </form>
     </section>
+    <script src="formulario.js"></script>
 </body>
 </html>
