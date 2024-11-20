@@ -260,7 +260,7 @@ header > div {
         left: -80vw; 
     }
     100% {
-        left: -12vw;
+        left: -8vw;
     }
 }
 @keyframes movenuvem1 {
@@ -449,6 +449,11 @@ header > div {
     text-align: center;
     position: relative;
 }
+.darkground{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
 
 .botao_treino{
     background-color: var(--verde);
@@ -494,7 +499,6 @@ header > div {
 
 .modal{
     background-image: linear-gradient(white, var(--verde));
-    display: flex;
     flex-direction: column;
     justify-content: center;
     margin: auto;
@@ -517,14 +521,16 @@ header > div {
     justify-content: space-around;
     margin: auto;
 }
-.modal button{
+.modal a{
     background-color: black;
     margin: auto;
     font-size: 20px;
     color: white;
-    text-align: center;
-    width: 215px;
-    height: 48px;
+    padding: 20px 50px;
+    transition: 1s;
+}
+.modal a:hover{
+    transform: scale(1.1);
 }
 
 .modal img{
@@ -545,7 +551,6 @@ header > div {
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
 /* ------------- SOBRE NÓS --------------*/
 #sobreNos {
     background: linear-gradient(rgba(255,255,255,1) 0%, rgba(176,252,204,1) 35%, rgba(0,0,0,1) 100%);
