@@ -240,7 +240,7 @@ header > div {
     background-color: rgb(255, 255, 255);
     font-size: 20px;
     width: 30%;
-    height: 30%;
+    height: 350px;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-right: 30px;
@@ -260,7 +260,7 @@ header > div {
         left: -80vw; 
     }
     100% {
-        left: -8vw;
+        left: 16vw;
     }
 }
 @keyframes movenuvem1 {
@@ -367,7 +367,7 @@ header > div {
     }
 
     50% {
-        transform: rotate(-8deg);
+        transform: rotate(-14deg);
     }
 
     100% {
