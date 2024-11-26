@@ -86,7 +86,7 @@ function animate(frames, currentFrame, interval) {
 
 function runAnimation(frames, currentFrame, interval, isDoubleBiceps = false, callback = null) {
     spriteElement.src = frames[currentFrame];
-    spriteElement.style.bottom = isDoubleBiceps ? '-187px' : '-160px';
+    spriteElement.style.bottom = isDoubleBiceps ? '-45px' : '-210px';
     currentFrame++;
 
     if (currentFrame < frames.length) {
@@ -98,7 +98,7 @@ function runAnimation(frames, currentFrame, interval, isDoubleBiceps = false, ca
 
 function runInfiniteDescansarAnimation() {
     currentDescansarFrame = animate(descansarFrames, currentDescansarFrame, intervalDescansar);
-    spriteElement.style.bottom = '-187px';
+    spriteElement.style.bottom = '-45px';
     setTimeout(runInfiniteDescansarAnimation, intervalDescansar);
 }
 

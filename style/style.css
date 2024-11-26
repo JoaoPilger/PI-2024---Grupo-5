@@ -176,7 +176,7 @@ header > div {
 }
 
 .nuvens img {
-    width: 200px;
+    width: 300px;
     height: auto; 
     position: absolute;
 }
@@ -220,12 +220,11 @@ header > div {
     opacity: 1; 
 }
 #sprite {
-    width: 320px; 
-    height: 320px;
-    background-image: url('sprites/sprite1.png'); 
+    width: 512px; 
+    height: 512px;
     background-size: cover; 
     position: relative;
-    bottom: -160px;
+    bottom: 5px;
     left: 100px; 
     filter: drop-shadow(0.5px rgba(0, 0, 0, 1));
     z-index: 2; 
