@@ -213,6 +213,7 @@ header > div {
     position: relative; 
     filter: contrast(1.5);
     opacity: 0;
+    transform: translateY(125px);
 }
 #osdois.animate{
     animation: moveSprite 12s forwards;
@@ -232,7 +233,7 @@ header > div {
 
 #h1 {
     filter: contrast(1.5) drop-shadow(2px rgba(0, 0, 0, 1));
-    font-size: 30px;
+    font-size: 60px;
     font-weight: 1000;
     margin-bottom: 10px;
 }
@@ -240,7 +241,7 @@ header > div {
     background-color: rgb(255, 255, 255);
     font-size: 20px;
     width: 30%;
-    height: 350px;
+    aspect-ratio: 1 / 1;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-right: 30px;
@@ -253,6 +254,11 @@ header > div {
     flex-direction: column;
     font-family: "Aldrich";
     z-index: 2;
+    transform: translateY(-219px);
+}
+
+#caixa p {
+    font-size: 28px;
 }
 
 @keyframes moveSprite {
