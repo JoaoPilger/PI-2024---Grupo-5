@@ -51,6 +51,7 @@ form{
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    width: 100%;
 }
 .slider{
     max-width: 100%;
@@ -66,14 +67,12 @@ form{
 .slider label{
     font-size: 20px;
 }
-.slider > div{
-    display: flex;
-    flex-direction: row;
-}
-
 #slide{
     transition: 1s ease-in-out;
     gap: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .info{
@@ -85,13 +84,13 @@ form{
     border-top: 50px solid var(--verde);
     padding: 40px 50px;
     background-color: white;
-    min-width: 100%;
     box-sizing: border-box;
-    text-align: center;
+    min-width: 100%;
+    height: 100%;
+
 }
 
-
-.info > div{
+.pergs{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,7 +137,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .submit{
-    width: 25%;
+    width:200px ;
     padding: 30px 0;
     background-color: var(--verde);
     font-size: 24px;
@@ -151,6 +150,12 @@ input[type="number"]::-webkit-inner-spin-button {
     transform: scale(1.1);
     background-color: var(--second-verde);
     cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
 
 .quais{

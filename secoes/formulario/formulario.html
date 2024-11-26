@@ -13,7 +13,7 @@
                 <div id="slide">
                     <fieldset class="info basico">
                         <h1>Informações Básicas</h1>
-                        <div>
+                        <div class="pergs">
                             <div class="perg">
                                 <label for="nome">Nome</label>
                                 <input type="text" id="nome" name="nome" required>
@@ -48,12 +48,13 @@
                                 <input type="number" id="altura" name="altura" required>
                             </div>
                         </div>
+                        <div class="submit passar">Próximo</div>
                     </fieldset>
     
                     <!-- Atividades regulares -->
                     <fieldset class="info atv">
                         <h1>Informações sobre prática anterior de atividades físicas</h1>
-                        <div class="atvRegular">
+                        <div class="pergs">
                             <div class="perg radio">
                                 <label>Você pratica atividade regularmente?</label>
                                 <div>
@@ -131,12 +132,16 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="buttons">
+                            <div class="submit voltar">Voltar</div>
+                            <div class="submit passar">Próximo</div>
+                        </div>
                     </fieldset>
     
                     <!-- Doença ou Deficiência -->
                     <fieldset class="info doencaDefic">
                         <h1>Informações sobre possíveis interferências</h1>
-                        <div class="doenca">
+                        <div class="pergs">
                             <div class="perg radio">
                                 <label>Possui alguma doença que impede a realização de atividades físicas?</label>
                                 <div>
@@ -156,7 +161,7 @@
                                 <input name="qualDoenca" id="qualDoenca" class="qualPerg">
                             </div>
                         </div>
-                        <div class="deficiencia">
+                        <div class="pergs">
                             <div class="perg radio">
                                 <label>Possui alguma deficiência física?</label>
                                 <div>
@@ -176,12 +181,16 @@
                                 <input name="qualDefic" id="qualDefic" class="qualPerg">
                             </div>
                         </div>
+                        <div class="buttons">
+                            <div class="submit voltar">Voltar</div>
+                            <div class="submit passar">Próximo</div>
+                        </div>
                     </fieldset>
     
                     <!-- Saúde -->
                     <fieldset class="info saude">
                         <h1>Informações sobre a sua saúde</h1>
-                        <div class="cirurgia">
+                        <div class="pergs">
                             <div class="perg radio">
                                 <label>Fez ou irá fazer cirurgia?</label>
                                 <div>
@@ -200,7 +209,7 @@
                                 <input name="qualCirur" id="qualCirur" class="qualPerg">
                             </div>
                         </div>
-                        <div class="medicamento">
+                        <div class="pergs">
                             <div class="perg radio">
                                 <label>Toma medicamento(s) frequentemente?</label>
                                 <div>
@@ -241,10 +250,14 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="buttons">
+                            <div class="submit voltar">Voltar</div>
+                            <div class="submit passar">Próximo</div>
+                        </div>
                     </fieldset>
                     <fieldset class="info bebidaFumo">
                         <h1>Uso de entorpecentes</h1>
-                        <div class="bebida">
+                        <div class="pergs">
                             <div class="perg radio">
                                 <label>Ingere bebidas alcoólicas?</label>
                                 <div>
@@ -281,7 +294,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="fumo">
+                        <div class="pergs">
                             <div class="perg radio">
                                 <label>Fuma?</label>
                                 <div>
@@ -318,12 +331,16 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="buttons">
+                            <div class="submit voltar">Voltar</div>
+                            <div class="submit passar">Próximo</div>
+                        </div>
                     </fieldset>
     
                     <!-- Informações sobre nova atividades -->
                     <fieldset class="info novaAtv">
                         <h1>Tempo e Intensidade da atividade</h1>
-                        <div>
+                        <div class="pergs">
                             <div class="perg radio">
                                 <label>Frequência semanal:</label>
                                     <div>
@@ -403,10 +420,14 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="buttons">
+                            <div class="submit voltar">Voltar</div>
+                            <button class="submit">Enviar</button>
+                        </div>
+                        
                     </fieldset>
                 </div>
             </div>
-            <div class="submit" id="passar">Enviar</div>
         </form>
     </section>
     <script src="formulario.js"></script>
