@@ -120,7 +120,7 @@ const content = [
   { nome:'João Pilger', text: 'Texto Pilger', img: 'midia/integrantes/pilger.png' },
   { nome: 'João Pramio', text: 'Estudante de 16 anos do Instituto Federal Catarinense Campus Concórdia,  no curso de informática. Responsável pelo boneco.', img: 'midia/integrantes/pramio.png' },
   { nome: 'Bruno Gelain', text: 'Estudante de 16 anos do Instituto Federal Catarinense Campus Concórdia,  no curso de informática. Responsável por esta seção "Sobre Nós" e pelo footer.', img: 'midia/integrantes/bruno.png' },
-  { nome: 'Gabriel Jappe', text: 'Texto Jappe', img: 'midia/integrantes/jappe.png' },
+  { nome: 'Gabriel Jappe', text: 'Discente do IFC Campus Concórdia - Informática para a Internet. Ingressado em 1ª colocação à Instituição. Corretor ortográfico e desenvolvedor do projeto. Responsável pela escrita e correção dos textos do website, e encarregado da integração do sistema prescritor de treinos com a Inteligência Artificial.', img: 'midia/integrantes/jappe.jpg' },
   { nome: 'Carlos Mior', text: 'Texto Carlos', img: 'midia/integrantes/carlos.png' },
   { nome: 'Murilo Jochkeck', text: 'Texto Murilo', img: 'midia/integrantes/murilo.png' }
 ];
