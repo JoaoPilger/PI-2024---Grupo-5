@@ -225,7 +225,7 @@ header > div {
     background-size: cover; 
     position: relative;
     bottom: 5px;
-    left: 100px; 
+    left: 160px; 
     filter: drop-shadow(0.5px rgba(0, 0, 0, 1));
     z-index: 2; 
 }
@@ -265,7 +265,7 @@ header > div {
         left: -80vw; 
     }
     100% {
-        left: 16vw;
+        left: 10vw;
     }
 }
 @keyframes movenuvem1 {
