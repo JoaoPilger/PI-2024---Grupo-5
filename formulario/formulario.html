@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <section class="container formulario">
+        <form action="/submit" method="POST" class="form">
+            <div class="slider" id="slider">
+                <div id="slide">
+                    <fieldset class="info basico">
+                        <h1>Informações Básicas</h1>
+                        <div class="pergs">
+                            <div class="perg">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            
+                            <div class="perg">
+                                <label for="idade">Idade</label>
+                                <input type="number" id="idade" name="idade" required>
+                            </div>
+            
+                            <div class="perg radio">
+                                <label>Sexo:</label>
+                                <div>
+                                    <div>
+                                        <label for="masc">Masculino</label>
+                                        <input type="radio" id="masc" name="sexo" required>
+                                    </div>
+                                    <div>
+                                        <label for="fem">Feminino</label>
+                                        <input type="radio" id="fem" name="sexo" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="perg">
+                                <label for="peso">Peso</label>
+                                <input type="number" id="peso" name="peso" required>
+                            </div>
+            
+                            <div class="perg">
+                                <label for="altura">Altura</label>
+                                <input type="number" id="altura" name="altura" required>
+                            </div>
+                        </div>
+                        <div class="submit passar">Próximo</div>
+                    </fieldset>
+    
+                    <!-- Atividades regulares -->
+                    <fieldset class="info atv">
+                        <h1>Informações sobre prática anterior de atividades físicas</h1>
+                        <div class="pergs">
+                            <div class="perg radio">
+                                <label>Você pratica atividade regularmente?</label>
+                                <div>
+                                    <div>
+                                        <label for="atvSim">Sim</label>
+                                        <input type="radio" id="atvSim" name="atvReg" required>
+                                    </div>
+                                    <div>
+                                        <label for="atvNao">Não</label>
+                                        <input type="radio" id="atvNao" name="atvReg" required>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="perg quais">
+                                <label for="atvQual">Qual(is):</label>
+                                <textarea name="atvQuais" id="atvQual" class="qualPerg"></textarea>
+                            </div>
+    
+                            <div class="perg radio">
+                                <label>Frequência semanal:</label>
+    
+                                <div>
+                                    <div>
+                                        <label for="atv1">De 1 a 3 vezes</label>
+                                        <input type="radio" name="atvFrequencia" id="atv1">
+                                    </div>
+                                    <div>
+                                        <label for="atv2">De 3 a 5 vezes</label>
+                                        <input type="radio" name="atvFrequencia" id="atv2">
+                                    </div>
+                                    <div>
+                                        <label for="atv3">De 5 a 7 vezes</label>
+                                        <input type="radio" name="atvFrequencia" id="atv3">
+                                    </div>
+                                </div>
+                                
+                            </div>
+    
+                            <div class="perg radio">
+                                <label>Duração:</label>
+    
+                                <div>
+                                    <div>
+                                        <label for="dur1">De 0 a 1 hora</label>
+                                        <input type="radio" name="atvDur" id="dur1">
+                                    </div>
+                                    <div>
+                                        <label for="dur2">De 1 a 2 horas</label>
+                                        <input type="radio" name="atvDur" id="dur2">
+                                    </div>
+                                    <div>
+                                        <label for="dur3">Mais de 2 horas</label>
+                                        <input type="radio" name="atvDur" id="dur3">
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="perg radio">
+                                <label>Tempo regular de sono:</label>
+        
+                                <div>
+                                    <div>
+                                        <label for="sono1">De 4 horas ou menos</label>
+                                    <input type="radio" name="sono" id="sono1" required>
+                                    </div>
+                                    <div>
+                                        <label for="sono2">De 5 horas à 8 horas</label>
+                                        <input type="radio" name="sono" id="sono2" required>
+                                    </div>
+                                    <div>
+                                        <label for="sono3">Mais de 8 horas</label>
+                                        <input type="radio" name="sono" id="sono3" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="submit voltar">Voltar</div>
+                            <div class="submit passar">Próximo</div>
+                        </div>
+                    </fieldset>
+    
+                    <!-- Doença ou Deficiência -->
+                    <fieldset class="info doencaDefic">
+                        <h1>Informações sobre possíveis interferências</h1>
+                        <div class="pergs">
+                            <div class="perg radio">
+                                <label>Possui alguma doença que impede a realização de atividades físicas?</label>
+                                <div>
+                                    <div>
+                                        <label for="simDoenca">Sim</label>
+                                        <input type="radio" name="doenca" id="simDoenca" required>
+                                    </div>
+                                    <div>
+                                        <label for="naoDoenca">Não</label>
+                                        <input type="radio" name="doenca" id="naoDoenca" required>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="perg quais">
+                                <label for="qualDoenca">Qual(is)</label>
+                                <input name="qualDoenca" id="qualDoenca" class="qualPerg">
+                            </div>
+                        </div>
+                        <div class="pergs">
+                            <div class="perg radio">
+                                <label>Possui alguma deficiência física?</label>
+                                <div>
+                                    <div>
+                                        <label for="simDefic">Sim</label>
+                                        <input type="radio" name="defic" id="simDefic" required>
+                                    </div>
+                                    <div>
+                                        <label for="naoDefic">Não</label>
+                                        <input type="radio" name="defic" id="naoDefic" required>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="perg quais">
+                                <label for="qualDefic">Qual(is)</label>
+                                <input name="qualDefic" id="qualDefic" class="qualPerg">
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="submit voltar">Voltar</div>
+                            <div class="submit passar">Próximo</div>
+                        </div>
+                    </fieldset>
+    
+                    <!-- Saúde -->
+                    <fieldset class="info saude">
+                        <h1>Informações sobre a sua saúde</h1>
+                        <div class="pergs">
+                            <div class="perg radio">
+                                <label>Fez ou irá fazer cirurgia?</label>
+                                <div>
+                                    <div>
+                                        <label for="cirurSim">Sim</label>
+                                        <input type="radio" name="cirur" id="cirurSim">
+                                    </div>
+                                    <div>
+                                        <label for="cirurNao">Não</label>
+                                        <input type="radio" name="cirur" id="cirurNao">
+                                    </div>
+                                </div>
+                            </div>         
+                            <div class="perg quais">
+                                <label for="qualCirur">Qual(is)</label>
+                                <input name="qualCirur" id="qualCirur" class="qualPerg">
+                            </div>
+                        </div>
+                        <div class="pergs">
+                            <div class="perg radio">
+                                <label>Toma medicamento(s) frequentemente?</label>
+                                <div>
+                                    <div>
+                                        <label for="medSim">Sim</label>
+                                        <input type="radio" name="med" id="medSim">
+                                    </div>
+                                    <div>
+                                        <label for="medNao">Não</label>
+                                        <input type="radio" name="med" id="medNao">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="perg quais">
+                                <label for="qualMed">Qual(is)</label>
+                                <input name="qualCirur" id="qualMed" class="qualPerg">
+                            </div>
+    
+                            <div class="perg radio">
+                                <label>Frequência:</label>
+                                <div>
+                                    <div>
+                                        <label for="medFre1">De 0 à 1 vez semanal</label>
+                                        <input type="radio" name="medFre" id="medFre1">
+                                    </div>
+                                    <div>
+                                        <label for="medFre2">De 2 à 3 vezes semanais</label>
+                                        <input type="radio" name="medFre" id="medFre2">
+                                    </div>
+                                    <div>
+                                        <label for="medFre3">De 4 à 5 vezes semanais</label>
+                                        <input type="radio" name="medFre" id="medFre3">
+                                    </div>
+                                    <div>
+                                        <label for="medFre4">De 6 à 7 vezes semanais</label>
+                                        <input type="radio" name="medFre" id="medFre4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="submit voltar">Voltar</div>
+                            <div class="submit passar">Próximo</div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="info bebidaFumo">
+                        <h1>Uso de entorpecentes</h1>
+                        <div class="pergs">
+                            <div class="perg radio">
+                                <label>Ingere bebidas alcoólicas?</label>
+                                <div>
+                                    <div>
+                                        <label for="bebidaSim">Sim</label>
+                                        <input type="radio" name="bebida" id="bebidaSim">
+                                    </div>
+                                    <div>
+                                        <label for="bebidaNao">Não</label>
+                                        <input type="radio" name="bebida" id="bebidaNao">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="perg radio">
+                                <label>Frequência:</label>
+                                <div>
+                                    <div>
+                                        <label for="bebidaFre1">De 0 à 1 vez semanal</label>
+                                        <input type="radio" name="bebidaFre" id="bebidaFre1">
+                                    </div>
+                                    <div>
+                                        <label for="bebidaFre2">De 2 à 3 vezes semanais</label>
+                                    <input type="radio" name="bebidaFre" id="bebidaFre2">
+                                    </div>
+                                    <div>
+                                        <label for="bebidaFre3">De 4 à 5 vezes semanais</label>
+                                        <input type="radio" name="bebidaFre" id="bebidaFre3">
+                                    </div>
+                                    <div>
+                                        <label for="bebidaFre4">De 6 à 7 vezes semanais</label>
+                                        <input type="radio" name="bebidaFre" id="bebidaFre4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pergs">
+                            <div class="perg radio">
+                                <label>Fuma?</label>
+                                <div>
+                                    <div>
+                                        <label for="fumoSim">Sim</label>
+                                        <input type="radio" name="fumo" id="fumoSim">
+                                    </div>
+                                    <div>
+                                        <label for="fumoNao">Não</label>
+                                        <input type="radio" name="fumo" id="fumoNao">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="perg radio">
+                                <label>Frequência:</label>
+                                <div>
+                                    <div>
+                                        <label for="fumoFre1">De 0 à 1 vez semanal</label>
+                                        <input type="radio" name="bebidaFre" id="fumoFre1">
+                                    </div>
+                                    <div>
+                                        <label for="fumoFre2">De 2 à 3 vezes semanais</label>
+                                        <input type="radio" name="bebidaFre" id="fumoFre2">
+                                    </div>
+                                    <div>
+                                        <label for="fumoFre3">De 4 à 5 vezes semanais</label>
+                                        <input type="radio" name="bebidaFre" id="fumoFre3">
+                                    </div>
+                                    <div>
+                                        <label for="fumoFre4">De 6 à 7 vezes semanais</label>
+                                        <input type="radio" name="bebidaFre" id="fumoFre4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="submit voltar">Voltar</div>
+                            <div class="submit passar">Próximo</div>
+                        </div>
+                    </fieldset>
+    
+                    <!-- Informações sobre nova atividades -->
+                    <fieldset class="info novaAtv">
+                        <h1>Tempo e Intensidade da atividade</h1>
+                        <div class="pergs">
+                            <div class="perg radio">
+                                <label>Frequência semanal:</label>
+                                    <div>
+                                        <div>
+                                            <label for="atvNovaFre1">De 0 à 1 vez</label>
+                                            <input type="radio" name="atvNovaFre" id="atvNovaFre1">
+                                        </div>
+                                        <div>
+                                            <label for="atvNovaFre2">De 2 à 3 vezes</label>
+                                            <input type="radio" name="atvNovaFre" id="atvNovaFre2">
+                                        </div>
+                                        <div>
+                                            <label for="atvNovaFre3">De 4 à 5 vezes</label>
+                                            <input type="radio" name="atvNovaFre" id="atvNovaFre3">
+                                        </div>
+                                        <div>
+                                            <label for="atvNovaFre4">De 6 à 7 vezes</label>
+                                            <input type="radio" name="atvNovaFre" id="atvNovaFre4">
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="perg radio">
+                                <label>Quanto tempo livre você tem no dia para a realização de exercícios?</label>
+                                <div>
+                                    <div>
+                                        <label for="atvNovaTempo1">De 30 minutos à 1 hora diária</label>
+                                        <input type="radio" name="atvNovaTempo" id="atvNovaTempo1">
+                                    </div>
+                                    <div>
+                                        <label for="atvNovaTempo2">De 1 hora à 1 hora e meia diária</label>
+                                        <input type="radio" name="atvNovaTempo" id="atvNovaTempo2">
+                                    </div>
+                                    <div>
+                                        <label for="atvNovaTempo3"> De 2 horas diárias ou mais</label>
+                                        <input type="radio" name="atvNovaTempo" id="atvNovaTempo3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="perg radio">
+                                <label>Período do dia:</label>
+                                <div>
+                                    <div>
+                                        <label for="atvNovaPer1">Manhã</label>
+                                        <input type="radio" name="atvNovaPer" id="atvNovaPer1">
+                                    </div>
+                                    <div>
+                                        <label for="atvNovaPer2">Tarde</label>
+                                        <input type="radio" name="atvNovaPer" id="atvNovaPer2">
+                                    </div>
+                                    <div>
+                                        <label for="atvNovaPer3">Noite</label>
+                                        <input type="radio" name="atvNovaPer" id="atvNovaPer3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="perg radio">
+                                <label>Intensidade da atividade:</label>
+                                <div>
+                                    <div>
+                                        <label for="atvNovaIntense1">Leve</label>
+                                        <input type="radio" name="atvNovaIntense" id="atvNovaIntense1">
+                                    </div>
+                                    <div>
+                                        <label for="atvNovaIntense2">Intermediária</label>
+                                        <input type="radio" name="atvNovaIntense" id="atvNovaIntense2">
+                                    </div>
+                                    <div>
+                                        <label for="atvNovaIntense3">Pesada</label>
+                                        <input type="radio" name="atvNovaIntense" id="atvNovaIntense3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="extra perg">
+                                <div>
+                                    <label for="infoExtra">Infomações extras que julga serem importantes:</label>
+                                    <textarea name="infoExtra" id="infoExtra" class="qualPerg"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="submit voltar">Voltar</div>
+                            <button class="submit">Enviar</button>
+                        </div>
+                        
+                    </fieldset>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="formulario.js"></script>
+</body>
+</html>
