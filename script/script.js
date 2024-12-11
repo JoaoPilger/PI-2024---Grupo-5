@@ -104,14 +104,15 @@ const button = document.getElementById("buttonAval")
 button.addEventListener("click", () =>{
   const modal = document.getElementById("modal")
   const darkground = document.getElementById("darkground")
-
   darkground.style.backgroundColor = "rgba(0, 0, 0, 0.4)"
-
+  
   modal.style.display = "flex"
   modal.style.position = "fixed"
   modal.style.top = "50%"
   modal.style.left = "50%"
   modal.style.transform = "translate(-50%,-50%)"
+
+
 })
 
 
@@ -122,7 +123,7 @@ const content = [
   { nome: 'Bruno Gelain', text: 'Estudante de 16 anos do Instituto Federal Catarinense Campus Concórdia,  no curso de informática. Responsável por esta seção "Sobre Nós" e pelo footer.', img: 'midia/integrantes/bruno.png' },
   { nome: 'Gabriel Jappe', text: 'Discente do IFC Campus Concórdia - Informática para a Internet. Ingressado em 1ª colocação à Instituição. Corretor ortográfico e desenvolvedor do projeto. Responsável pela escrita e correção dos textos do website, e encarregado da integração do sistema prescritor de treinos com a Inteligência Artificial.', img: 'midia/integrantes/jappe.jpg' },
   { nome: 'Carlos Mior', text: 'Texto Carlos', img: 'midia/integrantes/carlos.png' },
-  { nome: 'Murilo Jochkeck', text: 'Texto Murilo', img: 'midia/integrantes/murilo.png' }
+  { nome: 'Murilo Jochkeck', text: 'Sou discente no Instituto Federal Catarinense, Campus Concórdia, no curso técnico integrado em Informática para Internet, onde estou adquirindo uma base sólida de conhecimento em programação, desenvolvimento web e design de interfaces. Desde que comecei o curso, tive a oportunidade de aprender diversas linguagens de programação, como HTML, CSS, JavaScript, e também como aplicar essas ferramentas em projetos práticos.', img: 'midia/integrantes/murilo.png' }
 ];
 
 let currentIndex = 0;
