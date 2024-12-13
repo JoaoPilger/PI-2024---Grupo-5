@@ -293,6 +293,11 @@ button.addEventListener("click", () =>{
   const modal = document.getElementById("modal")
   const darkground = document.getElementById("darkground")
   darkground.style.backgroundColor = "rgba(0, 0, 0, 0.4)"
+  darkground.style.display = "flex"
+  document.body.style.overflow = "hidden";
+  document.getElementById("avaliacao").scrollIntoView();
+  
+
   
   modal.style.display = "flex"
   modal.style.position = "fixed"
