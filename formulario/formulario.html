@@ -223,32 +223,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="perg quais">
-                                <label for="qualMed">Qual(is)</label> <!-- string -->
-                                <input name="qualCirur" id="qualMed" class="qualPerg">
-                            </div>
-    
-                            <div class="perg radio">
-                                <label>Frequência:</label> <!-- bool (para cada um) -->
-                                <div>
-                                    <div>
-                                        <label for="medFre1">De 0 à 1 vez semanal</label>
-                                        <input type="radio" name="medFre" id="medFre1">
-                                    </div>
-                                    <div>
-                                        <label for="medFre2">De 2 à 3 vezes semanais</label>
-                                        <input type="radio" name="medFre" id="medFre2">
-                                    </div>
-                                    <div>
-                                        <label for="medFre3">De 4 à 5 vezes semanais</label>
-                                        <input type="radio" name="medFre" id="medFre3">
-                                    </div>
-                                    <div>
-                                        <label for="medFre4">De 6 à 7 vezes semanais</label>
-                                        <input type="radio" name="medFre" id="medFre4">
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="buttons">
                             <div class="submit voltar">Voltar</div>
@@ -417,18 +391,21 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="extra perg">
-                                <div>
-                                    <label for="infoExtra">Infomações extras que julga serem importantes:</label> <!-- string -->
-                                    <textarea name="infoExtra" id="infoExtra" class="qualPerg"></textarea>
-                                </div>
-                            </div>
                         </div>
                         <div class="buttons">
                             <div class="submit voltar">Voltar</div>
-                            <button class="submit">Enviar</button>
+                            <div class="submit passar">Próximo</div>
                         </div>
-                        
+
+                    </fieldset>
+                    <fieldset>
+                        <div class="perg extra">
+                            <div>
+                                <label for="infoExtra">Infomações extras que julga serem importantes:</label> <!-- string -->
+                                <textarea name="infoExtra" id="infoExtra" class="qualPerg"></textarea>
+                            </div>
+                        </div>
+                        <button class="submit">Enviar</button>
                     </fieldset>
                 </div>
             </div>
