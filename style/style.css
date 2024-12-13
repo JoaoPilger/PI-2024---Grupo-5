@@ -460,7 +460,7 @@ header > div {
     height: 100%;
     position: absolute;
 }
-
+    
 .botao_treino{
     background-color: var(--verde);
     text-decoration: none;
@@ -503,6 +503,16 @@ header > div {
     margin-top: 10px;
 }
 
+.overlaymodal{
+    left:0;
+    top:0;
+    width:100vw;
+    height:100vh;
+    display: none;
+    background-color: blue;
+    opacity:0.5;
+}
+
 .modal{
     background-image: linear-gradient(white, var(--verde));
     flex-direction: column;
@@ -513,6 +523,7 @@ header > div {
     border: 5px solid black;
     padding: 50px;
     display: none;
+    overflow-y: un;
 }
 .modal p{
     font-size: 24px;

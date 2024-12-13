@@ -21,3 +21,24 @@ for (let i = 0; i < voltar.length; i++) {
         
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const atvSim = document.getElementById("atvSim");
+    const atvNao = document.getElementById("atvNao");
+    const pergsSim = document.querySelector(".pergsSim");
+
+    // Esconde a div inicialmente
+    pergsSim.style.display = "none";
+
+    // Adiciona um event listener para quando o estado dos botões mudar
+    [atvSim, atvNao].forEach(radio => {
+        radio.addEventListener("change", () => {
+            if (atvSim.checked) {
+                pergsSim.style.display = "block"; // Mostra a div
+                pergsSim.style.height = "auto"
+            } else {
+                pergsSim.style.display = "none"; // Esconde a div
+            }
+        });
+    });
+});

@@ -101,6 +101,13 @@ form{
 .perg{
     width: 100%;
 }
+
+.pergsSim{
+    display: none;
+    height: 0;
+    transition: ease 0.5s;
+}
+
 input, textarea{
     background-color: rgb(230, 228, 228);
     padding: 10px 10px;
@@ -158,6 +165,9 @@ input[type="number"]::-webkit-inner-spin-button {
     gap: 50px;
 }
 
+.pergquais{
+    display: none;
+}
 .quais{
     display: flex;
     flex-direction: column;
