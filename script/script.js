@@ -312,7 +312,7 @@ button.addEventListener("click", () =>{
 // SOBRE NÓS
 const content = [
   { nome:'João Pilger', text: 'Texto Pilger', img: 'midia/integrantes/pilger.png' },
-  { nome: 'João Pramio', text: 'Estudante de 16 anos do Instituto Federal Catarinense Campus Concórdia,  no curso de informática. Responsável pelo boneco.', img: 'midia/integrantes/pramio.png' },
+  { nome: 'João Pramio', text: 'Sou estudante de 15 anos no Instituto Federal Catarinense Campus Concórdia, no curso de Informática. No momento, sou responsável por uma seção de um projeto que envolve o desenvolvimento de animações em sprites e trabalho no backend, criando o sistema. Entre minhas funções, destaco a criação de um boneco interativo que empurra uma caixa de informação, utilizando técnicas de animação e programação para oferecer uma experiência dinâmica e funcional.', img: 'midia/integrantes/pramio1.png' },
   { nome: 'Bruno Gelain', text: 'Estudante de 16 anos do Instituto Federal Catarinense Campus Concórdia,  no curso de informática. Responsável por esta seção "Sobre Nós" e pelo footer. Ao longo do curso desenvolvi habilidades diversas na área e estou sempre buscando aprender sobre novas ferramentas.', img: 'midia/integrantes/bruno.png' },
   { nome: 'Gabriel Jappe', text: 'Discente do IFC Campus Concórdia - Informática para a Internet. Ingressado em 1ª colocação à Instituição. Corretor ortográfico e desenvolvedor do projeto. Responsável pela escrita e correção dos textos do website, e encarregado da integração do sistema prescritor de treinos com a Inteligência Artificial.', img: 'midia/integrantes/jappe.jpg' },
   { nome: 'Carlos Mior', text: 'Texto Carlos', img: 'midia/integrantes/carlos.png' },
