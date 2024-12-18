@@ -294,20 +294,34 @@ button.addEventListener("click", () =>{
   const darkground = document.getElementById("darkground")
 
   darkground.style.backgroundColor = "rgba(0, 0, 0, 0.4)"
+  darkground.style.display = "flex"
+  document.body.style.overflow = "hidden";
+  document.getElementById("avaliacao").scrollIntoView();
+  
+
   
   modal.style.position = "fixed"
   modal.style.display = "flex"
   modal.style.top = "50%"
   modal.style.left = "50%"
   modal.style.transform = "translate(-50%,-50%)"
+
+  darkground.addEventListener("click", (event) => {
+    if (event.target === darkground) {
+      darkground.style.display = "none"; 
+      modal.style.display = "none"; 
+      document.body.style.overflow = "auto";
+    }
+  });
+  
 })
 
 
 // SOBRE NÓS
 const content = [
-  { nome:'João Pilger', text: 'Texto Pilger', img: 'midia/integrantes/pilger.png' },
-  { nome: 'João Pramio', text: 'Estudante de 16 anos do Instituto Federal Catarinense Campus Concórdia,  no curso de informática. Responsável pelo boneco.', img: 'midia/integrantes/pramio.png' },
-  { nome: 'Bruno Gelain', text: 'Estudante de 16 anos do Instituto Federal Catarinense Campus Concórdia,  no curso de informática. Responsável por esta seção "Sobre Nós" e pelo footer.', img: 'midia/integrantes/bruno.png' },
+  { nome:'João Pilger', text: 'Estudante de 16 anos do Intituto Federal Catarinense Campus Concórdia, no curso de informática para internet. Atuando como líder do grupo 5 durante o segundo semestre letivo. Resposável pela seção do carrossel de informações, estilização primária do formulário de avaliação e cooperando no desinvolvimento do sistema prescritor de treinos com Inteligência Artificial.', img: 'midia/integrantes/pilger.png' },
+  { nome: 'João Pramio', text: 'Sou estudante de 15 anos no Instituto Federal Catarinense Campus Concórdia, no curso de Informática. No momento, sou responsável por uma seção de um projeto que envolve o desenvolvimento de animações em sprites e trabalho no backend, criando o sistema. Entre minhas funções, destaco a criação de um boneco interativo que empurra uma caixa de informação, utilizando técnicas de animação e programação para oferecer uma experiência dinâmica e funcional.', img: 'midia/integrantes/pramio1.jpg' },
+  { nome: 'Bruno Gelain', text: 'Estudante de 16 anos do Instituto Federal Catarinense Campus Concórdia,  no curso de informática. Responsável por esta seção "Sobre Nós" e pelo footer. Ao longo do curso desenvolvi habilidades diversas na área e estou sempre buscando aprender sobre novas ferramentas.', img: 'midia/integrantes/bruno.png' },
   { nome: 'Gabriel Jappe', text: 'Discente do IFC Campus Concórdia - Informática para a Internet. Ingressado em 1ª colocação à Instituição. Corretor ortográfico e desenvolvedor do projeto. Responsável pela escrita e correção dos textos do website, e encarregado da integração do sistema prescritor de treinos com a Inteligência Artificial.', img: 'midia/integrantes/jappe.jpg' },
   { nome: 'Carlos Mior', text: 'Texto Carlos', img: 'midia/integrantes/carlos.png' },
   { nome: 'Murilo Jochkeck', text: 'Sou discente no Instituto Federal Catarinense, Campus Concórdia, no curso técnico integrado em Informática para Internet, onde estou adquirindo uma base sólida de conhecimento em programação, desenvolvimento web e design de interfaces. Desde que comecei o curso, tive a oportunidade de aprender diversas linguagens de programação, como HTML, CSS, JavaScript, e também como aplicar essas ferramentas em projetos práticos.', img: 'midia/integrantes/murilo.png' }
