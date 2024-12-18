@@ -172,7 +172,7 @@ header > div {
 
 .nuvens {
     position: relative;
-
+    transform: translateX(-500px);
 }
 
 .nuvens img {
@@ -187,7 +187,7 @@ header > div {
     opacity: 0;
 }
 #nuvem1.animate{
-    animation: movenuvem1 35s infinite;
+    animation: movenuvem1 30s infinite;
     opacity: 1;
 }
 #nuvem2 {
@@ -196,8 +196,9 @@ header > div {
     opacity: 0;
 }
 #nuvem2.animate{
-    animation: movenuvem2 35s infinite;
+    animation: movenuvem2 30s infinite;
     opacity: 1;
+    animation-delay: 0.4s;
 }
 #nuvem3 {
     bottom: -100px;
@@ -205,7 +206,8 @@ header > div {
     opacity: 0;
 }
 #nuvem3.animate{
-    animation: movenuvem3 35s infinite;
+    animation: movenuvem3 30s infinite;
+    animation-delay: 1s;
     opacity: 1;
 }
 #osdois{
@@ -262,7 +264,7 @@ header > div {
 
 @keyframes moveSprite {
     0% {
-        left: -80vw; 
+        left: -60vw; 
     }
     100% {
         left: 10vw;
@@ -270,28 +272,28 @@ header > div {
 }
 @keyframes movenuvem1 {
     0% {
-        transform: translateX(-100vw);
+        transform: translateX(-70vw);
     }
     100% {
-        transform: translateX(100vw); 
+        transform: translateX(150vw); 
     }
 }
 
 @keyframes movenuvem2 {
     0% {
-        transform: translateX(-100vw);
+        transform: translateX(-70vw);
     }
     100% {
-        transform: translateX(100vw);
+        transform: translateX(150vw);
     }
 }
 
 @keyframes movenuvem3 {
     0% {
-        transform: translateX(-100vw);
+        transform: translateX(-70vw);
     }
     100% {
-        transform: translateX(100vw);
+        transform: translateX(150vw);
     }
 }
 
