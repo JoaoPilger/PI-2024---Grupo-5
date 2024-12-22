@@ -9,7 +9,7 @@
 
   function changeBackground() {
 
-    carousel.style.backgroundImage = `url(midia/hero/${images[currentImage]})`;
+    carousel.style.backgroundImage = `url(static/images/hero/${images[currentImage]})`;
 
     currentImage = (currentImage + 1) % images.length;
   }
@@ -77,68 +77,68 @@
     const osdois = document.getElementById('osdois');
     const spriteElement = document.getElementById('sprite');
   const empurrandoFrames = [
-    './midia/empurrando/1.png',
-    './midia/empurrando/2.png',
-    './midia/empurrando/3.png',
-    './midia/empurrando/4.png',
-    './midia/empurrando/5.png',
-    './midia/empurrando/6.png',
-    './midia/empurrando/7.png',
-    './midia/empurrando/8.png',
-    './midia/empurrando/9.png',
-    './midia/empurrando/10.png',
-    './midia/empurrando/11.png',
-    './midia/empurrando/12.png',
-    './midia/empurrando/13.png',
-    './midia/empurrando/14.png',
-    './midia/empurrando/15.png',
-    './midia/empurrando/16.png',
-    './midia/empurrando/17.png',
-    './midia/empurrando/18.png',
-    './midia/empurrando/19.png',
-    './midia/empurrando/20.png',
-    './midia/empurrando/21.png',
-    './midia/empurrando/22.png',
-    './midia/empurrando/23.png',
-    './midia/empurrando/24.png',
-    './midia/empurrando/25.png',
-    './midia/empurrando/26.png',
-    './midia/empurrando/27.png',
-    './midia/empurrando/28.png',
-    './midia/empurrando/29.png',
-    './midia/empurrando/30.png',
-    './midia/empurrando/31.png',
-    './midia/empurrando/32.png',
+    '../static/images/empurrando/1.png',
+    '../static/images/empurrando/2.png',
+    '../static/images/empurrando/3.png',
+    '../static/images/empurrando/4.png',
+    '../static/images/empurrando/5.png',
+    '../static/images/empurrando/6.png',
+    '../static/images/empurrando/7.png',
+    '../static/images/empurrando/8.png',
+    '../static/images/empurrando/9.png',
+    '../static/images/empurrando/10.png',
+    '../static/images/empurrando/11.png',
+    '../static/images/empurrando/12.png',
+    '../static/images/empurrando/13.png',
+    '../static/images/empurrando/14.png',
+    '../static/images/empurrando/15.png',
+    '../static/images/empurrando/16.png',
+    '../static/images/empurrando/17.png',
+    '../static/images/empurrando/18.png',
+    '../static/images/empurrando/19.png',
+    '../static/images/empurrando/20.png',
+    '../static/images/empurrando/21.png',
+    '../static/images/empurrando/22.png',
+    '../static/images/empurrando/23.png',
+    '../static/images/empurrando/24.png',
+    '../static/images/empurrando/25.png',
+    '../static/images/empurrando/26.png',
+    '../static/images/empurrando/27.png',
+    '../static/images/empurrando/28.png',
+    '../static/images/empurrando/29.png',
+    '../static/images/empurrando/30.png',
+    '../static/images/empurrando/31.png',
+    '../static/images/empurrando/32.png',
 
   ];
 
   const doublebicepsFrames = [
-    './midia/doublebiceps/1.1.png',
-    './midia/doublebiceps/1.2.png',
-    './midia/doublebiceps/1.3.png',
-    './midia/doublebiceps/1.4.png',
-    './midia/doublebiceps/1.5.png',
-    './midia/doublebiceps/1.6.png',
-    './midia/doublebiceps/1.7.png',
-    './midia/doublebiceps/1.8.png',
-    './midia/doublebiceps/1.9.png',
-    './midia/doublebiceps/1.10.png',
-    './midia/doublebiceps/1.11.png',
-    './midia/doublebiceps/1.12.png',
-    './midia/doublebiceps/1.13.png',
-    './midia/doublebiceps/1.14.png',
-    './midia/doublebiceps/1.15.png',
-    './midia/doublebiceps/1.16.png',
-    './midia/doublebiceps/1.17.png',
-    './midia/doublebiceps/1.18.png',
-    './midia/doublebiceps/1.19.png',
-    './midia/doublebiceps/1.20.png',
+    '../static/images/doublebiceps/1.1.png',
+    '../static/images/doublebiceps/1.2.png',
+    '../static/images/doublebiceps/1.3.png',
+    '../static/images/doublebiceps/1.4.png',
+    '../static/images/doublebiceps/1.5.png',
+    '../static/images/doublebiceps/1.6.png',
+    '../static/images/doublebiceps/1.7.png',
+    '../static/images/doublebiceps/1.8.png',
+    '../static/images/doublebiceps/1.9.png',
+    '../static/images/doublebiceps/1.10.png',
+    '../static/images/doublebiceps/1.11.png',
+    '../static/images/doublebiceps/1.12.png',
+    '../static/images/doublebiceps/1.13.png',
+    '../static/images/doublebiceps/1.14.png',
+    '../static/images/doublebiceps/1.15.png',
+    '../static/images/doublebiceps/1.16.png',
+    '../static/images/doublebiceps/1.17.png',
+    '../static/images/doublebiceps/1.18.png',
+    '../static/images/doublebiceps/1.19.png',
+    '../static/images/doublebiceps/1.20.png',
 
   ];
 
   const descansarFrames = [
-    './midia/descansar/2.1.png',
-    './midia/descansar/2.2.png',
+    '../static/images/descansar/2.1.png',
+    '../static/images/descansar/2.2.png',
 
   ];
   let currentEmpurrandoFrame = 0;  
@@ -319,12 +319,12 @@ button.addEventListener("click", () =>{
 
 // SOBRE NÓS
 const content = [
-  { nome:'João Pilger', text: 'Estudante de 16 anos do Intituto Federal Catarinense Campus Concórdia, no curso de informática para internet. Atuando como líder do grupo 5 durante o segundo semestre letivo. Resposável pela seção do carrossel de informações, estilização primária do formulário de avaliação e cooperando no desinvolvimento do sistema prescritor de treinos com Inteligência Artificial.', img: 'midia/integrantes/pilger.png' },
-  { nome: 'João Pramio', text: 'Sou estudante de 15 anos no Instituto Federal Catarinense Campus Concórdia, no curso de Informática. No momento, sou responsável por uma seção de um projeto que envolve o desenvolvimento de animações em sprites e trabalho no backend, criando o sistema. Entre minhas funções, destaco a criação de um boneco interativo que empurra uma caixa de informação, utilizando técnicas de animação e programação para oferecer uma experiência dinâmica e funcional.', img: 'midia/integrantes/pramio1.jpg' },
-  { nome: 'Bruno Gelain', text: 'Estudante de 16 anos do Instituto Federal Catarinense Campus Concórdia,  no curso de informática. Responsável por esta seção "Sobre Nós" e pelo footer. Ao longo do curso desenvolvi habilidades diversas na área e estou sempre buscando aprender sobre novas ferramentas.', img: 'midia/integrantes/bruno.png' },
-  { nome: 'Gabriel Jappe', text: 'Discente do IFC Campus Concórdia - Informática para a Internet. Ingressado em 1ª colocação à Instituição. Corretor ortográfico e desenvolvedor do projeto. Responsável pela escrita e correção dos textos do website, e encarregado da integração do sistema prescritor de treinos com a Inteligência Artificial.', img: 'midia/integrantes/jappe.jpg' },
-  { nome: 'Carlos Mior', text: 'Estudante do Instituto Federal Catarinense Campus Concórdia - Curso Técnico Em Informática para a Internet, estou aprendendo sobre programação e sistemas de computadores, sempre atrás de uma oportunidade de me aprimorar. Desde meu ingresso no instituto, ganhei conhecimento em diversas áreas como a de criação de sites utilizando HTML, CSS e JavaScript, além da linguagem de programação Python.', img: 'midia/integrantes/carlos.png' },
-  { nome: 'Murilo Jochkeck', text: 'Sou discente no Instituto Federal Catarinense, Campus Concórdia, no curso técnico integrado em Informática para Internet, onde estou adquirindo uma base sólida de conhecimento em programação, desenvolvimento web e design de interfaces. Desde que comecei o curso, tive a oportunidade de aprender diversas linguagens de programação, como HTML, CSS, JavaScript, e também como aplicar essas ferramentas em projetos práticos.', img: 'midia/integrantes/murilo.png' }
+  { nome:'João Pilger', text: 'Estudante de 16 anos do Intituto Federal Catarinense Campus Concórdia, no curso de informática para internet. Atuando como líder do grupo 5 durante o segundo semestre letivo. Resposável pela seção do carrossel de informações, estilização primária do formulário de avaliação e cooperando no desinvolvimento do sistema prescritor de treinos com Inteligência Artificial.', img: '../static/images/integrantes/pilger.png' },
+  { nome: 'João Pramio', text: 'Sou estudante de 15 anos no Instituto Federal Catarinense Campus Concórdia, no curso de Informática. No momento, sou responsável por uma seção de um projeto que envolve o desenvolvimento de animações em sprites e trabalho no backend, criando o sistema. Entre minhas funções, destaco a criação de um boneco interativo que empurra uma caixa de informação, utilizando técnicas de animação e programação para oferecer uma experiência dinâmica e funcional.', img: '../static/images/integrantes/pramio1.jpg' },
+  { nome: 'Bruno Gelain', text: 'Estudante de 16 anos do Instituto Federal Catarinense Campus Concórdia,  no curso de informática. Responsável por esta seção "Sobre Nós" e pelo footer. Ao longo do curso desenvolvi habilidades diversas na área e estou sempre buscando aprender sobre novas ferramentas.', img: '../static/images/integrantes/bruno.png' },
+  { nome: 'Gabriel Jappe', text: 'Discente do IFC Campus Concórdia - Informática para a Internet. Ingressado em 1ª colocação à Instituição. Corretor ortográfico e desenvolvedor do projeto. Responsável pela escrita e correção dos textos do website, e encarregado da integração do sistema prescritor de treinos com a Inteligência Artificial.', img: '../static/images/integrantes/jappe.jpg' },
+  { nome: 'Carlos Mior', text: 'Estudante do Instituto Federal Catarinense Campus Concórdia - Curso Técnico Em Informática para a Internet, estou aprendendo sobre programação e sistemas de computadores, sempre atrás de uma oportunidade de me aprimorar. Desde meu ingresso no instituto, ganhei conhecimento em diversas áreas como a de criação de sites utilizando HTML, CSS e JavaScript, além da linguagem de programação Python.', img: '../static/images/integrantes/carlos.png' },
+  { nome: 'Murilo Jochkeck', text: 'Sou discente no Instituto Federal Catarinense, Campus Concórdia, no curso técnico integrado em Informática para Internet, onde estou adquirindo uma base sólida de conhecimento em programação, desenvolvimento web e design de interfaces. Desde que comecei o curso, tive a oportunidade de aprender diversas linguagens de programação, como HTML, CSS, JavaScript, e também como aplicar essas ferramentas em projetos práticos.', img: '../static/images/integrantes/murilo.png' }
 ];
 
   let currentIndex = 0;

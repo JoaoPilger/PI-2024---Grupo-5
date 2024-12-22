@@ -1,0 +1,3 @@
+@echo off 
+echo Desinstalando...
+pip uninstall -y -r requirements.txt > uninstallLog.log 2>&1
