@@ -78,5 +78,5 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](./LI
 
 ## **Contribuidores**
 <a href="https://github.com/JoaoPilger/PI-2024-Grupo-5/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=JoaoPilger/PI-2024-Grupo-5&nocache=true" />
+  <img src="./flask/static/images/contrib_banner.png" />
 </a>
