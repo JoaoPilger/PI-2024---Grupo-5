@@ -1,4 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify
+import os
+import json
 
 def rgb_text(r, g, b, text):
     return f"\033[38;2;{r};{g};{b}m{text}\033[0m"
@@ -38,10 +40,37 @@ print(rgb_text(255, 255, 255,'''
 def home():
     return render_template('index.html')
 
+
+
 @app.route('/avaliacao')
 def avaliacao():
     return render_template('formulario/formulario.html')
 
-# Inicia o servidor Flask se este arquivo for executado diretamente
+json_path = os.path.join(os.getcwd(), 'flask', 'sistema', 'data.json')
+@app.route('/save_data', methods=['POST'])
+def save_data():
+    try:
+        # pega os dados do formulário em formato de JSON
+        data = request.get_json()
+
+        # Confere se o arquivo JSON já existe
+        if not os.path.exists(json_path):
+            # Se não, cria um novo arquivo com um objeto vazio
+            with open(json_path, 'w') as f:
+                json.dump({}, f)
+
+        # Salva os dados atualizados no arquivo JSON, sobrescrevendo qualquer uso anterior
+        with open(json_path, 'w') as f:
+            json.dump(data, f, indent=2)
+
+        # Retorna uma resposta JSON
+        return jsonify({'status': 'success', 'message': 'Dados salvos com sucesso!'})
+
+    except Exception as e:
+        return jsonify({'status': 'error', 'message': str(e)})
+    
+
+
+# Inicia o servidor Flask
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=False)

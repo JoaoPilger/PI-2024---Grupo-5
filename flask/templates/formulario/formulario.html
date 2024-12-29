@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/formulario/formulario.css">
+    <link rel="stylesheet" href="../../static/css/formulario/formulario.css">
     <title>Formulário</title>
 </head>
 <body>
     <section class="container formulario">
-        <form action="/submit" method="POST" class="form">
+        <form action="/submit" method="POST" class="form" id="myForm">
             <div class="slider" id="slider">
                 <div id="slide">
                     <fieldset class="info basico">
@@ -60,11 +60,11 @@
                                 <div>
                                     <div>
                                         <label for="atvSim">Sim</label>
-                                        <input type="radio" id="atvSim" name="atvReg" value="sim" required>
+                                        <input type="radio" id="atvSim" name="atividadeRegular" value="sim" required>
                                     </div>
                                     <div>
                                         <label for="atvNao">Não</label>
-                                        <input type="radio" id="atvNao" name="atvReg" value="nao" required>
+                                        <input type="radio" id="atvNao" name="atividadeRegular" value="nao" required>
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +72,7 @@
                         <div class="pergsSim" onclick="pergsSim">     
                             <div class="perg quais">
                                 <label for="atvQual">Qual(is):</label> <!-- string -->
-                                <textarea name="atvQuais" id="atvQual" class="qualPerg"></textarea>
+                                <textarea name="atividadeQuais" id="atvQual" class="qualPerg"></textarea>
                             </div>
     
                             <div class="perg radio">
@@ -81,15 +81,15 @@
                                 <div>
                                     <div>
                                         <label for="atv1">De 1 a 3 vezes</label>
-                                        <input type="radio" name="atvFrequencia" id="atv1" value="1-3 vezes">
+                                        <input type="radio" name="atividadeFrequencia" id="atv1" value="1-3 vezes">
                                     </div>
                                     <div>
                                         <label for="atv2">De 3 a 5 vezes</label>
-                                        <input type="radio" name="atvFrequencia" id="atv2" value="3-5 vezes">
+                                        <input type="radio" name="atividadeFrequencia" id="atv2" value="3-5 vezes">
                                     </div>
                                     <div>
                                         <label for="atv3">De 5 a 7 vezes</label>
-                                        <input type="radio" name="atvFrequencia" id="atv3" value="5-7 vezes">
+                                        <input type="radio" name="atividadeFrequencia" id="atv3" value="5-7 vezes">
                                     </div>
                                 </div>
                                 
@@ -101,15 +101,15 @@
                                 <div>
                                     <div>
                                         <label for="dur1">De 0 a 1 hora</label>
-                                        <input type="radio" name="atvDur" id="dur1" value="0-1 horas">
+                                        <input type="radio" name="atividadeDuracao" id="dur1" value="0-1 horas">
                                     </div>
                                     <div>
                                         <label for="dur2">De 1 a 2 horas</label>
-                                        <input type="radio" name="atvDur" id="dur2" value="1-2 horas">
+                                        <input type="radio" name="atividadeDuracao" id="dur2" value="1-2 horas">
                                     </div>
                                     <div>
                                         <label for="dur3">Mais de 2 horas</label>
-                                        <input type="radio" name="atvDur" id="dur3" value="2+ horas">
+                                        <input type="radio" name="atividadeDuracao" id="dur3" value="2+ horas">
                                     </div>
                                 </div>
                         </div>
@@ -120,7 +120,7 @@
                                 <div>
                                     <div>
                                         <label for="sono1">De 4 horas ou menos</label>
-                                    <input type="radio" name="sono" id="sono1" value="4- horas" required>
+                                    <input type="radio" name="sono" id="sono1" value="-4 horas" required>
                                     </div>
                                     <div>
                                         <label for="sono2">De 5 horas à 8 horas</label>
@@ -167,18 +167,18 @@
                                 <div>
                                     <div>
                                         <label for="simDefic">Sim</label>
-                                        <input type="radio" name="defic" id="simDefic" value="sim" required>
+                                        <input type="radio" name="deficiencia" id="simDefic" value="sim" required>
                                     </div>
                                     <div>
                                         <label for="naoDefic">Não</label>
-                                        <input type="radio" name="defic" id="naoDefic" value="nao" required>
+                                        <input type="radio" name="deficiencia" id="naoDefic" value="nao" required>
                                     </div>
                                 </div>
                             </div>
                                 <div class="pergSimDefi">
                                     <div class="pergquais">
                                         <label for="qualDefic">Qual(is)</label>
-                                        <input name="qualDefic" id="qualDefic" class="qualPerg">
+                                        <input name="qualDeficiencia" id="qualDefic" class="qualPerg">
                                     </div>
                                 </div>
                         </div>
@@ -197,18 +197,18 @@
                                 <div>
                                     <div>
                                         <label for="cirurSim">Sim</label>
-                                        <input type="radio" name="cirur" id="cirurSim" value="sim">
+                                        <input type="radio" name="cirurgia" id="cirurSim" value="sim">
                                     </div>
                                     <div>
                                         <label for="cirurNao">Não</label>
-                                        <input type="radio" name="cirur" id="cirurNao" value="nao">
+                                        <input type="radio" name="cirurgia" id="cirurNao" value="nao">
                                     </div>
                                 </div>
                             </div> 
                             <div class="pergSimCirur">     
                                 <div class="perg quais">
-                                    <label for="qualCirur">Qual(is)</label> <!-- string -->
-                                    <input name="qualCirur" id="qualCirur" class="qualPerg">
+                                    <label for="qualCirurgia">Qual(is)</label> <!-- string -->
+                                    <input name="qualCirurgia" id="qualCirurgia" class="qualPerg">
                                 </div>
                             </div>
                         </div>
@@ -218,11 +218,11 @@
                                 <div>
                                     <div>
                                         <label for="medSim">Sim</label>
-                                        <input type="radio" name="med" id="medSim" value="sim">
+                                        <input type="radio" name="medicamento" id="medSim" value="sim">
                                     </div>
                                     <div>
                                         <label for="medNao">Não</label>
-                                        <input type="radio" name="med" id="medNao" value="nao">
+                                        <input type="radio" name="medicamento" id="medNao" value="nao">
                                     </div>
                                 </div>
                             </div>
@@ -240,11 +240,11 @@
                                 <div>
                                     <div>
                                         <label for="bebidaSim">Sim</label>
-                                        <input type="radio" name="bebida" id="bebidaSim" value="sim">
+                                        <input type="radio" name="alcool" id="bebidaSim" value="sim">
                                     </div>
                                     <div>
                                         <label for="bebidaNao">Não</label>
-                                        <input type="radio" name="bebida" id="bebidaNao" value="nao">
+                                        <input type="radio" name="alcool" id="bebidaNao" value="nao">
                                     </div>
                                 </div>
                             </div>
@@ -254,19 +254,19 @@
                                 <div>
                                     <div>
                                         <label for="bebidaFre1">De 0 à 1 vez semanal</label>
-                                        <input type="radio" name="bebidaFre" id="bebidaFre1" value="0-1 semanal">
+                                        <input type="radio" name="alcoolFrequencia" id="bebidaFre1" value="0-1 semanal">
                                     </div>
                                     <div>
                                         <label for="bebidaFre2">De 2 à 3 vezes semanais</label>
-                                    <input type="radio" name="bebidaFre" id="bebidaFre2" value="2-3 semanal">
+                                    <input type="radio" name="alcoolFrequencia" id="bebidaFre2" value="2-3 semanal">
                                     </div>
                                     <div>
                                         <label for="bebidaFre3">De 4 à 5 vezes semanais</label>
-                                        <input type="radio" name="bebidaFre" id="bebidaFre3" value="4-5 semanal">
+                                        <input type="radio" name="alcoolFrequencia" id="bebidaFre3" value="4-5 semanal">
                                     </div>
                                     <div>
                                         <label for="bebidaFre4">De 6 à 7 vezes semanais</label>
-                                        <input type="radio" name="bebidaFre" id="bebidaFre4" value="6-7 semanal">
+                                        <input type="radio" name="alcoolFrequencia" id="bebidaFre4" value="6-7 semanal">
                                     </div>
                                 </div>
                             </div>    
@@ -292,19 +292,19 @@
                                 <div>
                                     <div>
                                         <label for="fumoFre1">De 0 à 1 vez semanal</label>
-                                        <input type="radio" name="bebidaFre" id="fumoFre1" value="0-1 semanal">
+                                        <input type="radio" name="fumoFrequencia" id="fumoFre1" value="0-1 semanal">
                                     </div>
                                     <div>
                                         <label for="fumoFre2">De 2 à 3 vezes semanais</label>
-                                        <input type="radio" name="bebidaFre" id="fumoFre2" value="2-3 semanal">
+                                        <input type="radio" name="fumoFrequencia" id="fumoFre2" value="2-3 semanal">
                                     </div>
                                     <div>
                                         <label for="fumoFre3">De 4 à 5 vezes semanais</label>
-                                        <input type="radio" name="bebidaFre" id="fumoFre3" value="4-5 semanal">
+                                        <input type="radio" name="fumoFrequencia" id="fumoFre3" value="4-5 semanal">
                                     </div>
                                     <div>
                                         <label for="fumoFre4">De 6 à 7 vezes semanais</label>
-                                        <input type="radio" name="bebidaFre" id="fumoFre4" value="6-7 semanal">
+                                        <input type="radio" name="fumoFrequencia" id="fumoFre4" value="6-7 semanal">
                                     </div>
                                 </div>
                             </div>
@@ -325,19 +325,19 @@
                                     <div>
                                         <div>
                                             <label for="atvNovaFre1">De 0 à 1 vez</label>
-                                            <input type="radio" name="atvNovaFre" id="atvNovaFre1" value="0-1 dias">
+                                            <input type="radio" name="atividadeNovaFrequencia" id="atvNovaFre1" value="0-1 dias">
                                         </div>
                                         <div>
                                             <label for="atvNovaFre2">De 2 à 3 vezes</label>
-                                            <input type="radio" name="atvNovaFre" id="atvNovaFre2" value="2-3 dias">
+                                            <input type="radio" name="atividadeNovaFrequencia" id="atvNovaFre2" value="2-3 dias">
                                         </div>
                                         <div>
                                             <label for="atvNovaFre3">De 4 à 5 vezes</label>
-                                            <input type="radio" name="atvNovaFre" id="atvNovaFre3" value="4-5 dias">
+                                            <input type="radio" name="atividadeNovaFrequencia" id="atvNovaFre3" value="4-5 dias">
                                         </div>
                                         <div>
                                             <label for="atvNovaFre4">De 6 à 7 vezes</label>
-                                            <input type="radio" name="atvNovaFre" id="atvNovaFre4" value="6-7 dias">
+                                            <input type="radio" name="atividadeNovaFrequencia" id="atvNovaFre4" value="6-7 dias">
                                         </div>
                                     </div>
                             </div>
@@ -346,19 +346,19 @@
                                 <div>
                                     <div>
                                         <label for="atvNovaTempo1">De 0 à 30 minutos diários</label>
-                                        <input type="radio" name="atvNovaTempo" id="atvNovaTempo1" value="0-30mins">
+                                        <input type="radio" name="atividadeNovaTempo" id="atvNovaTempo1" value="0-30mins">
                                     </div>
                                     <div>
                                         <label for="atvNovaTempo1">De 30 minutos à 1 hora diária</label>
-                                        <input type="radio" name="atvNovaTempo" id="atvNovaTempo2" value="30min-1hora">
+                                        <input type="radio" name="atividadeNovaTempo" id="atvNovaTempo2" value="30min-1hora">
                                     </div>
                                     <div>
                                         <label for="atvNovaTempo2">De 1 hora à 1 hora e meia diária</label>
-                                        <input type="radio" name="atvNovaTempo" id="atvNovaTempo3" value="1hora-1hora e meia">
+                                        <input type="radio" name="atividadeNovaTempo" id="atvNovaTempo3" value="1hora-1hora e meia">
                                     </div>
                                     <div>
                                         <label for="atvNovaTempo3"> De 2 horas diárias ou mais</label>
-                                        <input type="radio" name="atvNovaTempo" id="atvNovaTempo4" value="2+horas">
+                                        <input type="radio" name="atividadeNovaTempo" id="atvNovaTempo4" value="2+horas">
                                     </div>
                                 </div>
                             </div>
@@ -367,15 +367,15 @@
                                 <div>
                                     <div>
                                         <label for="atvNovaPer1">Manhã</label>
-                                        <input type="radio" name="atvNovaPer" id="atvNovaPer1" value="manha">
+                                        <input type="radio" name="atividadeNovaPeriodo" id="atvNovaPer1" value="manha">
                                     </div>
                                     <div>
                                         <label for="atvNovaPer2">Tarde</label>
-                                        <input type="radio" name="atvNovaPer" id="atvNovaPer2" value="tarde">
+                                        <input type="radio" name="atividadeNovaPeriodo" id="atvNovaPer2" value="tarde">
                                     </div>
                                     <div>
                                         <label for="atvNovaPer3">Noite</label>
-                                        <input type="radio" name="atvNovaPer" id="atvNovaPer3" value="noite">
+                                        <input type="radio" name="atividadeNovaPeriodo" id="atvNovaPer3" value="noite">
                                     </div>
                                 </div>
                             </div>
@@ -384,15 +384,15 @@
                                 <div>
                                     <div>
                                         <label for="atvNovaIntense1">Leve</label>
-                                        <input type="radio" name="atvNovaIntense" id="atvNovaIntense1" value="leve">
+                                        <input type="radio" name="atividadeNovaIntensidade" id="atvNovaIntense1" value="leve">
                                     </div>
                                     <div>
                                         <label for="atvNovaIntense2">Intermediária</label>
-                                        <input type="radio" name="atvNovaIntense" id="atvNovaIntense2" value="intermediaria">
+                                        <input type="radio" name="atividadeNovaIntensidade" id="atvNovaIntense2" value="intermediaria">
                                     </div>
                                     <div>
                                         <label for="atvNovaIntense3">Pesada</label>
-                                        <input type="radio" name="atvNovaIntense" id="atvNovaIntense3" value="pesada">
+                                        <input type="radio" name="atividadeNovaIntensidade" id="atvNovaIntense3" value="pesada">
                                     </div>
                                 </div>
                             </div>
@@ -410,12 +410,12 @@
                                 <textarea name="infoExtra" id="infoExtra" class="qualPerg"></textarea>
                             </div>
                         </div>
-                        <button class="submit">Enviar</button>
+                        <button class="submit" type="submit" id="btnSubmit">Enviar</button>
                     </fieldset>
                 </div>
             </div>
         </form>
     </section>
-    <script src="/js/formulario.js"></script>
+    <script src="../../static/js/formulario.js"></script>
 </body>
 </html>

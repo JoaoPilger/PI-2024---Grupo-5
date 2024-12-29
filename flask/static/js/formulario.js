@@ -1,6 +1,7 @@
 const passar = document.getElementsByClassName("passar");
 const voltar = document.getElementsByClassName("voltar");
 const slider = document.getElementById("slide");
+const submitButton = document.getElementById("btnSubmit");
 
 // // // Passar a seção do questionário // // //
 for (let i = 1; i < passar.length + 1; i++) {
@@ -141,4 +142,25 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+});
+
+// // // Lógica para o botão Enviar // // //
+submitButton.addEventListener("click", function() {
+    // Coleta os dados do formulário (presumindo que os dados estão em inputs de tipo text, number, etc.)
+    const formData = new FormData(document.querySelector("form"));
+    const data = {};
+
+    formData.forEach((value, key) => {
+        data[key] = value;
+    });
+
+    // envia os dados pro flask
+    fetch('/save_data', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),  // Envia os dados como JSON
+    })
+    .then(response => response.json())
 });
