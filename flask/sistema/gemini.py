@@ -17,7 +17,7 @@ with open('./flask/sistema/documentos.txt', 'r', encoding='utf-8') as arquivo:
 with open('./flask/sistema/data.json', 'r', encoding='utf-8') as formulario:
     form = formulario.read()
 
-prompt = f"Dê uma ideia de um breve treino depois de ler o seguinte conteúdo: {conteudo}\n\nE tenha em mente as seguintes informações do usuário fictício, lembre-se também que ele possui atestado médico para poder realizar exercícios: {form}. Trate o usuário como se estivesse falando diretamente com ele."
+prompt = f"Dê uma ideia de um breve treino depois de ler o seguinte conteúdo: {conteudo}\n\nE tenha em mente as seguintes informações do usuário fictício, lembre-se também que ele possui atestado médico para poder realizar exercícios: {form}. Trate o usuário como se estivesse falando diretamente com ele. SEMPRE exiba o fato de que você é apenas umas inteligência artificial, e não substitui um profissional da área."
 print("Carregando... Isso pode levar alguns segundos.")
 response = model.generate_content(prompt)
 resultado = response.text
@@ -33,3 +33,5 @@ path = os.path.join(os.getcwd(), 'flask', 'sistema', 'respostaIA.json')
 # Cria o dados.json com a resposta da IA
 with open(path, 'w', encoding='utf-8') as arquivo:
     json.dump(treino, arquivo, indent=4, ensure_ascii=False)
+
+print("Seu resultado está pronto!")

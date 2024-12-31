@@ -155,7 +155,7 @@ submitButton.addEventListener("click", function() {
     });
 
     // envia os dados pro flask
-    fetch('http://localhost:5000/save_data', {
+    fetch('http://127.0.0.1:5000/save_data', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
