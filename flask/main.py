@@ -1,6 +1,7 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_from_directory
 import os
 import json
+import subprocess
 
 def rgb_text(r, g, b, text):
     return f"\033[38;2;{r};{g};{b}m{text}\033[0m"
@@ -46,11 +47,28 @@ def home():
 def avaliacao():
     return render_template('formulario/formulario.html')
 
+@app.route('/dados')
+def dados():
+    base_dir = 'flask/sistema'
+    caminho_json = os.path.join(base_dir, 'respostaIA.json')
+
+    with open(caminho_json, 'r', encoding='utf-8') as f:
+        dados = json.load(f)  # Carrega os dados do JSON
+    return jsonify(dados)
+
+@app.route('/resultado')
+def resultado():
+    gemini = "flask/sistema/gemini.py"
+    subprocess.Popen(["python", gemini])
+
+    return render_template('resultado/resultado.html')
+
 json_path = os.path.join(os.getcwd(), 'flask', 'sistema', 'data.json')
+
 @app.route('/save_data', methods=['POST'])
 def save_data():
     try:
-        # pega os dados do formulário em formato de JSON
+        # Pega os dados do formulário em formato de JSON
         data = request.get_json()
 
         # Confere se o arquivo JSON já existe
