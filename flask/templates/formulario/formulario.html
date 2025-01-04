@@ -40,12 +40,12 @@
                             
                             <div class="perg">
                                 <label for="peso">Peso</label> <!-- float -->
-                                <input type="number" id="peso" name="peso" required>
+                                <input type="number" id="peso" name="peso" placeholder="78,4" required>
                             </div>
             
                             <div class="perg">
                                 <label for="altura">Altura</label> <!-- float -->
-                                <input type="number" id="altura" name="altura" required>
+                                <input type="number" id="altura" name="altura" placeholder="1,75" required>
                             </div>
                         </div>
                         <div class="submit passar">Próximo</div>
@@ -72,7 +72,7 @@
                         <div class="pergsSim" onclick="pergsSim">     
                             <div class="perg quais">
                                 <label for="atvQual">Qual(is):</label> <!-- string -->
-                                <textarea name="atividadeQuais" id="atvQual" class="qualPerg"></textarea>
+                                <textarea name="atividadeQuais" id="atvQual" placeholder="Caminhada, futebol..." class="qualPerg"></textarea>
                             </div>
     
                             <div class="perg radio">
@@ -158,7 +158,7 @@
                             <div class="pergSimDoe">
                                 <div class="pergquais" onclick="pergSimDoe">
                                     <label for="qualDoenca">Qual(is)</label>
-                                    <input name="qualDoenca" id="qualDoenca" class="qualPerg">
+                                    <input name="qualDoenca" id="qualDoenca" placeholder="Arritmia, paralisia dos membros inferiores..." class="qualPerg">
                                 </div>
                             </div>
                         <div class="pergs">
@@ -178,7 +178,7 @@
                                 <div class="pergSimDefi">
                                     <div class="pergquais">
                                         <label for="qualDefic">Qual(is)</label>
-                                        <input name="qualDeficiencia" id="qualDefic" class="qualPerg">
+                                        <input name="qualDeficiencia" id="qualDefic" placeholder="Amputação transtibial, distrofia muscular..." class="qualPerg">
                                     </div>
                                 </div>
                         </div>
@@ -212,10 +212,10 @@
                             <div class="pergSimCirur">     
                                 <div class="perg quais">
                                     <label for="qualCirurgia">Qual(is)</label> <!-- string -->
-                                    <input name="qualCirurgia" id="qualCirurgia" class="qualPerg">
+                                    <input name="qualCirurgia" placeholder="Reconstrução mamária, bariátrica, prótese..." id="qualCirurgia" class="qualPerg">
                                 </div>
                                 <div class="perg quais">
-                                    <label for="tempoCirur">A quanto tempo foi realizado a cirurgia?</label>
+                                    <label for="tempoCirur">Há quanto que tempo foi realizada a cirurgia?</label>
                                     <div>
                                         <div>
                                             <label for="cirur1">Menos de 1 mês</label>
@@ -244,7 +244,7 @@
                                 <div class="perg quais">
                                     <label for="cirurRest">Há alguma restrição? Se sim, qual?</label>
                                     <div>
-                                        <input name="qualCirurgia" id="qualCirurgia" class="qualPerg">
+                                        <input name="qualCirurgia" id="qualCirurgia" placeholder="Prática anaeróbica..." class="qualPerg">
                                     </div>
                                 </div>
                                 <div class="perg quais">
@@ -289,7 +289,7 @@
                             <div class="pergSimMed">
                                 <div class="perg quais">
                                     <label for="qualMed">Qual(is)</label> <!-- string -->
-                                    <input name="qualCirur" id="qualMed" class="qualPerg">
+                                    <input name="qualCirur" id="qualMed" placeholder="Propranolol, fluoxetina, progesterona..." class="qualPerg">
                                 </div>
                             <div class="perg radio">
                                 <label>Frequência:</label> <!-- bool (para cada um) -->
@@ -404,7 +404,7 @@
     
                     <!-- Informações sobre nova atividades -->
                     <fieldset class="info novaAtv">
-                        <h1>Tempo e Intensidade da atividade</h1>
+                        <h1>Disponibilidade e Intensidade da atividade</h1>
                         <div class="pergs">
                             <div class="perg radio">
                                 <label>Frequência semanal:</label> <!-- bool (para cada um) -->
@@ -493,7 +493,7 @@
                         <div class="perg extra">
                             <div>
                                 <label for="infoExtra">Infomações extras que julga serem importantes:</label> <!-- string -->
-                                <textarea name="infoExtra" id="infoExtra" class="qualPerg"></textarea>
+                                <textarea name="infoExtra" id="infoExtra" placeholder="Calo no pé, restrição médica temporária, dificuldade em correr continuamente..." class="qualPerg"></textarea>
                             </div>
                         </div>
                         <button class="submit" type="submit" id="btnSubmit">Enviar</button>
