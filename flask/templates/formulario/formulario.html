@@ -196,12 +196,16 @@
                                 <label>Fez ou fará cirurgia?</label> <!-- bool -->
                                 <div>
                                     <div>
-                                        <label for="cirurSim">Sim</label>
+                                        <label for="cirurSim">Já fiz</label>
                                         <input type="radio" name="cirurgia" id="cirurSim" value="sim">
                                     </div>
                                     <div>
                                         <label for="cirurNao">Não</label>
                                         <input type="radio" name="cirurgia" id="cirurNao" value="nao">
+                                    </div>
+                                    <div>
+                                        <label for="cirurFazer">Irei fazer</label>
+                                        <input type="radio" name="cirurgia" id="cirurFazer" value="fazer">
                                     </div>
                                 </div>
                             </div>
@@ -215,26 +219,56 @@
                                     <div>
                                         <div>
                                             <label for="cirur1">Menos de 1 mês</label>
-                                            <input type="radio" name="cirur1" id="cirur1">
+                                            <input type="radio" name="cirur" id="cirur1">
                                         </div>
                                         <div>
                                             <label for="cirur2">1 a 3 meses</label>
-                                            <input type="radio" name="cirur2" id="cirur2">
+                                            <input type="radio" name="cirur" id="cirur2">
                                         </div>
                                         <div>
                                             <label for="cirur3">3 meses a 6 meses</label>
-                                            <input type="radio" name="cirur3" id="cirur3">
+                                            <input type="radio" name="cirur" id="cirur3">
                                         </div>
                                         <div>
                                             <label for="cirur4">6 meses a 1 ano</label>
-                                            <input type="radio" name="cirur4" id="cirur4">
+                                            <input type="radio" name="cirur" id="cirur4">
                                         </div>
                                         <div>
                                             <label for="cirur5">Mais de 1 ano</label>
-                                            <input type="radio" name="cirur5" id="cirur5">
+                                            <input type="radio" name="cirur" id="cirur5">
                                         </div>
                                     </div>
-
+                                </div>
+                            </div>
+                            <div class="pergFazerCirur">
+                                <div class="perg quais">
+                                    <label for="cirurRest">Há alguma restrição? Se sim, qual?</label>
+                                    <div>
+                                        <input name="qualCirurgia" id="qualCirurgia" class="qualPerg">
+                                    </div>
+                                </div>
+                                <div class="perg quais">
+                                    <label for="cirurTempo">Tempo até a realização da cirurgia?</label>
+                                    <div>
+                                        <label for="cirurtemp1">Menos de 1 mês</label>
+                                        <input type="radio" name="cirurtemp" id="">
+                                    </div>
+                                    <div>
+                                        <label for="cirurtemp2">1 a 3 meses</label>
+                                        <input type="radio" name="cirurtemp" id="">
+                                    </div>
+                                    <div>
+                                        <label for="cirurtemp3">3 a 6 meses</label>
+                                        <input type="radio" name="cirurtemp" id="">
+                                    </div>
+                                    <div>
+                                        <label for="cirurtemp1">6 meses a 1 ano</label>
+                                        <input type="radio" name="cirurtemp" id="">
+                                    </div>
+                                    <div>
+                                        <label for="cirurtemp1">Mais de 1 ano</label>
+                                        <input type="radio" name="cirurtemp" id="">
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -79,15 +79,23 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     const cirurSim = document.getElementById("cirurSim");
     const cirurNao = document.getElementById("cirurNao");
+    const cirurFazer = document.getElementById("cirurFazer")
+    const pergFazerCirur = document.querySelector(".pergFazerCirur");
     const pergSimCirur = document.querySelector(".pergSimCirur");
 
-    [cirurSim, cirurNao].forEach(radio => {
+    [cirurSim, cirurNao, cirurFazer].forEach(radio => {
         radio.addEventListener("change", () => {
             if (cirurSim.checked) {
                 pergSimCirur.style.display = "block"; 
                 pergSimCirur.style.height = "auto"
-            } else {
+            } else if (cirurFazer.checked) {
+                pergFazerCirur.style.display = "block"; 
+                pergFazerCirur.style.height = "auto"
+                pergSimCirur.style.display = "none"
+            }
+            else {
                 pergSimCirur.style.display = "none"; 
+                pergFazerCirur.style.display = "none"
             }
         });
     });
@@ -143,6 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
 
 
 // // // Lógica para o botão Enviar // // //
