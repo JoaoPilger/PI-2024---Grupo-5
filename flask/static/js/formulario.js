@@ -144,6 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
 // // // Lógica para o botão Enviar // // //
 submitButton.addEventListener("click", function() {
     // Coleta os dados do formulário (presumindo que os dados estão em inputs de tipo text, number, etc.)

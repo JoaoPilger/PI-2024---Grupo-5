@@ -204,11 +204,33 @@
                                         <input type="radio" name="cirurgia" id="cirurNao" value="nao">
                                     </div>
                                 </div>
-                            </div> 
+                            </div>
                             <div class="pergSimCirur">     
                                 <div class="perg quais">
                                     <label for="qualCirurgia">Qual(is)</label> <!-- string -->
                                     <input name="qualCirurgia" id="qualCirurgia" class="qualPerg">
+                                </div>
+                                <div class="perg quais">
+                                    <label for="tempoCirur">A quanto tempo foi realizado a cirurgia?</label>
+                                    <div>
+                                        <div>
+                                            <label for="cirur1">Menos de 1 mês</label>
+                                            <input type="radio" name="cirur1" id="cirur1">
+                                        </div>
+                                        <div>
+                                            <label for="cirur2">1 a 6 meses</label>
+                                            <input type="radio" name="cirur2" id="cirur2">
+                                        </div>
+                                        <div>
+                                            <label for="cirur3">6 meses a 1 ano</label>
+                                            <input type="radio" name="cirur3" id="cirur3">
+                                        </div>
+                                        <div>
+                                            <label for="cirur4">Mais de 1 ano</label>
+                                            <input type="radio" name="cirur4" id="cirur4">
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -223,6 +245,32 @@
                                     <div>
                                         <label for="medNao">Não</label>
                                         <input type="radio" name="medicamento" id="medNao" value="nao">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pergSimMed">
+                                <div class="perg quais">
+                                    <label for="qualMed">Qual(is)</label> <!-- string -->
+                                    <input name="qualCirur" id="qualMed" class="qualPerg">
+                                </div>
+                            <div class="perg radio">
+                                <label>Frequência:</label> <!-- bool (para cada um) -->
+                                <div>
+                                    <div>
+                                        <label for="medFre1">De 0 à 1 vez semanal</label>
+                                        <input type="radio" name="medFre" id="medFre1">
+                                    </div>
+                                    <div>
+                                        <label for="medFre2">De 2 à 3 vezes semanais</label>
+                                        <input type="radio" name="medFre" id="medFre2">
+                                    </div>
+                                    <div>
+                                        <label for="medFre3">De 4 à 5 vezes semanais</label>
+                                        <input type="radio" name="medFre" id="medFre3">
+                                    </div>
+                                    <div>
+                                        <label for="medFre4">De 6 à 7 vezes semanais</label>
+                                        <input type="radio" name="medFre" id="medFre4">
                                     </div>
                                 </div>
                             </div>
@@ -410,7 +458,7 @@
                                 <textarea name="infoExtra" id="infoExtra" class="qualPerg"></textarea>
                             </div>
                         </div>
-                        <button class="submit" type="button" id="btnSubmit" onclick="window.location.href='/resultado'">Enviar</button>
+                        <button class="submit" type="submit" id="btnSubmit">Enviar</button>
                     </fieldset>
                 </div>
             </div>
