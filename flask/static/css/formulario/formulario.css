@@ -91,6 +91,10 @@ form{
 
 }
 
+#infoExtra{
+    height: 100px;
+}
+
 .pergs{
     display: flex;
     align-items: center;
