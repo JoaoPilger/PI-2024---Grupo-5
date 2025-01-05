@@ -679,19 +679,19 @@ footer {
     color: white;
 }
 
-#footerOpenAI {
+#footerGemini {
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-top: 30px;
 }
 
-#footerOpenAI > p {
+#footerGemini > p {
     margin-bottom: 0;
     transform: translateY(-6px);
 }
 
-#footerOpenAI img {
+#footerGemini img {
     height: 55px;
     width: auto;
     margin-top: 6px;
