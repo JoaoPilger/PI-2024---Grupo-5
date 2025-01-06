@@ -40,12 +40,12 @@
                             
                             <div class="perg">
                                 <label for="peso">Peso</label> <!-- float -->
-                                <input type="number" id="peso" name="peso" required>
+                                <input type="number" id="peso" name="peso" placeholder="78,4" required>
                             </div>
             
                             <div class="perg">
                                 <label for="altura">Altura</label> <!-- float -->
-                                <input type="number" id="altura" name="altura" required>
+                                <input type="number" id="altura" name="altura" placeholder="1,75" required>
                             </div>
                         </div>
                         <div class="submit passar">Próximo</div>
@@ -72,7 +72,7 @@
                         <div class="pergsSim" onclick="pergsSim">     
                             <div class="perg quais">
                                 <label for="atvQual">Qual(is):</label> <!-- string -->
-                                <textarea name="atividadeQuais" id="atvQual" class="qualPerg"></textarea>
+                                <textarea name="atividadeQuais" id="atvQual" placeholder="Caminhada, futebol..." class="qualPerg"></textarea>
                             </div>
     
                             <div class="perg radio">
@@ -158,7 +158,7 @@
                             <div class="pergSimDoe">
                                 <div class="pergquais" onclick="pergSimDoe">
                                     <label for="qualDoenca">Qual(is)</label>
-                                    <input name="qualDoenca" id="qualDoenca" class="qualPerg">
+                                    <textarea name="qualDoenca" id="qualDoenca" placeholder="Arritmia, paralisia dos membros inferiores..." class="qualPerg"></textarea>
                                 </div>
                             </div>
                         <div class="pergs">
@@ -178,7 +178,7 @@
                                 <div class="pergSimDefi">
                                     <div class="pergquais">
                                         <label for="qualDefic">Qual(is)</label>
-                                        <input name="qualDeficiencia" id="qualDefic" class="qualPerg">
+                                        <textarea name="qualDeficiencia" id="qualDefic" placeholder="Amputação transtibial, distrofia muscular..." class="qualPerg"></textarea>
                                     </div>
                                 </div>
                         </div>
@@ -196,22 +196,26 @@
                                 <label>Fez ou fará cirurgia?</label> <!-- bool -->
                                 <div>
                                     <div>
-                                        <label for="cirurSim">Sim</label>
-                                        <input type="radio" name="cirurgia" id="cirurSim" value="sim">
+                                        <label for="cirurSim">Já fiz</label>
+                                        <input type="radio" name="cirurgia" id="cirurSim" value="sim" required>
                                     </div>
                                     <div>
                                         <label for="cirurNao">Não</label>
-                                        <input type="radio" name="cirurgia" id="cirurNao" value="nao">
+                                        <input type="radio" name="cirurgia" id="cirurNao" value="nao" required>
+                                    </div>
+                                    <div>
+                                        <label for="cirurFazer">Irei fazer</label>
+                                        <input type="radio" name="cirurgia" id="cirurFazer" value="fazer" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="pergSimCirur">     
                                 <div class="perg quais">
                                     <label for="qualCirurgia">Qual(is)</label> <!-- string -->
-                                    <input name="qualCirurgia" id="qualCirurgia" class="qualPerg">
+                                    <textarea name="qualCirurgia" placeholder="Reconstrução mamária, bariátrica, prótese..." id="qualCirurgia" class="qualPerg"></textarea>
                                 </div>
                                 <div class="perg quais">
-                                    <label for="tempoCirur">A quanto tempo foi realizado a cirurgia?</label>
+                                    <label for="tempoCirur">Há quanto que tempo foi realizada a cirurgia?</label>
                                     <div>
                                         <div>
                                             <label for="cirurMenos1Mes">Menos de 1 mês</label>
@@ -234,7 +238,37 @@
                                             <input type="radio" name="cirurTempo" id="cirur1AnoMais">
                                         </div>
                                     </div>
-
+                                </div>
+                            </div>
+                            <div class="pergFazerCirur">
+                                <div class="perg quais">
+                                    <label for="cirurRest">Há alguma restrição? Se sim, qual?</label>
+                                    <div>
+                                        <textarea name="qualCirurgia" id="qualCirurgia" placeholder="Prática anaeróbica..." class="qualPerg"></textarea>
+                                    </div>
+                                </div>
+                                <div class="perg quais">
+                                    <label for="cirurTempo">Tempo até a realização da cirurgia?</label>
+                                    <div>
+                                        <label for="cirurtemp1">Menos de 1 mês</label>
+                                        <input type="radio" name="cirurtemp" id="">
+                                    </div>
+                                    <div>
+                                        <label for="cirurtemp2">1 a 3 meses</label>
+                                        <input type="radio" name="cirurtemp" id="">
+                                    </div>
+                                    <div>
+                                        <label for="cirurtemp3">3 a 6 meses</label>
+                                        <input type="radio" name="cirurtemp" id="">
+                                    </div>
+                                    <div>
+                                        <label for="cirurtemp1">6 meses a 1 ano</label>
+                                        <input type="radio" name="cirurtemp" id="">
+                                    </div>
+                                    <div>
+                                        <label for="cirurtemp1">Mais de 1 ano</label>
+                                        <input type="radio" name="cirurtemp" id="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -244,18 +278,18 @@
                                 <div>
                                     <div>
                                         <label for="medSim">Sim</label>
-                                        <input type="radio" name="medicamento" id="medSim" value="sim">
+                                        <input type="radio" name="medicamento" id="medSim" value="sim" required>
                                     </div>
                                     <div>
                                         <label for="medNao">Não</label>
-                                        <input type="radio" name="medicamento" id="medNao" value="nao">
+                                        <input type="radio" name="medicamento" id="medNao" value="nao" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="pergSimMed">
                                 <div class="perg quais">
                                     <label for="qualMed">Qual(is)</label> <!-- string -->
-                                    <input name="qualCirur" id="qualMed" class="qualPerg">
+                                    <textarea name="qualCirur" id="qualMed" placeholder="Propranolol, fluoxetina, progesterona..." class="qualPerg"></textarea>
                                 </div>
                             <div class="perg radio">
                                 <label>Frequência:</label> <!-- bool (para cada um) -->
@@ -292,16 +326,16 @@
                                 <div>
                                     <div>
                                         <label for="bebidaSim">Sim</label>
-                                        <input type="radio" name="alcool" id="bebidaSim" value="sim">
+                                        <input type="radio" name="alcool" id="bebidaSim" value="sim" required>
                                     </div>
                                     <div>
                                         <label for="bebidaNao">Não</label>
-                                        <input type="radio" name="alcool" id="bebidaNao" value="nao">
+                                        <input type="radio" name="alcool" id="bebidaNao" value="nao" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="pergSimBebe">
-                            <div class="pergradio">
+                            <div class="perg radio">
                                 <label>Frequência:</label> <!-- bool (para cada um) -->
                                 <div>
                                     <div>
@@ -330,11 +364,11 @@
                                 <div>
                                     <div>
                                         <label for="fumoSim">Sim</label>
-                                        <input type="radio" name="fumo" id="fumoSim" value="sim">
+                                        <input type="radio" name="fumo" id="fumoSim" value="sim" required>
                                     </div>
                                     <div>
                                         <label for="fumoNao">Não</label>
-                                        <input type="radio" name="fumo" id="fumoNao" value="nao">
+                                        <input type="radio" name="fumo" id="fumoNao" value="nao" required>
                                     </div>
                                 </div>
                             </div>
@@ -370,26 +404,26 @@
     
                     <!-- Informações sobre nova atividades -->
                     <fieldset class="info novaAtv">
-                        <h1>Tempo e Intensidade da atividade</h1>
+                        <h1>Disponibilidade e Intensidade da atividade</h1>
                         <div class="pergs">
                             <div class="perg radio">
                                 <label>Frequência semanal:</label> <!-- bool (para cada um) -->
                                     <div>
                                         <div>
                                             <label for="atvNovaFre1">De 0 à 1 vez</label>
-                                            <input type="radio" name="atividadeNovaFrequencia" id="atvNovaFre1" value="0-1 dias">
+                                            <input type="radio" name="atividadeNovaFrequencia" id="atvNovaFre1" value="0-1 dias" required>
                                         </div>
                                         <div>
                                             <label for="atvNovaFre2">De 2 à 3 vezes</label>
-                                            <input type="radio" name="atividadeNovaFrequencia" id="atvNovaFre2" value="2-3 dias">
+                                            <input type="radio" name="atividadeNovaFrequencia" id="atvNovaFre2" value="2-3 dias" required>
                                         </div>
                                         <div>
                                             <label for="atvNovaFre3">De 4 à 5 vezes</label>
-                                            <input type="radio" name="atividadeNovaFrequencia" id="atvNovaFre3" value="4-5 dias">
+                                            <input type="radio" name="atividadeNovaFrequencia" id="atvNovaFre3" value="4-5 dias" required>
                                         </div>
                                         <div>
                                             <label for="atvNovaFre4">De 6 à 7 vezes</label>
-                                            <input type="radio" name="atividadeNovaFrequencia" id="atvNovaFre4" value="6-7 dias">
+                                            <input type="radio" name="atividadeNovaFrequencia" id="atvNovaFre4" value="6-7 dias" required>
                                         </div>
                                     </div>
                             </div>
@@ -398,19 +432,19 @@
                                 <div>
                                     <div>
                                         <label for="atvNovaTempo1">De 0 à 30 minutos diários</label>
-                                        <input type="radio" name="atividadeNovaTempo" id="atvNovaTempo1" value="0-30mins">
+                                        <input type="radio" name="atividadeNovaTempo" id="atvNovaTempo1" value="0-30mins" required>
                                     </div>
                                     <div>
                                         <label for="atvNovaTempo1">De 30 minutos à 1 hora diária</label>
-                                        <input type="radio" name="atividadeNovaTempo" id="atvNovaTempo2" value="30min-1hora">
+                                        <input type="radio" name="atividadeNovaTempo" id="atvNovaTempo2" value="30min-1hora" required>
                                     </div>
                                     <div>
                                         <label for="atvNovaTempo2">De 1 hora à 1 hora e meia diária</label>
-                                        <input type="radio" name="atividadeNovaTempo" id="atvNovaTempo3" value="1hora-1hora e meia">
+                                        <input type="radio" name="atividadeNovaTempo" id="atvNovaTempo3" value="1hora-1hora e meia" required>
                                     </div>
                                     <div>
                                         <label for="atvNovaTempo3"> De 2 horas diárias ou mais</label>
-                                        <input type="radio" name="atividadeNovaTempo" id="atvNovaTempo4" value="2+horas">
+                                        <input type="radio" name="atividadeNovaTempo" id="atvNovaTempo4" value="2+horas" required>
                                     </div>
                                 </div>
                             </div>
@@ -419,15 +453,15 @@
                                 <div>
                                     <div>
                                         <label for="atvNovaPer1">Manhã</label>
-                                        <input type="radio" name="atividadeNovaPeriodo" id="atvNovaPer1" value="manha">
+                                        <input type="radio" name="atividadeNovaPeriodo" id="atvNovaPer1" value="manha" required>
                                     </div>
                                     <div>
                                         <label for="atvNovaPer2">Tarde</label>
-                                        <input type="radio" name="atividadeNovaPeriodo" id="atvNovaPer2" value="tarde">
+                                        <input type="radio" name="atividadeNovaPeriodo" id="atvNovaPer2" value="tarde" required>
                                     </div>
                                     <div>
                                         <label for="atvNovaPer3">Noite</label>
-                                        <input type="radio" name="atividadeNovaPeriodo" id="atvNovaPer3" value="noite">
+                                        <input type="radio" name="atividadeNovaPeriodo" id="atvNovaPer3" value="noite" required>
                                     </div>
                                 </div>
                             </div>
@@ -436,15 +470,15 @@
                                 <div>
                                     <div>
                                         <label for="atvNovaIntense1">Leve</label>
-                                        <input type="radio" name="atividadeNovaIntensidade" id="atvNovaIntense1" value="leve">
+                                        <input type="radio" name="atividadeNovaIntensidade" id="atvNovaIntense1" value="leve" required>
                                     </div>
                                     <div>
                                         <label for="atvNovaIntense2">Intermediária</label>
-                                        <input type="radio" name="atividadeNovaIntensidade" id="atvNovaIntense2" value="intermediaria">
+                                        <input type="radio" name="atividadeNovaIntensidade" id="atvNovaIntense2" value="intermediaria" required>
                                     </div>
                                     <div>
                                         <label for="atvNovaIntense3">Pesada</label>
-                                        <input type="radio" name="atividadeNovaIntensidade" id="atvNovaIntense3" value="pesada">
+                                        <input type="radio" name="atividadeNovaIntensidade" id="atvNovaIntense3" value="pesada" required>
                                     </div>
                                 </div>
                             </div>
@@ -456,13 +490,16 @@
 
                     </fieldset>
                     <fieldset>
-                        <div class="perg extra">
+                        <div class="info" style="height: auto;">
                             <div>
                                 <label for="infoExtra">Infomações extras que julga serem importantes:</label> <!-- string -->
-                                <textarea name="infoExtra" id="infoExtra" class="qualPerg"></textarea>
+                                <textarea name="infoExtra" id="infoExtra" class="perg"></textarea>
+                            </div>
+                            <div class="buttons">
+                                <div class="submit voltar">Voltar</div>
+                                <button class="submit" type="button" id="btnSubmit">Enviar</button>
                             </div>
                         </div>
-                        <button class="submit" type="button" id="btnSubmit" onclick="window.location.href = '/resultado'">Enviar</button>
                     </fieldset>
                 </div>
             </div>
