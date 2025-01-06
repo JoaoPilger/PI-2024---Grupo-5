@@ -40,7 +40,6 @@ textarea{
 }
 
 .formulario{
-    background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, var(--verde) 100%);
     display: flex;
     flex-direction: row;

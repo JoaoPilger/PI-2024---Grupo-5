@@ -214,24 +214,24 @@
                                     <label for="tempoCirur">A quanto tempo foi realizado a cirurgia?</label>
                                     <div>
                                         <div>
-                                            <label for="cirur1">Menos de 1 mês</label>
-                                            <input type="radio" name="cirur1" id="cirur1">
+                                            <label for="cirurMenos1Mes">Menos de 1 mês</label>
+                                            <input type="radio" name="cirurTempo" id="cirurMenos1Mes">
                                         </div>
                                         <div>
-                                            <label for="cirur2">1 a 3 meses</label>
-                                            <input type="radio" name="cirur2" id="cirur2">
+                                            <label for="cirur1A3Meses">1 a 3 meses</label>
+                                            <input type="radio" name="cirurTempo" id="cirur1A3Meses">
                                         </div>
                                         <div>
-                                            <label for="cirur3">3 meses a 6 meses</label>
-                                            <input type="radio" name="cirur3" id="cirur3">
+                                            <label for="cirur3A6Meses">3 meses a 6 meses</label>
+                                            <input type="radio" name="ciruTempo" id="cirur3A6Meses">
                                         </div>
                                         <div>
-                                            <label for="cirur4">6 meses a 1 ano</label>
-                                            <input type="radio" name="cirur4" id="cirur4">
+                                            <label for="cirur6MesesA1Ano">6 meses a 1 ano</label>
+                                            <input type="radio" name="cirurTempo" id="cirur6MesesA1Ano">
                                         </div>
                                         <div>
-                                            <label for="cirur5">Mais de 1 ano</label>
-                                            <input type="radio" name="cirur5" id="cirur5">
+                                            <label for="cirur1AnoMais">Mais de 1 ano</label>
+                                            <input type="radio" name="cirurTempo" id="cirur1AnoMais">
                                         </div>
                                     </div>
 
@@ -462,7 +462,7 @@
                                 <textarea name="infoExtra" id="infoExtra" class="qualPerg"></textarea>
                             </div>
                         </div>
-                        <button class="submit" type="submit" id="btnSubmit">Enviar</button>
+                        <button class="submit" type="button" id="btnSubmit" onclick="window.location.href = '/resultado'">Enviar</button>
                     </fieldset>
                 </div>
             </div>

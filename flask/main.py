@@ -42,11 +42,12 @@ def home():
     return render_template('index.html')
 
 
-
+#Rota onde o formulário é carregado
 @app.route('/avaliacao')
 def avaliacao():
     return render_template('formulario/formulario.html')
 
+#Rota onde a resposta da IA é armazenada
 @app.route('/dados')
 def dados():
     base_dir = 'flask/sistema'
@@ -56,6 +57,7 @@ def dados():
         dados = json.load(f)  # Carrega os dados do JSON
     return jsonify(dados)
 
+#Rota com a página de resultados formatados
 @app.route('/resultado')
 def resultado():
     gemini = "flask/sistema/gemini.py"
@@ -64,6 +66,7 @@ def resultado():
     return render_template('resultado/resultado.html')
 
 json_path = os.path.join(os.getcwd(), 'flask', 'sistema', 'data.json')
+
 
 @app.route('/save_data', methods=['POST'])
 def save_data():

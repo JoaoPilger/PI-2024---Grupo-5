@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,41 @@
     <link rel="stylesheet" href="../../static/css/formulario/resultado.css">
 </head>
 <body>
-    <div class="segunda"></div>
-    <div class="terca"></div>
-    <div class="quarta"></div>
-    <div class="quinta"></div>
-    <div class="sexta"></div>
-    <div class="sábado"></div>
-    <div class="domingo"></div>
+    <section class="loading" id="loading">
+        <div class="loadCircle"></div>
+        <p id="textChange">Processando dados...</p>
+    </section>
+    <section class="main" id="main">
+        <header>
+            <div>
+                <div class="logo">
+                    <a href="/">GenZ</a>
+                    <a href="/">Dynamics</a>
+                </div>
+            </div>
+        </header>
+        <section class="container flex sectionDays">
+            <div class="divIntro" id="divIntro"></div>
+            <div id="divDays" class="flex divDays">
+            </div>
+        </section>
+        <footer class="container">
+            <div id="footerLogo">
+                <p class="footerGenZ">GenZ</p>
+                <p class="footerDynamics">Dynamics</p>
+            </div>
+            <div id="footerIfc">
+                <a href="https://concordia.ifc.edu.br/"><img src="../static/images/footer/logoIfc.png" alt="Logo do Instituto Federal Catarinense"></a>
+            </div>
+            <div id="footerOpenAI">
+                <p>Inteligência Artificial utilizada:</p>
+                <a href="https://openai.com/chatgpt/overview/"><img src="../static/images/footer/logoOpenAI.png" alt="Logo do Gemini, inteligência artifical do Google"></a>
+            </div>
+            <div id="footerContato">
+                <p>Contato:</p>
+                <p>genzdynamicscontato@gmail.com</p>
+            </div>
+        </footer>
+    </section>
 </body>
 </html>

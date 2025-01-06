@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.aldrich-regular {
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+:root {
+  --verde: #ABF8CA;
+  --second-verde: #6cfda6;
+}
+body{
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, var(--verde) 100%);
+}
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: "Aldrich", sans-serif;
+}
+
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+  }
+  
+a{
+    text-decoration: none;
+    color: black;
+  }
+textarea{
+    resize: none;
+  }
+p{
+    font-size: 22px;
+}
+.flex{
+    display: flex;
+  }
+.container{
+    padding: 50px 200px;
+  }
+
+/* ------------- LOANDING --------------*/
+
+.loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.loadCircle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 15px solid #cecece;
+    border-top-color: #ABF8CA;
+
+    animation: rotate 1s  infinite;
+}
+
+.loading > p{
+    border-right: 2px solid;
+    width: 15ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: taping 2s steps(15), transparating 0.3s infinite step-end alternate;
+}
+
+/* ------------- MAIN --------------*/
+.main{
+    display: none;
+}
+
+
+/* ------------- HEADER --------------*/
+
+  header {
+    width: 100%;
+  }
+  
+  header > div {
+    padding: 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    text-align: center;
+    max-width: 250px;
+    padding: 20px 0;
+  }
+  
+  .logo > a {
+    font-size: 26px;
+    color: black;
+  }
+  
+  .logo :first-child {
+    -webkit-text-stroke: 1px black;
+    color: var(--verde);
+  }
+
+/* ------------- ROTINA --------------*/
+
+.divIntro{
+    max-width: 75%;
+    text-align: justify;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: var(--verde);
+    border: 1px solid black;
+}
+
+.divIntro > p{
+    width: 100%;
+    overflow: hidden;
+}
+
+.sectionDays{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+}
+.divDays{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+    width: 50%;
+}
+.daysTogether{
+    align-items: center;
+    overflow: hidden;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-height: 71px;
+    transition:  0.7s ease-in-out;
+}
+
+.daysTogether:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.diaSemana{
+    background-color: var(--second-verde);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+
+    font-size: 24px;
+}
+.diaDescr{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-color: white;
+    text-align: justify;
+    padding: 20px;
+}
+
+/* ------------- FOOTER --------------*/
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Aldrich";
+    color: white;
+}
+
+#footerOpenAI {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#footerOpenAI > p {
+    margin-bottom: 0;
+    transform: translateY(-6px);
+}
+
+#footerOpenAI img {
+    height: 55px;
+    width: auto;
+    margin-top: 6px;
+}
+
+.footerGenZ{
+    color: var(--verde);
+    font-size: 30px;
+    -webkit-text-stroke: 1px black;
+    font-family: "Aldrich", sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+.footerDynamics{
+    font-size: 30px;
+    font-family: "Aldrich", sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+#footerContato {
+    text-align: center;
+}
+
+@keyframes taping{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes transparating{
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(1turn);
+    }
+}
