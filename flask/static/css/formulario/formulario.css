@@ -36,7 +36,10 @@ textarea{
     display: flex;
 }
 .container{
-    padding: 50px 200px;
+    padding: 22px 200px 21px 200px;
+}
+label{
+    text-align: center;
 }
 
 .formulario{
@@ -73,6 +76,7 @@ form{
     width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .info{
