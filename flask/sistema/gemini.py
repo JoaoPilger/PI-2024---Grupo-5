@@ -9,7 +9,7 @@ with open(path, 'w', encoding='utf-8') as arquivo:
     json.dump({}, arquivo, indent=4, ensure_ascii=False)
 
 # aplica a API_KEY para buscar com a IA
-load_dotenv(dotenv_path="sistema/.env")
+load_dotenv()
 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 model = genai.GenerativeModel("gemini-1.5-flash-002")

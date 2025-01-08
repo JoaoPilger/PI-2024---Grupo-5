@@ -69,7 +69,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pergsSim">     
+                        <div class="pergSim atividadeRegular">     
                             <div class="perg quais">
                                 <label for="atvQual">Qual(is):</label> <!-- string -->
                                 <textarea name="atividadeQuais" id="atvQual" placeholder="Caminhada, futebol..." class="qualPerg"></textarea>
@@ -155,7 +155,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pergSimDoe">
+                            <div class="pergSim doenca">
                                 <div class="pergquais">
                                     <label for="qualDoenca">Qual(is)</label>
                                     <textarea name="qualDoenca" id="qualDoenca" placeholder="Arritmia, paralisia dos membros inferiores..." class="qualPerg"></textarea>
@@ -175,7 +175,7 @@
                                     </div>
                                 </div>
                             </div>
-                                <div class="pergSimDefi">
+                                <div class="pergSim deficiencia">
                                     <div class="pergquais">
                                         <label for="qualDefic">Qual(is)</label>
                                         <textarea name="qualDeficiencia" id="qualDefic" placeholder="Amputação transtibial, distrofia muscular..." class="qualPerg"></textarea>
@@ -205,11 +205,11 @@
                                     </div>
                                     <div>
                                         <label for="cirurFazer">Irei fazer</label>
-                                        <input type="radio" name="cirurgia" id="cirurFazer" value="fazer" required>
+                                        <input type="radio" name="cirurgiaFazer" id="cirurFazer" value="fazer" required>
                                     </div>
                                 </div>
                             </div>
-                            <div class="pergSimCirur">     
+                            <div class="pergSim cirurgia">     
                                 <div class="perg quais">
                                     <label for="qualCirurgia">Qual(is)</label> <!-- string -->
                                     <textarea name="qualCirurgia" placeholder="Reconstrução mamária, bariátrica, prótese..." id="qualCirurgia" class="qualPerg"></textarea>
@@ -240,7 +240,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pergFazerCirur">
+                            <div class="pergSim cirurgiaFazer">
                                 <div class="perg quais">
                                     <label for="cirurRest">Há alguma restrição? Se sim, qual?</label>
                                     <div>
@@ -286,7 +286,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pergSimMed">
+                            <div class="pergSim medicamento">
                                 <div class="perg quais">
                                     <label for="qualMed">Qual(is)</label> <!-- string -->
                                     <textarea name="qualCirur" id="qualMed" placeholder="Propranolol, fluoxetina, progesterona..." class="qualPerg"></textarea>
@@ -334,7 +334,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pergSimBebe">
+                            <div class="pergSim alcool">
                             <div class="perg radio">
                                 <label>Frequência:</label> <!-- bool (para cada um) -->
                                 <div>
@@ -372,7 +372,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pergSimFuma">
+                            <div class="pergSim fumo">
                             <div class="perg radio">
                                 <label>Frequência:</label> <!-- bool (para cada um) -->
                                 <div>
@@ -489,11 +489,11 @@
                         </div>
 
                     </fieldset>
-                    <fieldset>
-                        <div class="info" style="height: auto;">
-                            <div>
+                    <fieldset class="info">
+                        <div class="infoExtra">
+                            <div class="infoExtra">
                                 <label for="infoExtra">Infomações extras que julga serem importantes:</label> <!-- string -->
-                                <textarea name="infoExtra" id="infoExtra" class="perg"></textarea>
+                                <textarea name="infoExtra" id="infoExtraText" class="perg"></textarea>
                             </div>
                             <div class="buttons">
                                 <div class="submit voltar">Voltar</div>

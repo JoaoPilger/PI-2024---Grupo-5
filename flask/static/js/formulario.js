@@ -23,132 +23,30 @@ for (let i = 0; i < voltar.length; i++) {
     });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const atvSim = document.getElementById("atvSim");
-    const atvNao = document.getElementById("atvNao");
-    const pergsSim = document.querySelector(".pergsSim");
+document.querySelectorAll('input[type="radio"][value="sim"], input[type="radio"][value="nao"], input[type="radio"][value="fazer"]').forEach(radio => {
+    let cirurFazer = document.querySelector('input[type="radio"][value="fazer"]')
+    let divFazer = document.getElementsByClassName(`${cirurFazer.name}`)[0]
 
-    pergsSim.style.display = "none";
+    radio.addEventListener("change", () => {
 
-    [atvSim, atvNao].forEach(radio => {
-        radio.addEventListener("change", () => {
-            if (atvSim.checked) {
-                pergsSim.style.display = "block"; 
-                pergsSim.style.height = "auto"
-            } else {
-                pergsSim.style.display = "none"; 
-            }
-        });
-    });
-});
+        let radioName = radio.name;
+        let divAbrir = document.getElementsByClassName(`${radioName}`)[0];
 
-document.addEventListener("DOMContentLoaded", () => {
-    const simDoenca = document.getElementById("simDoenca");
-    const naoDoenca = document.getElementById("naoDoenca");
-    const pergSimDoe = document.querySelector(".pergSimDoe");
+        if (radio.checked && radio.value === "sim") {
 
-    [simDoenca, naoDoenca].forEach(radio => {
-        radio.addEventListener("change", () => {
-            if (simDoenca.checked) {
-                pergSimDoe.style.display = "block"; 
-                pergSimDoe.style.height = "auto"
-            } else {
-                pergSimDoe.style.display = "none"; 
-            }
-        });
-    });
-});
+            divAbrir.style.display = "flex";
 
-document.addEventListener("DOMContentLoaded", () => {
-    const simDefic = document.getElementById("simDefic");
-    const naoDefic = document.getElementById("naoDefic");
-    const pergSimDefi = document.querySelector(".pergSimDefi");
 
-    [simDefic, naoDefic].forEach(radio => {
-        radio.addEventListener("change", () => {
-            if (simDefic.checked) {
-                pergSimDefi.style.display = "block"; 
-                pergSimDefi.style.height = "auto"
-            } else {
-                pergSimDefi.style.display = "none"; 
-            }
-        });
-    });
-});
+        } else if(radio.checked && radio.value === "fazer"){
 
-document.addEventListener("DOMContentLoaded", () => {
-    const cirurSim = document.getElementById("cirurSim");
-    const cirurNao = document.getElementById("cirurNao");
-    const cirurFazer = document.getElementById("cirurFazer")
-    const pergFazerCirur = document.querySelector(".pergFazerCirur");
-    const pergSimCirur = document.querySelector(".pergSimCirur");
+            divAbrir.style.display = "flex";
 
-    [cirurSim, cirurNao, cirurFazer].forEach(radio => {
-        radio.addEventListener("change", () => {
-            if (cirurSim.checked) {
-                pergSimCirur.style.display = "block"; 
-                pergSimCirur.style.height = "auto"
-            } else if (cirurFazer.checked) {
-                pergFazerCirur.style.display = "block"; 
-                pergFazerCirur.style.height = "auto"
-                pergSimCirur.style.display = "none"
-            }
-            else {
-                pergSimCirur.style.display = "none"; 
-                pergFazerCirur.style.display = "none"
-            }
-        });
-    });
-});
+        }else {
+            cirurFazer.checked = false
+            divFazer.style.display = "none"
 
-document.addEventListener("DOMContentLoaded", () => {
-    const medSim = document.getElementById("medSim");
-    const medNao = document.getElementById("medNao");
-    const pergSimMed = document.querySelector(".pergSimMed");
-
-    [medSim, medNao].forEach(radio => {
-        radio.addEventListener("change", () => {
-            if (medSim.checked) {
-                pergSimMed.style.display = "block"; 
-                pergSimMed.style.height = "auto"
-            } else {
-                pergSimMed.style.display = "none"; 
-            }
-        });
-    });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    const bebidaSim = document.getElementById("bebidaSim");
-    const bebidaNao = document.getElementById("bebidaNao");
-    const pergSimBebe = document.querySelector(".pergSimBebe");
-
-    [bebidaSim, bebidaNao].forEach(radio => {
-        radio.addEventListener("change", () => {
-            if (bebidaSim.checked) {
-                pergSimBebe.style.display = "block"; 
-                pergSimBebe.style.height = "auto"
-            } else {
-                pergSimBebe.style.display = "none"; 
-            }
-        });
-    });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    const fumoSim = document.getElementById("fumoSim");
-    const fumoNao = document.getElementById("fumoNao");
-    const pergSimFuma = document.querySelector(".pergSimFuma");
-
-    [fumoSim, fumoNao].forEach(radio => {
-        radio.addEventListener("change", () => {
-            if (fumoSim.checked) {
-                pergSimFuma.style.display = "block"; 
-                pergSimFuma.style.height = "auto"
-            } else {
-                pergSimFuma.style.display = "none"; 
-            }
-        });
+            divAbrir.style.display = "none";
+        }
     });
 });
 
