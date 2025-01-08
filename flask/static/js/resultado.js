@@ -27,6 +27,9 @@ async function requestJson() {
 // FORMATAÇÃO DOS TEXTOS //
 
 function sliceText(text) {
+    while (text.includes("*")) {
+        text = text.replace("*", ""); // Substitui o primeiro "*" encontrado
+    }
     let list = text.split("\n");
 
     // Remover elementos vazios usando filter
