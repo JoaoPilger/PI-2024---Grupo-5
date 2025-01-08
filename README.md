@@ -15,10 +15,12 @@
 
 
 
-## **Descrição**
+# **Descrição**
 Com o tema gerador proposto no Projeto Integrador 2024, nós da *GenZ Dynamics* desenvolvemos um website e um sistema analista e preescritor de exercícios físicos. Observando o cenário mundial em que nos encontramos, identificamos a necessidade de desenvolver um sistema que auxilia a prática regular de atividades físicas, e embora não seja capaz de substituir um profissional da área, cumpre sua função de auxiliar e induzir o usuário a prática. Confira também nosso <a href="Artigo_cientifico.pdf" target="_blank">artigo científico</a>.
 
-## **Ferramentas**
+<br><br>
+
+# **Ferramentas**
 
 ### Sistema
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
@@ -39,10 +41,12 @@ Com o tema gerador proposto no Projeto Integrador 2024, nós da *GenZ Dynamics* 
 ### Inteligência Artificial
 ![Google Gemini](https://img.shields.io/badge/google%20gemini-8E75B2?style=for-the-badge&logo=google%20gemini&logoColor=white)
 
+<br>
+<br>
 
-## **Instalação**
+# **Instalando**
 
-### **Pré-requisitos**
+## **Pré-requisitos**
 <p style="align-items: center; display: flex">
     <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python Badge">
     &nbsp;&nbsp;&nbsp;&nbsp;<strong>3.12+</strong><br>
@@ -53,30 +57,65 @@ Com o tema gerador proposto no Projeto Integrador 2024, nós da *GenZ Dynamics* 
     &nbsp;&nbsp;&nbsp;&nbsp;<strong>24.0+</strong><br>
 </p>
 
+<br>
 
-### **Etapas**
-Instale as dependências via Windows Terminal ou apenas executando o arquivo *setup.bat* com duplo clique. 
-<br>
-<br>
-#### Windows Terminal (Certifique-se de estar no diretório do arquivo)
+## _**Etapas**_
+## **1.** Dependências
+**1.1.** Instale as dependências via Windows Terminal ou apenas executando o arquivo *setup.bat* com duplo clique. 
+<br><br>
+**Windows** **Terminal** (Certifique-se de estar no diretório */PI-2024-Grupo-5*)
+
 ```bash
 setup.bat
 ```
 
+## **2.** Chave API
+**2.1.** Acesse o site <a href="https://aistudio.google.com/app/apikey">Google AIStudio</a> e gere uma *Chave API*. <br><br>
+**2.2.** Com sua Chave em mãos, acesse o diretótio */PI-2024-Grupo-5/flask/sistema* no Windows Terminal e crie um arquivo nomeado como *".env"* contendo a Chave API (Substitua "MINHA_CHAVE" pela respectiva).
+```bash
+echo GEMINI_API_KEY=MINHA_CHAVE > .env
+```
 
-## **Como utilizar**
-**1.** Concluir os passos de **Instalação**.<br>
-**2.** Executar o arquivo */flask/main.py* com seu interpretador Python. (Certifique-se de estar no diretório do arquivo)<br>
+<br>
+<br>
+
+# **Como utilizar**
+**1.** Concluir os passos da seção **Instalando**.<br><br>
+**2.** Executar o arquivo *main.py* com seu interpretador Python (Certifique-se de estar no diretório */PI-2024-Grupo-5/flask/main.py*).
 ```bash
 python main.py
 ```
-**3.** Navegue pelas seções!
+**3.** Abra o *link* exibido no terminal em seu navegador.
 
-## **Licença**
+**4.** Navegue pelas seções e usufrua do sistema!
+
+<br>
+<br>
+
+# **Desinstalando**
+
+<br>
+
+**1.** Desinstale as dependências via Windows Terminal ou apenas executando o arquivo *uninstall.bat* com duplo clique. 
+<br><br>
+**Windows** **Terminal** (Certifique-se de estar no diretório */PI-2024-Grupo-5*)
+
+```bash
+uninstall.bat
+```
+
+**2.** Agora que não há mais resquícios, exclua a pasta */PI-2024-Grupo-5*.
+
+<br>
+<br>
+
+# **Licença**
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
 
-## **Contribuidores**
+<br><br>
+
+# **Contribuidores**
 <a href="https://github.com/JoaoPilger/PI-2024-Grupo-5/graphs/contributors">
   <img src="./flask/static/images/contrib_banner.png" />
 </a>
