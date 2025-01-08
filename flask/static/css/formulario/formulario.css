@@ -36,7 +36,10 @@ textarea{
     display: flex;
 }
 .container{
-    padding: 50px 200px;
+    padding: 22px 200px 21px 200px;
+}
+label{
+    text-align: center;
 }
 
 .formulario{
@@ -73,6 +76,7 @@ form{
     width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .info{
@@ -90,8 +94,17 @@ form{
 
 }
 
-#infoExtra{
+#infoExtraText{
     height: 100px;
+    width: 80%;
+}
+
+.infoExtra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
 
 .pergs{
@@ -111,10 +124,14 @@ form{
     font-size: 23px;
 }
 
-.pergsSim{
+.pergSim{
     display: none;
-    height: 0;
+    height: auto;
     transition: ease 0.5s;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 input, textarea{
@@ -184,9 +201,4 @@ input[type="number"]::-webkit-inner-spin-button {
 .qualPerg{
     width: 100%;
     height: 100px;
-}
-
-.pergSimDoe, .pergSimDefi, .pergSimCirur, .pergSimMed, .pergSimBebe, .pergSimFuma, .pergFazerCirur{
-    display: none;
-    height: 0;
 }

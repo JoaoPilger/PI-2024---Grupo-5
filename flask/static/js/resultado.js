@@ -127,13 +127,15 @@ function setText(list) {
 // FUNÇÃO PARA ABRIR E FECHAR DIAS DA SEMANA //
 
 document.body.addEventListener("click", (event) => {
-
     let diaSemana = document.getElementsByClassName("diaSemana");
-    
+    let diaDescr = document.getElementsByClassName("diaDescr");
+
+    // Itera sobre os elementos de 'diaSemana'
     for (let i = 0; i < diaSemana.length; i++) {
-        if (event.target === diaSemana[i]) {
+        // Verifica se o clique foi em 'diaSemana' ou em 'diaDescr' correspondente
+        if (event.target === diaSemana[i] || event.target === diaDescr[i].firstChild) {
             let father = diaSemana[i].parentElement;
-            
+            console.log(father);
             openCloseDiv(father);
         }
     }
