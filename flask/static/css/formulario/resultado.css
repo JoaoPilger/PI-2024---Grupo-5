@@ -44,7 +44,7 @@ p{
     padding: 50px 200px;
   }
 
-/* ------------- LOANDING --------------*/
+/* ------------- LOADING --------------*/
 
 .loading{
     display: flex;
@@ -161,7 +161,6 @@ p{
     width: 100%;
     box-sizing: border-box;
     border: 1px solid black;
-
     font-size: 24px;
 }
 .diaDescr{
@@ -237,5 +236,37 @@ footer {
 @keyframes rotate{
     to{
         transform: rotate(1turn);
+    }
+}
+
+/* ------------ IMPRIMIR -------------- */
+@media print {
+    /* Estilos para ocultar cabeçalhos, rodapés, etc. */
+    .no-print, header, footer {
+        display: none;
+    }
+
+    .divDays {
+        width: 90%;
+    }
+
+    .daysTogether {
+        overflow: visible;
+    }
+
+    .diaSemana{
+        width: 165%;
+    }
+
+    .diaDescr {
+        width: 150%;
+    }
+
+    /* .sectionDays {
+        overflow: visible;
+    } */
+
+    .divIntro {
+        width: 200%;
     }
 }
