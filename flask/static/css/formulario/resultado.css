@@ -172,6 +172,24 @@ p{
     padding: 20px;
 }
 
+#btnPrint {
+    width: 200px;
+    height: 50px;
+    font-family: "Aldrich", sans-serif;
+    font-size: 30px;
+    margin: auto;
+    background-color: #6cfda6;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 1px solid black;
+}
+
+#btnPrint:hover {
+    transform: scale(1.05);
+    animation: ease 1s;
+    background-color: #ABF8CA;
+    cursor: pointer;
+}
+
 /* ------------- FOOTER --------------*/
 footer {
     background-color: black;
@@ -252,6 +270,7 @@ footer {
 
     .daysTogether {
         overflow: visible;
+        break-inside: avoid;
     }
 
     .diaSemana{
@@ -262,11 +281,8 @@ footer {
         width: 150%;
     }
 
-    /* .sectionDays {
-        overflow: visible;
-    } */
-
     .divIntro {
+        max-width: 200%;
         width: 200%;
     }
 }

@@ -188,7 +188,7 @@ window.addEventListener("load", () => {
 });
 
 
-document.getElementById('print').addEventListener('click', function () {
+document.getElementById('btnPrint').addEventListener('click', function () {
     const diasTreino = document.querySelectorAll('.daysTogether');
 
     // Abre todas as divs ajustando o max-height
