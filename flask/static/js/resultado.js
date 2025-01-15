@@ -186,3 +186,19 @@ window.addEventListener("load", () => {
     requestJson();
     createDays();
 });
+
+
+document.getElementById('btnPrint').addEventListener('click', function () {
+    const diasTreino = document.querySelectorAll('.daysTogether');
+
+    // Abre todas as divs ajustando o max-height
+    diasTreino.forEach(div => {
+        div.style.maxHeight = "1000px";
+    });
+
+    // Deixa um cooldown pra imprimir certo
+    setTimeout(() => {
+        window.print();
+    }, 500);
+
+});

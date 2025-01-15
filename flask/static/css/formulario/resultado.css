@@ -44,7 +44,7 @@ p{
     padding: 50px 200px;
   }
 
-/* ------------- LOANDING --------------*/
+/* ------------- LOADING --------------*/
 
 .loading{
     display: flex;
@@ -161,7 +161,6 @@ p{
     width: 100%;
     box-sizing: border-box;
     border: 1px solid black;
-
     font-size: 24px;
 }
 .diaDescr{
@@ -171,6 +170,24 @@ p{
     background-color: white;
     text-align: justify;
     padding: 20px;
+}
+
+#btnPrint {
+    width: 200px;
+    height: 50px;
+    font-family: "Aldrich", sans-serif;
+    font-size: 30px;
+    margin: auto;
+    background-color: #6cfda6;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 1px solid black;
+}
+
+#btnPrint:hover {
+    transform: scale(1.05);
+    animation: ease 1s;
+    background-color: #ABF8CA;
+    cursor: pointer;
 }
 
 /* ------------- FOOTER --------------*/
@@ -237,5 +254,35 @@ footer {
 @keyframes rotate{
     to{
         transform: rotate(1turn);
+    }
+}
+
+/* ------------ IMPRIMIR -------------- */
+@media print {
+    /* Estilos para ocultar cabeçalhos, rodapés, etc. */
+    .no-print, header, footer {
+        display: none;
+    }
+
+    .divDays {
+        width: 90%;
+    }
+
+    .daysTogether {
+        overflow: visible;
+        break-inside: avoid;
+    }
+
+    .diaSemana{
+        width: 165%;
+    }
+
+    .diaDescr {
+        width: 150%;
+    }
+
+    .divIntro {
+        max-width: 200%;
+        width: 200%;
     }
 }
